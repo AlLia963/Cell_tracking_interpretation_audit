@@ -1,5 +1,5 @@
 {
-  "repository": "https://github.com/AlLia963/cell-tracking-interpretation-audit",
+  "repository": "https://github.com/AlLia963/Cell_tracking_interpretation_audit",
   "scope": "Distributed source and catalog files except this manifest; the Git commit identifies the complete tree.",
   "files": [
     {
@@ -30,7 +30,7 @@
     {
       "path": "README.md",
       "bytes": 4628,
-      "sha256": "954cdafb6eeefbe9f7aa135520ace31039a0882835a85e03204a9541c366e368"
+      "sha256": "67207d19c273ab605df71238c6fed6b4ba8714252f57511fe8e3d82201563e1a"
     },
     {
       "path": "SOURCE_PROVENANCE.json",
@@ -84,8 +84,8 @@
     },
     {
       "path": "docs/DATA_ACCESS.md",
-      "bytes": 3119,
-      "sha256": "3e4a534ccbe687162d35ab2f2cc741d3de48e65846263bec8ae74dcd429ef4f8"
+      "bytes": 5182,
+      "sha256": "dd290c1f67cc88d1e143eef57d4b35b07eead965ef0360e8f3f8c7053a6d03b8"
     },
     {
       "path": "docs/EXPERIMENT_ROUTES.csv",
@@ -99,8 +99,8 @@
     },
     {
       "path": "docs/REPRODUCING.md",
-      "bytes": 4924,
-      "sha256": "94fcec182c1e28f5b29a75434f7395c74e8a41351e8c8709edaca98bc0fd400b"
+      "bytes": 5214,
+      "sha256": "46f96ba4aa7e6bfccb1bdd2f8201621578f18e2a809e85cf2852a67d576c8abb"
     },
     {
       "path": "docs/TYPED_WINDOW_INPUT_CONTRACT.md",
@@ -194,8 +194,8 @@
     },
     {
       "path": "paper/README.md",
-      "bytes": 6583,
-      "sha256": "588d276c437c7abe5a3e8c783396bfff5dbe886077c7116a6b28b17f6ea5ebc0"
+      "bytes": 6396,
+      "sha256": "0845c8e4cbd0d98fc7f679df504fbf3b14d1766118fce0ded59db1e0f9fe46c1"
     },
     {
       "path": "paper/SOURCE_INDEX.json",
@@ -2375,7 +2375,7 @@
     {
       "path": "pyproject.toml",
       "bytes": 680,
-      "sha256": "dfb8c276ed676ea5c64ba7ff9024eeb38ce6950b9beab25348d75ce7570ea2d3"
+      "sha256": "f7d6d85c7720fd98960f161bc12bb0e8ebf272aae18d1b4285d4ca067c1edc3d"
     },
     {
       "path": "requirements-verified.txt",

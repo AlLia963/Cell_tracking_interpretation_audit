@@ -1,6 +1,10 @@
 # Reproducing the analyses
 
 Start with the unrestricted example in the main README. Use new output paths.
+For original datasets, see [data sources and input use](DATA_ACCESS.md): it
+identifies the three upstream sources, the input formats and the next executable
+commands. The routes below use the named saved study inputs. Tracker inference
+and analysis of fixed predictions are separate steps.
 `COMPLETE` means the requested implementation scope completed; `WITHHELD_*`
 records a reason and contains no truncated bounds.
 

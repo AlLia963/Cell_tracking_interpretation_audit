@@ -16,9 +16,17 @@ Paper analyses use CPU. Upstream model training/inference has a separate environ
 
 ## Study inputs
 
-An **authorized LOCAL ONLY input companion** is required. It contains fixed stage/reference graphs, saved predictions and captures, source/measurement contracts, frozen image scores, the specified epithelial image archive and historical comparison targets. Author-side `export_inputs.py` and `build_extra_inputs.py` assemble actual copies without modifying source assets. Each companion has a per-file SHA256 manifest. Original source bytes used only for grid-registration hashes are inert provenance inputs, not external executable dependencies.
+The full-study suite uses `full_study_inputs_LOCAL_ONLY`, containing fixed
+stage/reference graphs, saved predictions, captures and historical comparison
+inputs. See [data sources and input use](../docs/DATA_ACCESS.md) for the three
+original datasets and the formats used by the explicit-input interfaces.
 
-The source clone includes the development catalog and focused numerical records; study images, arrays and weights are supplied through the input companions. `scientific/inputs_LOCAL_ONLY/` is a historical **code** path. Data rights are separate from the source license. Public image downloads alone do not supply study-specific stage captures. This repository does not upload or publish the input companion.
+The repository supplies the analysis code and development catalog. Dataset
+images are obtained upstream; the named companions retain the exact saved
+predictions and intermediates for the paper. Each companion has a per-file
+SHA256 manifest. `scientific/inputs_LOCAL_ONLY/` is a historical source-code path.
+Author-side `export_inputs.py` and `build_extra_inputs.py` assemble existing
+study inputs; they are not raw-dataset download or tracker-inference commands.
 
 Configure the supplied companion and prepare a fresh runtime:
 

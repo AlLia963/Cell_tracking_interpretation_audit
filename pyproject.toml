@@ -12,7 +12,7 @@ license = {file = "LICENSE"}
 dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2"]
 
 [project.urls]
-Repository = "https://github.com/AlLia963/cell-tracking-interpretation-audit"
+Repository = "https://github.com/AlLia963/Cell_tracking_interpretation_audit"
 
 [project.scripts]
 tracking-audit = "portable_analysis_candidate.cli:main"

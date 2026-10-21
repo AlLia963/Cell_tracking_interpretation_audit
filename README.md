@@ -13,8 +13,8 @@ readouts with whole-map witnesses or an explicit construction/query refusal.
 Tested on Windows with Python 3.13.12, NumPy 2.4.6 and SciPy 1.18.0.
 
 ```bash
-git clone https://github.com/AlLia963/cell-tracking-interpretation-audit.git
-cd cell-tracking-interpretation-audit
+git clone https://github.com/AlLia963/Cell_tracking_interpretation_audit.git
+cd Cell_tracking_interpretation_audit
 python -m venv .venv
 # PowerShell: .venv\Scripts\Activate.ps1
 # POSIX: source .venv/bin/activate
