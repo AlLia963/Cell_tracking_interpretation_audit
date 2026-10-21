@@ -1,0 +1,1744 @@
+{
+  "scope": "Pinned scientific dependencies used by the article analysis routes; per-file attribution and adaptations retained.",
+  "files": [
+    {
+      "relative_path": "acquire_pinned_public_archive.py",
+      "sha256": "6e703140bdcd2ced31fdc7b039c71d7c0813912273d889ee1bc93e08c369dc85",
+      "bytes": 1258
+    },
+    {
+      "relative_path": "complete_resumed_r1.py",
+      "sha256": "6ce099ac4f162ab763446c0b60b70a22bfe8aedfcd38a2b796cd6bf640787c05",
+      "bytes": 5487
+    },
+    {
+      "relative_path": "extensions/natural/literal_constrained_baseline_v03.py",
+      "sha256": "e9b9dd8e87099d4bdbd1ffbed7acdcffa9a52c40fe5f275c2592fbf581cee3be",
+      "bytes": 8714
+    },
+    {
+      "relative_path": "extensions/natural/reproduce_natural.py",
+      "sha256": "88983a897a1054a6c24182c1334f37305dc4d4adc1392c88b5606377f0a36770",
+      "bytes": 8879,
+      "historical_execution_sha256": "181cfeb420c85fff4048ea6d3407cd6fcbfa6789d122697328c4a7f4cd209606",
+      "current_adaptation": "Fail closed at active constructor/CLI import before third-party imports, input reads and computation when assertions are disabled; scientific arithmetic unchanged."
+    },
+    {
+      "relative_path": "extensions/natural/sources/family/reconstruct.py",
+      "sha256": "24d6000a5abea7b5d738e93cd3967831ce3c6be43489e3d88391bd683b51a9b8",
+      "bytes": 23398,
+      "historical_execution_sha256": "d733a59f98518e83d7138f8fcfa3172e70642f206afe491d8bb086423ce6fba4",
+      "current_adaptation": "Fail closed at active constructor/CLI import before third-party imports, input reads and computation when assertions are disabled; scientific arithmetic unchanged."
+    },
+    {
+      "relative_path": "extensions/natural/sources/family/sources/executed/stage_accounting.py",
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "bytes": 8876
+    },
+    {
+      "relative_path": "extensions/natural/sources/local/local_graph_core.py",
+      "sha256": "36ef1a068a3fdb0ec9f68c0f142c4bf97944ec2e8639c1c9ac087f3000e5a749",
+      "bytes": 3634
+    },
+    {
+      "relative_path": "extensions/natural/sources/local/scientific_backend/reconstruct.py",
+      "sha256": "eb44114ed985fc3bd5f02ce6e76d9861712465c47fb9f14195876bb3bf886427",
+      "bytes": 23287,
+      "historical_execution_sha256": "d733a59f98518e83d7138f8fcfa3172e70642f206afe491d8bb086423ce6fba4",
+      "current_adaptation": "Fail closed before raw-family construction when assertions are disabled; scientific arithmetic unchanged."
+    },
+    {
+      "relative_path": "extensions/natural/sources/local/scientific_backend/sources/executed/stage_accounting.py",
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "bytes": 8876
+    },
+    {
+      "relative_path": "extensions/natural/sources/local/workflow.py",
+      "sha256": "03d5c33dbebc55d00cf92cf3288aba5155b4b67b4db335a2f9f9232a6b57668f",
+      "bytes": 17945,
+      "historical_execution_sha256": "82a299ea34acddcc0eeaa8ef5fdbddd829d63e4b881a06a0279a94c89255c098",
+      "current_adaptation": "Fail closed before raw-family construction when assertions are disabled; scientific arithmetic unchanged."
+    },
+    {
+      "relative_path": "extensions/operating_envelope/audit_from_raw.py",
+      "sha256": "ed29ac8508dd8257f7ccf5c87ce3a805e928a3bc48a706abbeb754f96a4df954",
+      "bytes": 7817
+    },
+    {
+      "relative_path": "extensions/operating_envelope/factor_frames.py",
+      "sha256": "8787e5a7eff5f6fb5b2360b61cff347032cb8a2780de974b10fb3212d96ff319",
+      "bytes": 3964
+    },
+    {
+      "relative_path": "extensions/operating_envelope/run_operating_envelope.py",
+      "sha256": "a94048343331d0829cb9d669c00b80b1bf6385df3c160093c65fc5b765522f0d",
+      "bytes": 10031
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/acquire_public_inputs.py",
+      "sha256": "bbde2f009326803f52532452982d24c1757a50619f9ed0d35e1e4dd5147bae02",
+      "bytes": 2752
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/audit_resize.py",
+      "sha256": "32392f72c856ce13862d83ed8e74c6560740e7f9f1a3d066d182d949be6053b2",
+      "bytes": 3634
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/build_extension.py",
+      "sha256": "eac7cf319ed7b1ad72d0df1e012d93fff433b0eccaca4a3d8d63f6a64775cab1",
+      "bytes": 7143,
+      "original_sha256": "48323a49ebe9e54d4089d4848b4f847888cf2a9216203dec5fee0680958d1ae3",
+      "adaptation": "Replace obsolete author-machine default path literals with legacy_inputs paths; active callers bind explicit inputs."
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/build_fixed_inputs.py",
+      "sha256": "9db84b3b08d93adfa3fc90cc94f7faa0274c4a7ad29762b44472062e265e6adb",
+      "bytes": 6928
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/compare_scientific_records.py",
+      "sha256": "af0394f593c6642a84245b7196208b5b89a2e3052d8aa297157c8c8a7aafff1f",
+      "bytes": 4595
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/export_scientific_tables.py",
+      "sha256": "5ce6a983bc597d2b5995c457d85959d9c75cee947a85a0dbc0f973cf2bd480fe",
+      "bytes": 2480
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/finalize_extension.py",
+      "sha256": "31ba7c7d309c3e2c09b9713814ad2feb0f99c4545eb3ad8e838f97122679e7c4",
+      "bytes": 22588
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/fixed_archive_root/pulse_factorial_control_v0.1/source_preparation_v0.3/run_factorial_arm.py",
+      "sha256": "cea80cf920be16fb4ab4cb020ca5d1629bc92c3e8c8bf2ad6da29862bf6d0345",
+      "bytes": 12634,
+      "original_sha256": "796bb8894f09521c918a3a783e16727195559a2bf32fda1ad8a51b4c3f4bbdb9",
+      "adaptation": "Replace obsolete author-machine default path literals with legacy_inputs paths; active callers bind explicit inputs."
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/fixed_archive_root/pulse_factorial_control_v0.1/source_preparation_v0.3/source/src/trackformer/engine.py",
+      "sha256": "0049d7c5ee0831a87eabe4cca65f6dc8b9e578cb9db19ded057e48bf4bd903b0",
+      "bytes": 60881
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/generate_common.py",
+      "sha256": "b1987ba1b01b36ac924240083723b0244071b34863c9c42c6fd281dbac8e94d3",
+      "bytes": 5849
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/identity_crosswalk.py",
+      "sha256": "784d8b992c576112483e965d48510d6c2521370f7c80e2b2eaa291ce96c4e2b4",
+      "bytes": 10718,
+      "historical_execution_sha256": "93af4ab16c2eab404046596f5f13d8ff9c4c9c4407c4aeb7e34e40d3c4efe0ee",
+      "current_adaptation": "Stage 4: separate unlinked relations from linked unmatched event categories; identities and event matching unchanged."
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/inputs_LOCAL_ONLY/common_carrier96/reproduce96.py",
+      "sha256": "18a44677205fab80c8220bc75457bc23a0e269dedc9f3a365c120e240d31057f",
+      "bytes": 2041
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/inputs_LOCAL_ONLY/common_carrier96/source_relative_score.py",
+      "sha256": "d7cad2926e0c54fbfd9430ba67513f70fa355830ce7a4b10a1bd7ad24cb4e957",
+      "bytes": 1913
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/prepare_new_inference.py",
+      "sha256": "d1a9fbd4bd11be7c7e8b7c7351f377b43a33c929019631e37f6e6bd0e587bfc0",
+      "bytes": 3684
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/rematch_stage.py",
+      "sha256": "10cc77e97632231673900c0c3b0a78f5be3db8335b96a6848ec8c10930949d22",
+      "bytes": 9361
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/run_archive.py",
+      "sha256": "d43f923ff6a13de06b66b96de012064b43334e56342698e475afbdcd74a071ef",
+      "bytes": 19410,
+      "original_sha256": "b5cdce733ad1e45479309a7365704443cd6740b86211c132829be381f607efab",
+      "adaptation": "Explicit optional --decision-ledger connects fresh allocation output; unchanged checker and fixture bodies"
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/run_clean_archive.py",
+      "sha256": "4f9dcc392677b3013fbc91d939f1cbc05b2c09dfbd442a63aceda14cb9e13aa5",
+      "bytes": 1838
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/cca_existing_cohort_v0.1/analyze.py",
+      "sha256": "589f383edf42d7da1a13e5509a8e49d3cb358ae9ac2e4ec2612fa2f75ba655b7",
+      "bytes": 9604
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/cca_existing_cohort_v0.1/compare_endpoint_estimands.py",
+      "sha256": "655f8ae753fdf692efbfca6b6c16b4699f2ba85b20fdbcf7e59d3bf7f4deb6e9",
+      "bytes": 4221
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/closest_prior_lineage_definitions_v0.1/bc.py",
+      "sha256": "cab0b299382ca6d1c041a7a142261f1c1813f5c03bbf27758576cd3a8581c56d",
+      "bytes": 8707
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/closest_prior_lineage_definitions_v0.1/cca.py",
+      "sha256": "63fdc447afcbeae350a1cb5f8df301ed62cb96089d81d8d2f399f50785873b62",
+      "bytes": 2398
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/closest_prior_lineage_definitions_v0.1/chota.py",
+      "sha256": "c82866ff229cff82a8a1b8150c101ca6c4d3a30cddae05848a4651bba382c5fc",
+      "bytes": 4690
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/closest_prior_lineage_definitions_v0.1/ct.py",
+      "sha256": "76fedefda6c28284a0b27e55c28fe931738c768bd74324884d6229e7f559e742",
+      "bytes": 2556
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/common_policy/execute_common_carrier_v01.py",
+      "sha256": "bde5be054b6c9b8bec77a66ae16ab160a4a0260615b03006ec32f90bab12ef09",
+      "bytes": 7152
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/common_policy/policies/event_gate/affirmative_veto.py",
+      "sha256": "5057f39ac0a0609be35ec98205664a2ba49af9c6bc40a7e8668a6bbb8543074e",
+      "bytes": 5246
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/common_policy/policies/event_gate/event_consensus.py",
+      "sha256": "2ef0af317c9c86a0cf367d292ce1a5eb0fb45b5ed3255a0ee7dfdadcac8e1b74",
+      "bytes": 8076
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/common_policy/policies/measurement_fusion/measurement_fusion.py",
+      "sha256": "36c96b9bf3f33c4f6cef647ba6b2c2308b639336470e496ab6c10d76bee06940",
+      "bytes": 736
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/common_policy/policies/topology/endpoint_consistency.py",
+      "sha256": "ff8d364b472d5cf68257000e485dcaf791fc54a51366ea004ff6d8a13f4ff8a8",
+      "bytes": 2581
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/common_policy/recount_sdy_sparse_v01.py",
+      "sha256": "7851a6de98c00070d520bf3efed33a6cbda25c191dafd60b914e28ce160f9f72",
+      "bytes": 6490,
+      "original_sha256": "63e9adfad38762ec54b679b176c1687d17f7f07274f1d61e9a29fb27be28e6bf",
+      "adaptation": "Replace obsolete author-machine default path literals with legacy_inputs paths; active callers bind explicit inputs."
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/common_policy/replay_svm_topology_v02.py",
+      "sha256": "0e504570ee86b816435f722750c86279f1e474109813d5b37bac2036681775ac",
+      "bytes": 11291,
+      "original_sha256": "df644a25291fc8525727e807396af72d1d8de5f41d89808b71f666882af8e813",
+      "adaptation": "Replace obsolete author-machine default path literals with legacy_inputs paths; active callers bind explicit inputs."
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/division_timing_sensitivity_v0.1/analyze.py",
+      "sha256": "85d1ecfe5985c34965b7f1e54cc212b42aa88228c7b257b6071abad9cfec240e",
+      "bytes": 10290
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/division_timing_sensitivity_v0.1/compare_event_identities.py",
+      "sha256": "ed1345fabfac8076a2eed4024b5810b6a38ec4858c540ab53b7c0068f94eda1c",
+      "bytes": 2218
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/division_timing_sensitivity_v0.1/join_strict_chain_birth_cases.py",
+      "sha256": "ed13821ae172e923e7d846766d50638a675fb00bcecff0dbce66abffe5c6c37d",
+      "bytes": 3467
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/division_timing_sensitivity_v0.1/summarize_contracts.py",
+      "sha256": "6e977828f527085f452477de03096471c2358fea555e5f74eb3e2c732b0f01e2",
+      "bytes": 6104
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/division_window_controls_v0.1/generate.py",
+      "sha256": "43074db4529d598b69c39d35b3300ca82bbd733e80d8ff2aa81ea64038cbc8a2",
+      "bytes": 6252
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/division_window_controls_v0.1/generate_v02.py",
+      "sha256": "e2d2186e6d124e899d67f3dcca8ec2ba6d60f0f4e1089fa7afe2f7b39fb2dad8",
+      "bytes": 6258
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/division_window_controls_v0.1/measure.py",
+      "sha256": "94b4899d3de7e5a83aa09f80c19daaf5a4ccf03b502a71dea8fa5b591fabf6fc",
+      "bytes": 9224
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/final_only.py",
+      "sha256": "36b967ebc0acb5d9e40a3c4c2d657c27175a59283963666c7b8495415d19b586",
+      "bytes": 7674
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/native_stage_observer_v04.py",
+      "sha256": "fc9371ea6370e4c01b91c76114bcc0405864fb5c157d1353e1213bf3eacb884b",
+      "bytes": 5668
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/scripts/create_coco_dataset_from_CTC.py",
+      "sha256": "20c998d7f468e30768e2ccdf52e8690fa99e16a9d052ffe6a4bccb03236f2d56",
+      "bytes": 4387
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/scripts/utils_coco.py",
+      "sha256": "ac250aad6867f8b47643bba38576a11b5f31fb84941cb801fdbf8e90468b5c14",
+      "bytes": 27468
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/setup.py",
+      "sha256": "a3ca30d3914d508495621f5589aa0190dcb80f9b90217b4c675ec69af5bcba92",
+      "bytes": 184
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/old_functions/display_worst_loss_and_score_samples.py",
+      "sha256": "7c860ab599873330448bbdf0aa6c8ea8655b2067bd4d997559f23bb2d4fb744c",
+      "bytes": 8231
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/old_functions/engine_stitch_and_crop.py",
+      "sha256": "d1bf6d27b241942ce3ab8f6d2b5b38d39c3b4698f2c91cc900baacde38047d81",
+      "bytes": 102386
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/pipeline.py",
+      "sha256": "437260806f8b44239ed939ad1c89c9e5edc15eb82f9c69d68fc9f7e70b27ef82",
+      "bytes": 3801
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/datasets/__init__.py",
+      "sha256": "b4918b3c4e97c26ac2468c3fabab21b1f60a1cbc7188a9444a3103ec17f57910",
+      "bytes": 907
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/datasets/coco.py",
+      "sha256": "a0018fe5b841591985358859b90981a19be96c1777b7fb35c0899dfe5707761a",
+      "bytes": 11000
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/datasets/coco_eval.py",
+      "sha256": "e5468ce67db715d4159b4a095de9337049bcb082d0335ade2738e5da981c1329",
+      "bytes": 8865
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/datasets/mot.py",
+      "sha256": "f80fe557f526005257f57386c24df95d240c7b3960f86f94480a99ff5c1ae50a",
+      "bytes": 8772
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/datasets/transforms.py",
+      "sha256": "2d9baaeb2559a040c70e112eca96ef6970a20ea99f628a4af2a4f251cd31750f",
+      "bytes": 19019
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/engine.py",
+      "sha256": "f2d26d9464db10fca938cc1940edb6e3dc5066fd8d6dfcf34ad36d891a1e9bad",
+      "bytes": 58662
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/__init__.py",
+      "sha256": "a63d8ba059b0f42e2ca51b9656cf1ad561de1e66c85ceb79e3e68f1d5384cb72",
+      "bytes": 6972
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/backbone.py",
+      "sha256": "1867ba574a81d069ef10bbebeea998d216d6a75f80eab82f02a308b415d26976",
+      "bytes": 5785
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/deformable_detr.py",
+      "sha256": "34c9c8d4f858d98be6c2c2595a5a9868897e1eedc9dc84854e5f13e5701175dc",
+      "bytes": 20086
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/deformable_transformer.py",
+      "sha256": "1dbb6ad25f8cfc9ff6227c91a9dbdd97f0df00b77a47f8b3997afd0f80bc5fda",
+      "bytes": 40027
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/detr.py",
+      "sha256": "2e46a780806c9e308b6ad8350ad4c35b176512d90c95d5aad95b972436844606",
+      "bytes": 19480
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/detr_segmentation.py",
+      "sha256": "121343a15a5a9d12913be563759acde25c0365f9e3f6887e7474fdb74476a122",
+      "bytes": 6091
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/detr_tracking.py",
+      "sha256": "19121f59f636fc29767cf03502cc1dedb9bd66b773512aed3c3cf890ef1a1de6",
+      "bytes": 39626
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/matcher.py",
+      "sha256": "7650fb8bdcd0de3f2cd8bcec29daf68b348681d7c9bc49cd3d566c0c64e02497",
+      "bytes": 16018
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/functions/__init__.py",
+      "sha256": "55600551d8a50168840a18478c0bf2e383758c12092f0837cc3e9ad43df99e3f",
+      "bytes": 119
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/functions/ms_deform_attn_func.py",
+      "sha256": "20ea18c02a5e5e462d7e01519f8e97908f0d0a6eecc8370ecbdf94ed41e1c810",
+      "bytes": 5068
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/modules/__init__.py",
+      "sha256": "25042b9749f112c19e6928418b4bd197abe7dada5b7a2079c2b8f61c52fa1384",
+      "bytes": 42
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/modules/ms_deform_attn.py",
+      "sha256": "407a73c8f7b2f728ade047822f5e7553a79023913e128952c15031e42bdd72af",
+      "bytes": 4681
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/setup.py",
+      "sha256": "df75d38cc7724c844c13efe42d6589b392fb7e021e4bdc8cacd9805da661269a",
+      "bytes": 2015
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/test.py",
+      "sha256": "11b4b0e806d6eee2a0ce62f8d2e0ee053d2a86ee67d35032b204d869ca1fa6a9",
+      "bytes": 7051
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/test_double_precision.py",
+      "sha256": "acaabfddd15a02273669f6f21cd73c734ad524c1a9980c775047524b7af2bcd3",
+      "bytes": 7186
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/__init__.py",
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a",
+      "bytes": 598
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/ms_deform_attn_func.py",
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc",
+      "bytes": 3298
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/__init__.py",
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f",
+      "bytes": 584
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/ms_deform_attn.py",
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408",
+      "bytes": 6270
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/functions/__init__.py",
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a",
+      "bytes": 598
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/functions/ms_deform_attn_func.py",
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc",
+      "bytes": 3298
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/modules/__init__.py",
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f",
+      "bytes": 584
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/modules/ms_deform_attn.py",
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408",
+      "bytes": 6270
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/setup.py",
+      "sha256": "167e8f8ffa224514c1f195b5091b5ed6f7cfcabfe8b967719ddede3c402a103f",
+      "bytes": 2559
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/test.py",
+      "sha256": "6066519322d749265c9983117ba8b012b35b6fbd46505d5b7842751eeb706942",
+      "bytes": 4087
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/position_encoding.py",
+      "sha256": "2e877a16afbf8024875658fcede838205d295d353fd4916d19c18a4f72c5bbee",
+      "bytes": 7303
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/tracker.py",
+      "sha256": "3fcb0b2aa121bb3c4d6f537a15756edd6b1e6e46a60c8b894eda1a381971c2e6",
+      "bytes": 23373
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/transformer.py",
+      "sha256": "5a34321a2e0bcd3fc71c8ca010a255df50e9bcb1ccf4d22a4cc88333b9a9820c",
+      "bytes": 13716
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/util/__init__.py",
+      "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+      "bytes": 71
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/util/box_ops.py",
+      "sha256": "1e1ff7096ddaecd01a676d290e54dedf41455ce49351cd8a13673551130e4394",
+      "bytes": 9870
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/util/data_viz.py",
+      "sha256": "8de3cdb427e1a843d12e9200630b7a5cb3ef36c3accad5b1872b90c8a112efa3",
+      "bytes": 53858
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/util/flex_div.py",
+      "sha256": "0632ba37f94fb3f12275c5cf5b91d0df40fd838c8b09ba1d8aa22a66af80b0a2",
+      "bytes": 47871
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/util/misc.py",
+      "sha256": "6ceffee9df81537e0127634faa947367e96fb08f53f33a142aa02b985f3fd9d8",
+      "bytes": 60809
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/vis.py",
+      "sha256": "78b7a99ecb7b37b2d8288935bab7ee3913ade0aef954701dfec530d5e3490050",
+      "bytes": 11159
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/train.py",
+      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59",
+      "bytes": 7796
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/scripts/create_coco_dataset_from_CTC.py",
+      "sha256": "20c998d7f468e30768e2ccdf52e8690fa99e16a9d052ffe6a4bccb03236f2d56",
+      "bytes": 4387
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/scripts/utils_coco.py",
+      "sha256": "ac250aad6867f8b47643bba38576a11b5f31fb84941cb801fdbf8e90468b5c14",
+      "bytes": 27468
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/setup.py",
+      "sha256": "a3ca30d3914d508495621f5589aa0190dcb80f9b90217b4c675ec69af5bcba92",
+      "bytes": 184
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/old_functions/display_worst_loss_and_score_samples.py",
+      "sha256": "7c860ab599873330448bbdf0aa6c8ea8655b2067bd4d997559f23bb2d4fb744c",
+      "bytes": 8231
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/old_functions/engine_stitch_and_crop.py",
+      "sha256": "d1bf6d27b241942ce3ab8f6d2b5b38d39c3b4698f2c91cc900baacde38047d81",
+      "bytes": 102386
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/pipeline.py",
+      "sha256": "437260806f8b44239ed939ad1c89c9e5edc15eb82f9c69d68fc9f7e70b27ef82",
+      "bytes": 3801
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/datasets/__init__.py",
+      "sha256": "b4918b3c4e97c26ac2468c3fabab21b1f60a1cbc7188a9444a3103ec17f57910",
+      "bytes": 907
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/datasets/coco.py",
+      "sha256": "a0018fe5b841591985358859b90981a19be96c1777b7fb35c0899dfe5707761a",
+      "bytes": 11000
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/datasets/coco_eval.py",
+      "sha256": "e5468ce67db715d4159b4a095de9337049bcb082d0335ade2738e5da981c1329",
+      "bytes": 8865
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/datasets/mot.py",
+      "sha256": "f80fe557f526005257f57386c24df95d240c7b3960f86f94480a99ff5c1ae50a",
+      "bytes": 8772
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/datasets/transforms.py",
+      "sha256": "2d9baaeb2559a040c70e112eca96ef6970a20ea99f628a4af2a4f251cd31750f",
+      "bytes": 19019
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/engine.py",
+      "sha256": "01fda847994c5766da61de3409dd5b27364faf2defb5fd83b1ceeff5b3575422",
+      "bytes": 58621
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/__init__.py",
+      "sha256": "a63d8ba059b0f42e2ca51b9656cf1ad561de1e66c85ceb79e3e68f1d5384cb72",
+      "bytes": 6972
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/backbone.py",
+      "sha256": "1867ba574a81d069ef10bbebeea998d216d6a75f80eab82f02a308b415d26976",
+      "bytes": 5785
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/deformable_detr.py",
+      "sha256": "34c9c8d4f858d98be6c2c2595a5a9868897e1eedc9dc84854e5f13e5701175dc",
+      "bytes": 20086
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/deformable_transformer.py",
+      "sha256": "1dbb6ad25f8cfc9ff6227c91a9dbdd97f0df00b77a47f8b3997afd0f80bc5fda",
+      "bytes": 40027
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/detr.py",
+      "sha256": "2e46a780806c9e308b6ad8350ad4c35b176512d90c95d5aad95b972436844606",
+      "bytes": 19480
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/detr_segmentation.py",
+      "sha256": "121343a15a5a9d12913be563759acde25c0365f9e3f6887e7474fdb74476a122",
+      "bytes": 6091
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/detr_tracking.py",
+      "sha256": "19121f59f636fc29767cf03502cc1dedb9bd66b773512aed3c3cf890ef1a1de6",
+      "bytes": 39626
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/matcher.py",
+      "sha256": "7650fb8bdcd0de3f2cd8bcec29daf68b348681d7c9bc49cd3d566c0c64e02497",
+      "bytes": 16018
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/functions/__init__.py",
+      "sha256": "55600551d8a50168840a18478c0bf2e383758c12092f0837cc3e9ad43df99e3f",
+      "bytes": 119
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/functions/ms_deform_attn_func.py",
+      "sha256": "20ea18c02a5e5e462d7e01519f8e97908f0d0a6eecc8370ecbdf94ed41e1c810",
+      "bytes": 5068
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/modules/__init__.py",
+      "sha256": "25042b9749f112c19e6928418b4bd197abe7dada5b7a2079c2b8f61c52fa1384",
+      "bytes": 42
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/modules/ms_deform_attn.py",
+      "sha256": "407a73c8f7b2f728ade047822f5e7553a79023913e128952c15031e42bdd72af",
+      "bytes": 4681
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/setup.py",
+      "sha256": "df75d38cc7724c844c13efe42d6589b392fb7e021e4bdc8cacd9805da661269a",
+      "bytes": 2015
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/test.py",
+      "sha256": "11b4b0e806d6eee2a0ce62f8d2e0ee053d2a86ee67d35032b204d869ca1fa6a9",
+      "bytes": 7051
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/test_double_precision.py",
+      "sha256": "acaabfddd15a02273669f6f21cd73c734ad524c1a9980c775047524b7af2bcd3",
+      "bytes": 7186
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/__init__.py",
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a",
+      "bytes": 598
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/ms_deform_attn_func.py",
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc",
+      "bytes": 3298
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/__init__.py",
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f",
+      "bytes": 584
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/ms_deform_attn.py",
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408",
+      "bytes": 6270
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/functions/__init__.py",
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a",
+      "bytes": 598
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/functions/ms_deform_attn_func.py",
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc",
+      "bytes": 3298
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/modules/__init__.py",
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f",
+      "bytes": 584
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/modules/ms_deform_attn.py",
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408",
+      "bytes": 6270
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/setup.py",
+      "sha256": "167e8f8ffa224514c1f195b5091b5ed6f7cfcabfe8b967719ddede3c402a103f",
+      "bytes": 2559
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/test.py",
+      "sha256": "6066519322d749265c9983117ba8b012b35b6fbd46505d5b7842751eeb706942",
+      "bytes": 4087
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/position_encoding.py",
+      "sha256": "2e877a16afbf8024875658fcede838205d295d353fd4916d19c18a4f72c5bbee",
+      "bytes": 7303
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/tracker.py",
+      "sha256": "3fcb0b2aa121bb3c4d6f537a15756edd6b1e6e46a60c8b894eda1a381971c2e6",
+      "bytes": 23373
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/transformer.py",
+      "sha256": "5a34321a2e0bcd3fc71c8ca010a255df50e9bcb1ccf4d22a4cc88333b9a9820c",
+      "bytes": 13716
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/util/__init__.py",
+      "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+      "bytes": 71
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/util/box_ops.py",
+      "sha256": "1e1ff7096ddaecd01a676d290e54dedf41455ce49351cd8a13673551130e4394",
+      "bytes": 9870
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/util/data_viz.py",
+      "sha256": "8de3cdb427e1a843d12e9200630b7a5cb3ef36c3accad5b1872b90c8a112efa3",
+      "bytes": 53858
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/util/flex_div.py",
+      "sha256": "0632ba37f94fb3f12275c5cf5b91d0df40fd838c8b09ba1d8aa22a66af80b0a2",
+      "bytes": 47871
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/util/misc.py",
+      "sha256": "6ceffee9df81537e0127634faa947367e96fb08f53f33a142aa02b985f3fd9d8",
+      "bytes": 60809
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/vis.py",
+      "sha256": "78b7a99ecb7b37b2d8288935bab7ee3913ade0aef954701dfec530d5e3490050",
+      "bytes": 11159
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/train.py",
+      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59",
+      "bytes": 7796
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/scripts/create_coco_dataset_from_CTC.py",
+      "sha256": "20c998d7f468e30768e2ccdf52e8690fa99e16a9d052ffe6a4bccb03236f2d56",
+      "bytes": 4387
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/scripts/utils_coco.py",
+      "sha256": "ac250aad6867f8b47643bba38576a11b5f31fb84941cb801fdbf8e90468b5c14",
+      "bytes": 27468
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/setup.py",
+      "sha256": "a3ca30d3914d508495621f5589aa0190dcb80f9b90217b4c675ec69af5bcba92",
+      "bytes": 184
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/old_functions/display_worst_loss_and_score_samples.py",
+      "sha256": "7c860ab599873330448bbdf0aa6c8ea8655b2067bd4d997559f23bb2d4fb744c",
+      "bytes": 8231
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/old_functions/engine_stitch_and_crop.py",
+      "sha256": "d1bf6d27b241942ce3ab8f6d2b5b38d39c3b4698f2c91cc900baacde38047d81",
+      "bytes": 102386
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/pipeline.py",
+      "sha256": "437260806f8b44239ed939ad1c89c9e5edc15eb82f9c69d68fc9f7e70b27ef82",
+      "bytes": 3801
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/datasets/__init__.py",
+      "sha256": "b4918b3c4e97c26ac2468c3fabab21b1f60a1cbc7188a9444a3103ec17f57910",
+      "bytes": 907
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/datasets/coco.py",
+      "sha256": "a0018fe5b841591985358859b90981a19be96c1777b7fb35c0899dfe5707761a",
+      "bytes": 11000
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/datasets/coco_eval.py",
+      "sha256": "e5468ce67db715d4159b4a095de9337049bcb082d0335ade2738e5da981c1329",
+      "bytes": 8865
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/datasets/mot.py",
+      "sha256": "f80fe557f526005257f57386c24df95d240c7b3960f86f94480a99ff5c1ae50a",
+      "bytes": 8772
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/datasets/transforms.py",
+      "sha256": "2d9baaeb2559a040c70e112eca96ef6970a20ea99f628a4af2a4f251cd31750f",
+      "bytes": 19019
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/engine.py",
+      "sha256": "116e804f811d5dd259c20a6855dd4a291b95b32adc881c809457099737f334de",
+      "bytes": 58621
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/__init__.py",
+      "sha256": "a63d8ba059b0f42e2ca51b9656cf1ad561de1e66c85ceb79e3e68f1d5384cb72",
+      "bytes": 6972
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/backbone.py",
+      "sha256": "1867ba574a81d069ef10bbebeea998d216d6a75f80eab82f02a308b415d26976",
+      "bytes": 5785
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/deformable_detr.py",
+      "sha256": "34c9c8d4f858d98be6c2c2595a5a9868897e1eedc9dc84854e5f13e5701175dc",
+      "bytes": 20086
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/deformable_transformer.py",
+      "sha256": "1dbb6ad25f8cfc9ff6227c91a9dbdd97f0df00b77a47f8b3997afd0f80bc5fda",
+      "bytes": 40027
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/detr.py",
+      "sha256": "2e46a780806c9e308b6ad8350ad4c35b176512d90c95d5aad95b972436844606",
+      "bytes": 19480
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/detr_segmentation.py",
+      "sha256": "121343a15a5a9d12913be563759acde25c0365f9e3f6887e7474fdb74476a122",
+      "bytes": 6091
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/detr_tracking.py",
+      "sha256": "19121f59f636fc29767cf03502cc1dedb9bd66b773512aed3c3cf890ef1a1de6",
+      "bytes": 39626
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/matcher.py",
+      "sha256": "7650fb8bdcd0de3f2cd8bcec29daf68b348681d7c9bc49cd3d566c0c64e02497",
+      "bytes": 16018
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/functions/__init__.py",
+      "sha256": "55600551d8a50168840a18478c0bf2e383758c12092f0837cc3e9ad43df99e3f",
+      "bytes": 119
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/functions/ms_deform_attn_func.py",
+      "sha256": "20ea18c02a5e5e462d7e01519f8e97908f0d0a6eecc8370ecbdf94ed41e1c810",
+      "bytes": 5068
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/modules/__init__.py",
+      "sha256": "25042b9749f112c19e6928418b4bd197abe7dada5b7a2079c2b8f61c52fa1384",
+      "bytes": 42
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/modules/ms_deform_attn.py",
+      "sha256": "407a73c8f7b2f728ade047822f5e7553a79023913e128952c15031e42bdd72af",
+      "bytes": 4681
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/setup.py",
+      "sha256": "df75d38cc7724c844c13efe42d6589b392fb7e021e4bdc8cacd9805da661269a",
+      "bytes": 2015
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/test.py",
+      "sha256": "11b4b0e806d6eee2a0ce62f8d2e0ee053d2a86ee67d35032b204d869ca1fa6a9",
+      "bytes": 7051
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/test_double_precision.py",
+      "sha256": "acaabfddd15a02273669f6f21cd73c734ad524c1a9980c775047524b7af2bcd3",
+      "bytes": 7186
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/__init__.py",
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a",
+      "bytes": 598
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/ms_deform_attn_func.py",
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc",
+      "bytes": 3298
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/__init__.py",
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f",
+      "bytes": 584
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/ms_deform_attn.py",
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408",
+      "bytes": 6270
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/functions/__init__.py",
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a",
+      "bytes": 598
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/functions/ms_deform_attn_func.py",
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc",
+      "bytes": 3298
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/modules/__init__.py",
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f",
+      "bytes": 584
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/modules/ms_deform_attn.py",
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408",
+      "bytes": 6270
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/setup.py",
+      "sha256": "167e8f8ffa224514c1f195b5091b5ed6f7cfcabfe8b967719ddede3c402a103f",
+      "bytes": 2559
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/test.py",
+      "sha256": "6066519322d749265c9983117ba8b012b35b6fbd46505d5b7842751eeb706942",
+      "bytes": 4087
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/position_encoding.py",
+      "sha256": "2e877a16afbf8024875658fcede838205d295d353fd4916d19c18a4f72c5bbee",
+      "bytes": 7303
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/tracker.py",
+      "sha256": "3fcb0b2aa121bb3c4d6f537a15756edd6b1e6e46a60c8b894eda1a381971c2e6",
+      "bytes": 23373
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/transformer.py",
+      "sha256": "5a34321a2e0bcd3fc71c8ca010a255df50e9bcb1ccf4d22a4cc88333b9a9820c",
+      "bytes": 13716
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/util/__init__.py",
+      "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+      "bytes": 71
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/util/box_ops.py",
+      "sha256": "1e1ff7096ddaecd01a676d290e54dedf41455ce49351cd8a13673551130e4394",
+      "bytes": 9870
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/util/data_viz.py",
+      "sha256": "8de3cdb427e1a843d12e9200630b7a5cb3ef36c3accad5b1872b90c8a112efa3",
+      "bytes": 53858
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/util/flex_div.py",
+      "sha256": "0632ba37f94fb3f12275c5cf5b91d0df40fd838c8b09ba1d8aa22a66af80b0a2",
+      "bytes": 47871
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/util/misc.py",
+      "sha256": "6ceffee9df81537e0127634faa947367e96fb08f53f33a142aa02b985f3fd9d8",
+      "bytes": 60809
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/vis.py",
+      "sha256": "78b7a99ecb7b37b2d8288935bab7ee3913ade0aef954701dfec530d5e3490050",
+      "bytes": 11159
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/train.py",
+      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59",
+      "bytes": 7796
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/run_arm.py",
+      "sha256": "ce543e282ecf826100928d641f5d0fff4d5089823da95cd0086b299c5ae424b9",
+      "bytes": 9074,
+      "original_sha256": "09fce6febab75ed03655b43558a1a54a2b7a69d6463a35026a569af915cb0687",
+      "adaptation": "Replace obsolete author-machine default path literals with legacy_inputs paths; active callers bind explicit inputs."
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/analysis_framework_v0.8/mask_correspondence.py",
+      "sha256": "35df456c04ac18ba7c7fa62195faf69daf5451ec05c57ab3ef97e99be855df0d",
+      "bytes": 2328
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/analysis_framework_v0.8/stage_accounting.py",
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "bytes": 8876
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/common_carrier96/reproduce96.py",
+      "sha256": "18a44677205fab80c8220bc75457bc23a0e269dedc9f3a365c120e240d31057f",
+      "bytes": 2041
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/common_carrier96/source_relative_score.py",
+      "sha256": "d7cad2926e0c54fbfd9430ba67513f70fa355830ce7a4b10a1bd7ad24cb4e957",
+      "bytes": 1913
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/external_full/reproduce_external_from_labels.py",
+      "sha256": "daca8da5f089c8cfbaa5ec76f119ba3a55d11ba2f36a2ab191cb38a775f05baf",
+      "bytes": 7230
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/external_natural/reproduce_natural_from_supports.py",
+      "sha256": "3c9c3d9b59cc2b07b7254aa2f2649919e4938e88730a7ab798b686ee6f8cd3f4",
+      "bytes": 6691
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/generate_native_noisy_controls_v02.py",
+      "sha256": "9dc82da98ff88729240712ffd724e56401f04b6fcb34b314e5d126fbbe85a4c7",
+      "bytes": 6580
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/mask_ambiguity_v0.1/exact_disjoint_envelope.py",
+      "sha256": "864c95d22820ab0cfd607b795f7f71c0fe16d0c6ce0c971b24e755ef8d37514c",
+      "bytes": 1980
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/real_policy_contract_v0.1/contract_accounting.py",
+      "sha256": "480d856d799da739bbbb3b63f5ffd6fa50f9dbd6ea5391ec2086f5bc35cecd13",
+      "bytes": 2837
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/real_policy_contract_v0.1/run_controls.py",
+      "sha256": "fdb2b78c3541ccd67d928e7dfc55059d9e1f8cb15c00ece230ed18abf3d37ef5",
+      "bytes": 6556
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/real_policy_contract_v0.2/contract_accounting.py",
+      "sha256": "0a2159943ba7626ea17cef9bc659d68c1f44caa624bc2251441c226b070ab591",
+      "bytes": 4310
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/real_policy_contract_v0.2/run_controls.py",
+      "sha256": "0143d96073a929e5f64fe1628dfb58bd06123e68e0a6f71bb7f9c2b65acb2ea9",
+      "bytes": 3469
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/reusable_analysis_package_v0.1/stage_accounting.py",
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "bytes": 8876
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/run_native_noisy_validation_v03.py",
+      "sha256": "eea1e6f9e992a176687e908126602aa213a053b470c9d90c5b6c66209bb48f53",
+      "bytes": 11445
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/legacy/typed_pathway_adapter_v0.2/typed_pathways.py",
+      "sha256": "5b7f83ea1217a91a4c121b39c3915d0a123b43f4f87e2b1e0e2ad6b7fe812ac6",
+      "bytes": 1990
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/lineage_consequence_v0.1/analyze.py",
+      "sha256": "0c37b1a8843fc5689245754bcc9aabc22a90371041a434aaf9b730d2895dda22",
+      "bytes": 10306
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/lineage_consequence_v0.1/analyze_v02.py",
+      "sha256": "44ed32b364753ed92e6abc290726b9f3cdce9fbc478a37ca8de53bc515ae1cf1",
+      "bytes": 10536
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_cohort_adapter_preparation_v0.6/actual_checker_contract_v0_1.py",
+      "sha256": "aad0faf5a6bd299931ee069ec815850b3b5b906257e174c04b50daf744de67bf",
+      "bytes": 5068
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_cohort_adapter_preparation_v0.6/normalize_cohort_v0_13.py",
+      "sha256": "9f28ff99f8cc3573a86812644c97e95fec1cbe2b9e0e4fb41ed39a69309e8789",
+      "bytes": 29785
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_cohort_adapter_preparation_v0.6/raw_adapters_v0_4.py",
+      "sha256": "b44737aff9bf0222d15a46e07fafb58a2199412e9b124fcb25db45c763a35c50",
+      "bytes": 14762
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_comparator_preparation_v0.4/analysis_v0_6.py",
+      "sha256": "89058bc77357554d4c896222075778a585ec81701d1ae626138449fa8ae5b4cf",
+      "bytes": 39309
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_comparator_preparation_v0.4/cpu_native_domain_guards.py",
+      "sha256": "b3fdb7493d0bcb81f2971081cb907f3b291bef54f7093d574bb298be52ad6b03",
+      "bytes": 7824
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_comparator_preparation_v0.4/finalize_native04.py",
+      "sha256": "5ae13a7ec3c5f1637f3523d60f6c65a289befbd2da995941825e53f8569ef88f",
+      "bytes": 8946
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_comparator_preparation_v0.4/prepare_native_fix.py",
+      "sha256": "a8cbbeb39495af81dce507cfdcc8bec8fea04cf11d3bef19d96897654aa84137",
+      "bytes": 7747
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_comparator_preparation_v0.4/refresh_before_cpu.py",
+      "sha256": "27bfa9c982dc352d244665765989aa070df129740e512a9892388d048c7ab6c8",
+      "bytes": 1353
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_scientific_measurement_preparation_v0.3/measurement_driver_v0_9.py",
+      "sha256": "cb98d77996b956a454035f874228b943b22ead8b86a08e6fd512a60bcdefbe7e",
+      "bytes": 32929
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_stage_exposure_preparation_v0.3/stage_exposure_v0_3.py",
+      "sha256": "4a99ca10b5416fa07d81d5daa5e415186b67843d8453a975d82e7e2b264fe427",
+      "bytes": 21471
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/reference_stage_matcher_preparation_v0.2/check_minimal_v03.py",
+      "sha256": "429d1f4d2433008904f9fe44663c1e7a81766082c1e578afc4b59efad7cf7f70",
+      "bytes": 4148
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/reference_stage_matcher_preparation_v0.2/derive_v03.py",
+      "sha256": "bf0daf971e8239526d17f79d91412a8f38967cc31401fa27ec03cd7d3d1dfe8d",
+      "bytes": 5463
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/reference_stage_matcher_preparation_v0.2/finalize.py",
+      "sha256": "c28e6745ef610548b2fa83ceced70b5efb66abe819495fc8bb8af2a9b6bab9bd",
+      "bytes": 4347
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/reference_stage_matcher_preparation_v0.2/stage_matcher_v0_3.py",
+      "sha256": "c75a4f3e2bbf646782d0f9771f1cf783ab672ed32d6412fde6e39c98c88bc0c5",
+      "bytes": 8281
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/anchor_verifier_v03.py",
+      "sha256": "e4ef2ebd83443fc776efa1bc7e3df42bae0ca966284aab9cc5be6a12c6e0e1a0",
+      "bytes": 4482
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/direct_input_observer_v0.1.py",
+      "sha256": "17b81e62f4a766cc2e059966ebe84d70e16da13ecb49f16e2df05c3a92250a35",
+      "bytes": 10615
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/direct_input_observer_v0_1.py",
+      "sha256": "17b81e62f4a766cc2e059966ebe84d70e16da13ecb49f16e2df05c3a92250a35",
+      "bytes": 10615
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/failure_receipt_v03.py",
+      "sha256": "18a34b86efc04764c6e5926995d4a3b0e175765cd728569de3f82976e6389de0",
+      "bytes": 2579
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/native_stage_observer_v04_copy.py",
+      "sha256": "fc9371ea6370e4c01b91c76114bcc0405864fb5c157d1353e1213bf3eacb884b",
+      "bytes": 5668
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/run_factorial_arm.py",
+      "sha256": "cea80cf920be16fb4ab4cb020ca5d1629bc92c3e8c8bf2ad6da29862bf6d0345",
+      "bytes": 12634,
+      "original_sha256": "796bb8894f09521c918a3a783e16727195559a2bf32fda1ad8a51b4c3f4bbdb9",
+      "adaptation": "Replace obsolete author-machine default path literals with legacy_inputs paths; active callers bind explicit inputs."
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/old_functions/display_worst_loss_and_score_samples.py",
+      "sha256": "7c860ab599873330448bbdf0aa6c8ea8655b2067bd4d997559f23bb2d4fb744c",
+      "bytes": 8231
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/old_functions/engine_stitch_and_crop.py",
+      "sha256": "d1bf6d27b241942ce3ab8f6d2b5b38d39c3b4698f2c91cc900baacde38047d81",
+      "bytes": 102386
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/pipeline.py",
+      "sha256": "437260806f8b44239ed939ad1c89c9e5edc15eb82f9c69d68fc9f7e70b27ef82",
+      "bytes": 3801
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/datasets/__init__.py",
+      "sha256": "b4918b3c4e97c26ac2468c3fabab21b1f60a1cbc7188a9444a3103ec17f57910",
+      "bytes": 907
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/datasets/coco.py",
+      "sha256": "a0018fe5b841591985358859b90981a19be96c1777b7fb35c0899dfe5707761a",
+      "bytes": 11000
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/datasets/coco_eval.py",
+      "sha256": "e5468ce67db715d4159b4a095de9337049bcb082d0335ade2738e5da981c1329",
+      "bytes": 8865
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/datasets/mot.py",
+      "sha256": "f80fe557f526005257f57386c24df95d240c7b3960f86f94480a99ff5c1ae50a",
+      "bytes": 8772
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/datasets/transforms.py",
+      "sha256": "2d9baaeb2559a040c70e112eca96ef6970a20ea99f628a4af2a4f251cd31750f",
+      "bytes": 19019
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/engine.py",
+      "sha256": "0049d7c5ee0831a87eabe4cca65f6dc8b9e578cb9db19ded057e48bf4bd903b0",
+      "bytes": 60881
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/__init__.py",
+      "sha256": "a63d8ba059b0f42e2ca51b9656cf1ad561de1e66c85ceb79e3e68f1d5384cb72",
+      "bytes": 6972
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/backbone.py",
+      "sha256": "1867ba574a81d069ef10bbebeea998d216d6a75f80eab82f02a308b415d26976",
+      "bytes": 5785
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/deformable_detr.py",
+      "sha256": "34c9c8d4f858d98be6c2c2595a5a9868897e1eedc9dc84854e5f13e5701175dc",
+      "bytes": 20086
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/deformable_transformer.py",
+      "sha256": "1dbb6ad25f8cfc9ff6227c91a9dbdd97f0df00b77a47f8b3997afd0f80bc5fda",
+      "bytes": 40027
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/detr.py",
+      "sha256": "2e46a780806c9e308b6ad8350ad4c35b176512d90c95d5aad95b972436844606",
+      "bytes": 19480
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/detr_segmentation.py",
+      "sha256": "121343a15a5a9d12913be563759acde25c0365f9e3f6887e7474fdb74476a122",
+      "bytes": 6091
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/detr_tracking.py",
+      "sha256": "19121f59f636fc29767cf03502cc1dedb9bd66b773512aed3c3cf890ef1a1de6",
+      "bytes": 39626
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/matcher.py",
+      "sha256": "7650fb8bdcd0de3f2cd8bcec29daf68b348681d7c9bc49cd3d566c0c64e02497",
+      "bytes": 16018
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/functions/__init__.py",
+      "sha256": "55600551d8a50168840a18478c0bf2e383758c12092f0837cc3e9ad43df99e3f",
+      "bytes": 119
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/functions/ms_deform_attn_func.py",
+      "sha256": "20ea18c02a5e5e462d7e01519f8e97908f0d0a6eecc8370ecbdf94ed41e1c810",
+      "bytes": 5068
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/modules/__init__.py",
+      "sha256": "25042b9749f112c19e6928418b4bd197abe7dada5b7a2079c2b8f61c52fa1384",
+      "bytes": 42
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/modules/ms_deform_attn.py",
+      "sha256": "407a73c8f7b2f728ade047822f5e7553a79023913e128952c15031e42bdd72af",
+      "bytes": 4681
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/setup.py",
+      "sha256": "df75d38cc7724c844c13efe42d6589b392fb7e021e4bdc8cacd9805da661269a",
+      "bytes": 2015
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/test.py",
+      "sha256": "11b4b0e806d6eee2a0ce62f8d2e0ee053d2a86ee67d35032b204d869ca1fa6a9",
+      "bytes": 7051
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/test_double_precision.py",
+      "sha256": "acaabfddd15a02273669f6f21cd73c734ad524c1a9980c775047524b7af2bcd3",
+      "bytes": 7186
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/__init__.py",
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a",
+      "bytes": 598
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/ms_deform_attn_func.py",
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc",
+      "bytes": 3298
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/__init__.py",
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f",
+      "bytes": 584
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/ms_deform_attn.py",
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408",
+      "bytes": 6270
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/functions/__init__.py",
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a",
+      "bytes": 598
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/functions/ms_deform_attn_func.py",
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc",
+      "bytes": 3298
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/modules/__init__.py",
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f",
+      "bytes": 584
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/modules/ms_deform_attn.py",
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408",
+      "bytes": 6270
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/setup.py",
+      "sha256": "167e8f8ffa224514c1f195b5091b5ed6f7cfcabfe8b967719ddede3c402a103f",
+      "bytes": 2559
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/test.py",
+      "sha256": "6066519322d749265c9983117ba8b012b35b6fbd46505d5b7842751eeb706942",
+      "bytes": 4087
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/position_encoding.py",
+      "sha256": "2e877a16afbf8024875658fcede838205d295d353fd4916d19c18a4f72c5bbee",
+      "bytes": 7303
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/tracker.py",
+      "sha256": "3fcb0b2aa121bb3c4d6f537a15756edd6b1e6e46a60c8b894eda1a381971c2e6",
+      "bytes": 23373
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/transformer.py",
+      "sha256": "5a34321a2e0bcd3fc71c8ca010a255df50e9bcb1ccf4d22a4cc88333b9a9820c",
+      "bytes": 13716
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/util/__init__.py",
+      "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+      "bytes": 71
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/util/box_ops.py",
+      "sha256": "1e1ff7096ddaecd01a676d290e54dedf41455ce49351cd8a13673551130e4394",
+      "bytes": 9870
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/util/data_viz.py",
+      "sha256": "8de3cdb427e1a843d12e9200630b7a5cb3ef36c3accad5b1872b90c8a112efa3",
+      "bytes": 53858
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/util/flex_div.py",
+      "sha256": "0632ba37f94fb3f12275c5cf5b91d0df40fd838c8b09ba1d8aa22a66af80b0a2",
+      "bytes": 47871
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/util/misc.py",
+      "sha256": "6ceffee9df81537e0127634faa947367e96fb08f53f33a142aa02b985f3fd9d8",
+      "bytes": 60809
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/vis.py",
+      "sha256": "78b7a99ecb7b37b2d8288935bab7ee3913ade0aef954701dfec530d5e3490050",
+      "bytes": 11159
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/train.py",
+      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59",
+      "bytes": 7796
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/source_duty/audit_s3_image_policy_v02.py",
+      "sha256": "502d1cae8f0755434a62c1c822539e0a0a55e1792d03f12fcc395d0bf66ab075",
+      "bytes": 4745
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/source_duty/executed_producer.py",
+      "sha256": "8b4f1d48096a86345de4718ed1aec01074dfbbada35284d6eba13b532ee9ce9b",
+      "bytes": 211317,
+      "distribution": "public_source",
+      "reason": "Historical community competition producer; redistribution terms not established. Supply authorized snapshot separately.",
+      "license": "Apache-2.0",
+      "upstream": "https://www.kaggle.com/code/flexonafft/biohub-harmonic-fusion",
+      "adaptation": "Author instrumented stage-export copy; archived bytes preserved. See licenses/Harmonic-Fusion-NOTICE.md."
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/source_duty/infer_s3_image_veto_strict_v01.py",
+      "sha256": "817b58642214d98ab143a376eb984327b132334e456352fbb1a2b0ffa1a28607",
+      "bytes": 3669
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/source_duty/real_S3_policy_sensitivity_v0.1/run_sensitivity.py",
+      "sha256": "3675800efbcbf5ab4850ef31375a3937ff08efaff79a625d0b6f2e8cfcd3b574",
+      "bytes": 5425
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/source_duty/replay_s3_image_veto_v01.py",
+      "sha256": "aef691355b7423126cd4ba14cd839c482de2d781948ec9c2b221fbb2c589952d",
+      "bytes": 3324
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/source_duty/trace_s3_allocation_v01.py",
+      "sha256": "e8cc871e32956f24eb439f439c56556279acd5f33185ba11555a428e8bd005d1",
+      "bytes": 4495
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/summarize_evidence.py",
+      "sha256": "8fe531d6a51c7464c925a3c2f6638bc8addf91dcf6e6e86b77ebec903e27b2e9",
+      "bytes": 4207
+    },
+    {
+      "relative_path": "inputs_LOCAL_ONLY/bacterial/validate_duty_boundary.py",
+      "sha256": "991105cd0b327a545d183e10f39cacca3ddfa4445cd3ea060b682d05b7d2320a",
+      "bytes": 3671
+    },
+    {
+      "relative_path": "normalize_query_metadata_r1.py",
+      "sha256": "dc0ddde7aeb431534cc03e397edc9a8d344f0aeaca7a467781ea30321f70d4c4",
+      "bytes": 2765
+    },
+    {
+      "relative_path": "prepare_constructed.py",
+      "sha256": "8a5328f4da4dadd744069a773dd84b9c8b1b7e5c14843ad144cb4d328ae42fdc",
+      "bytes": 3734
+    },
+    {
+      "relative_path": "r1_witness_replay.py",
+      "sha256": "85526b1f6c3fcf7d3250b70787d17cc7200d9c9d075528a7be2d2fded917d641",
+      "bytes": 10657
+    },
+    {
+      "relative_path": "reproduce_all.py",
+      "sha256": "aefbf5f8adcae70b19fd6d81cb161a4a41a4fc5f5fff6399eb0e2df33af3a12a",
+      "bytes": 28649
+    },
+    {
+      "relative_path": "run_bacterial_packaged.py",
+      "sha256": "ed14676582345158d9654198ce69c350b2fb56ae84d255a881bf2d7b30035154",
+      "bytes": 8642
+    },
+    {
+      "relative_path": "run_supplied_family.py",
+      "sha256": "9c16fb1394fb89ceb48e00ac53232bed0a172408bc7dd121f3cea861694542fe",
+      "bytes": 300
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/__init__.py",
+      "sha256": "29c5aecbe7dc0c9d504d94e1a6af93900bf757828b70194899801aabdbb9e6d1",
+      "bytes": 1924
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "bytes": 48
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/_upstream/__init__.py",
+      "sha256": "d6b56a6155d08e5006a0a8a6d089ca381a033f353c37431644a043e91fe2269b",
+      "bytes": 80
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/_upstream/coupled_accounting.py",
+      "sha256": "19d58332f6a89718474217f3b1ea49de9cd605fcba439e553faed2a906554503",
+      "bytes": 10362
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/_upstream/exact_disjoint_envelope.py",
+      "sha256": "864c95d22820ab0cfd607b795f7f71c0fe16d0c6ce0c971b24e755ef8d37514c",
+      "bytes": 1980
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/_upstream/family_accounting.py",
+      "sha256": "8c3fabd427df413e1bc68fa59c6fcb0f5851767f07b2431cd6a4d4a9897e0067",
+      "bytes": 5489
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/_upstream/mask_correspondence.py",
+      "sha256": "35df456c04ac18ba7c7fa62195faf69daf5451ec05c57ab3ef97e99be855df0d",
+      "bytes": 2328
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/_upstream/stage_accounting.py",
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "bytes": 8876
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/_upstream/typed_pathways.py",
+      "sha256": "5b7f83ea1217a91a4c121b39c3915d0a123b43f4f87e2b1e0e2ad6b7fe812ac6",
+      "bytes": 1990
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/cli.py",
+      "sha256": "1b7f130e805f72f0683fbae4802dfe92f9135673cd79be91f37cd3e88d026f79",
+      "bytes": 6802
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/io.py",
+      "sha256": "03a71fd60a8e5c6bb14f686b391913c47d0ce205e2f91de7be65437b765781d1",
+      "bytes": 6372
+    },
+    {
+      "relative_path": "sources/portable/src/portable_analysis_candidate/typed.py",
+      "sha256": "bba885d539cbe4b0c358a57295c5e111345920a5da51940e48b1c215b00efacd",
+      "bytes": 4148
+    },
+    {
+      "relative_path": "sources/primitive/local_graph_core.py",
+      "sha256": "36ef1a068a3fdb0ec9f68c0f142c4bf97944ec2e8639c1c9ac087f3000e5a749",
+      "bytes": 3634
+    },
+    {
+      "relative_path": "sources/primitive/scientific_backend/reconstruct.py",
+      "sha256": "eb44114ed985fc3bd5f02ce6e76d9861712465c47fb9f14195876bb3bf886427",
+      "bytes": 23287,
+      "historical_execution_sha256": "d733a59f98518e83d7138f8fcfa3172e70642f206afe491d8bb086423ce6fba4",
+      "current_adaptation": "Fail closed before raw-family construction when assertions are disabled; scientific arithmetic unchanged."
+    },
+    {
+      "relative_path": "sources/primitive/scientific_backend/sources/executed/stage_accounting.py",
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "bytes": 8876
+    },
+    {
+      "relative_path": "sources/primitive/workflow.py",
+      "sha256": "03d5c33dbebc55d00cf92cf3288aba5155b4b67b4db335a2f9f9232a6b57668f",
+      "bytes": 17945,
+      "historical_execution_sha256": "82a299ea34acddcc0eeaa8ef5fdbddd829d63e4b881a06a0279a94c89255c098",
+      "current_adaptation": "Fail closed before raw-family construction when assertions are disabled; scientific arithmetic unchanged."
+    },
+    {
+      "relative_path": "sources/public/additional_public_tracking_domain_v0.1/generate_raw_stages_v0_1.py",
+      "sha256": "6489eeca2a4e5d1a707e264eca6c7ac6650ea3626ad025b2d32743bb0e4eb50e",
+      "bytes": 6536
+    },
+    {
+      "relative_path": "sources/public/additional_public_tracking_domain_v0.1/measure_reference_graph_v0_1.py",
+      "sha256": "49701a3029bdd7b708fb70333d3501afce4e08f82de730a8eaf5371c99638365",
+      "bytes": 8784
+    },
+    {
+      "relative_path": "sources/public/generic_raw_local_workflow_v0.1/local_graph_core.py",
+      "sha256": "36ef1a068a3fdb0ec9f68c0f142c4bf97944ec2e8639c1c9ac087f3000e5a749",
+      "bytes": 3634
+    },
+    {
+      "relative_path": "sources/public/replay.py",
+      "sha256": "7ddf14df3bc4d69e3944694288899b691e703f459e1a0e4bbba5fbcb1eb2efb2",
+      "bytes": 4940
+    },
+    {
+      "relative_path": "sources/typed/evaluate_typed_binary.py",
+      "sha256": "9a483b4a91b8a56255929e6ae93bdf3dff76c6784ec3ae4299c80b4b647b1e5e",
+      "bytes": 10866
+    },
+    {
+      "relative_path": "extras/run_common_carrier_family_census_r2.py",
+      "sha256": "cf9a6d9134d59f088147423bf83753babc86309e6eda0b07fae31881bc5b2c05",
+      "bytes": 8034
+    },
+    {
+      "relative_path": "extras/analyst/audit_path_statement.py",
+      "sha256": "0481a8100e7c8f1e2bbf905bbf1178a1ba95d7c53f8f4b9a4f5e1f4dde1c8a92",
+      "bytes": 7883,
+      "historical_execution_sha256": "0781ccec08799155d7f31d774a6be3d942091c86efe837a33579e4ef61726914",
+      "current_adaptation": "Stage 4: reject contradictory NPZ units before reporting; record one unit conversion."
+    },
+    {
+      "relative_path": "extras/analyst/constructor/reconstruct.py",
+      "sha256": "24d6000a5abea7b5d738e93cd3967831ce3c6be43489e3d88391bd683b51a9b8",
+      "bytes": 23398,
+      "historical_execution_sha256": "d733a59f98518e83d7138f8fcfa3172e70642f206afe491d8bb086423ce6fba4",
+      "current_adaptation": "Fail closed at active constructor/CLI import before third-party imports, input reads and computation when assertions are disabled; scientific arithmetic unchanged."
+    },
+    {
+      "relative_path": "extras/analyst/constructor/sources/executed/stage_accounting.py",
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "bytes": 8876
+    },
+    {
+      "relative_path": "historical_sources/geometry_sensitivity_v0.1/source/make_report.py",
+      "sha256": "e3a76111d24def2746cdde984e6f5f87435d7ef13967adc06eb34b42edf6fb59",
+      "bytes": 15336
+    },
+    {
+      "relative_path": "historical_sources/geometry_sensitivity_v0.1/source/prepare.py",
+      "sha256": "907035cdc67b5bf8d7af14edf3535bd84f2c5de710a58d628bbbb5daa11e63ac",
+      "bytes": 15006
+    },
+    {
+      "relative_path": "historical_sources/geometry_sensitivity_v0.1/source/reconstruct.py",
+      "sha256": "33c0532b1e51237dc22243707b6ff29886c6708661c56e771b0ed9e995455f4c",
+      "bytes": 23176
+    },
+    {
+      "relative_path": "historical_sources/geometry_sensitivity_v0.1/source/sensitivity.py",
+      "sha256": "9abe341548ac43a233d07bbc1adedca09ed9fe9d4cdcacceeb04e48e5105a36d",
+      "bytes": 23947
+    },
+    {
+      "relative_path": "historical_sources/geometry_sensitivity_v0.1/source/verify.py",
+      "sha256": "acceda22ef04ae7fd90d3e121f30ef792e2eb226dded86225c428b025cdcb986",
+      "bytes": 10322
+    },
+    {
+      "relative_path": "historical_sources/geometry_sensitivity_v0.1/source/sources/executed/stage_accounting.py",
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "bytes": 8876
+    },
+    {
+      "relative_path": "historical_sources/family_operating_domain_stress_v0.1/run_stress.py",
+      "sha256": "497ee729af1251f7f3ae34d5e02789483c5b052dff7479f1d123168a6212a119",
+      "bytes": 34078
+    },
+    {
+      "relative_path": "historical_sources/family_operating_domain_stress_v0.1/verify_outputs.py",
+      "sha256": "1e06b3ff67a5083fe20ec5bcc3af77388129d06d8ab4ecca892153379816b5f2",
+      "bytes": 9735
+    },
+    {
+      "relative_path": "historical_sources/family_operating_domain_stress_v0.1/sources/joint_history.py",
+      "sha256": "330ddac2d61022cbbbb547d53ac91c4111f92f122e91c401fd5333d4db4d1b31",
+      "bytes": 9414
+    },
+    {
+      "relative_path": "historical_sources/family_operating_domain_stress_v0.1/sources/reconstruct.py",
+      "sha256": "d733a59f98518e83d7138f8fcfa3172e70642f206afe491d8bb086423ce6fba4",
+      "bytes": 23168
+    },
+    {
+      "relative_path": "historical_sources/family_operating_domain_stress_v0.1/sources/stage_accounting.py",
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "bytes": 8876
+    },
+    {
+      "relative_path": "historical_sources/family_operating_domain_stress_v0.1/sources/sources/executed/stage_accounting.py",
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "bytes": 8876
+    },
+    {
+      "relative_path": "historical_sources/original3d_multigate_family_v0.1/analyze_full_gate_families_v01.py",
+      "sha256": "67711130496310079340ace78b43202354f94fc5c1a2e572ba614e5677a88eb4",
+      "bytes": 6564
+    },
+    {
+      "relative_path": "historical_sources/original3d_multigate_family_v0.1/prepare_multigate_producer_v01.py",
+      "sha256": "4c6c7361579ab1de73afac68231d12043dce27cbe57c15edcd7eb521d9e60b42",
+      "bytes": 4675
+    },
+    {
+      "relative_path": "historical_sources/original3d_multigate_family_v0.1/prepare_multigate_producer_v02.py",
+      "sha256": "52cb870ad6573bb148f6a9f3151b68f03d0653e2e6f81fa398f55dd7f573679e",
+      "bytes": 580
+    },
+    {
+      "relative_path": "historical_sources/original3d_multigate_family_v0.1/run_finite_objective_family_v04.py",
+      "sha256": "cf874280ad6a214aa7e42890e554fcc98672aac5e6ccaa066da02f0fa7bf8cd7",
+      "bytes": 1294
+    },
+    {
+      "relative_path": "historical_sources/original3d_multigate_family_v0.1/run_general_numerical_family_v02.py",
+      "sha256": "8d3151f00f0dc9e92fdd76355a3b46b46a7139a33d043dabae4412638b5746dc",
+      "bytes": 10555
+    },
+    {
+      "relative_path": "historical_sources/original3d_multigate_family_v0.1/run_general_numerical_family_v03.py",
+      "sha256": "a9dd7321e542dcd52f8ebcc24afb57215fa94dcaaf843652067ee8f0320fee03",
+      "bytes": 669
+    },
+    {
+      "relative_path": "historical_sources/original3d_multigate_family_v0.1/run_multigate_family_v01.py",
+      "sha256": "e46079f98bbb0aac0e16d3bc0cd19e88bf20adf2088e1d7cb177f48138b42f73",
+      "bytes": 12825
+    },
+    {
+      "relative_path": "historical_sources/original3d_multigate_family_v0.1/run_multigate_margin_v01.py",
+      "sha256": "312845e53ac00b2b7c9e9792c89836b2e48d2b854825331d9728f01f5ca066c2",
+      "bytes": 11108
+    },
+    {
+      "relative_path": "historical_sources/projection/analyze.py",
+      "sha256": "43ab80f678473fc8bad54e62ab5075751dfb5e958646c9d81fdc57e3fe79cf74",
+      "bytes": 5835,
+      "provenance": "Original saved-output scientific source, unchanged"
+    },
+    {
+      "relative_path": "historical_sources/legacy_negative/stage_accounting.py",
+      "sha256": "02d10a64d9059eafde217d8149ed9f7e12bea252258094f9d13262f50a6f96a1",
+      "bytes": 4329,
+      "provenance": "Original saved-output scientific source, unchanged"
+    }
+  ]
+}

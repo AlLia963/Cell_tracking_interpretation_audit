@@ -1,0 +1,20 @@
+{
+  "status": "D44_CURRENT_DENOMINATORS_CHECKED",
+  "relation_identities": 123,
+  "relation_level_event_match_categories": {
+    "no_unique_neighboring_reference_event": 8,
+    "unmatched_within_one_frame": 13,
+    "one_frame_only": 102
+  },
+  "distinct_linked_events": 64,
+  "event_level_match_categories": {
+    "unmatched_within_one_frame": 13,
+    "one_frame_only": 51
+  },
+  "chain_incoming_timing_discrepancies": 30,
+  "legacy_unmatched_category_21_means_linked_unmatched_13_plus_unlinked_8": true,
+  "historical_result_bytes_changed": false,
+  "event_matching_rerun": false,
+  "denominators_not_pooled": true,
+  "current_producer_category_function_checked_against_all_retained_relation_ids": true
+}

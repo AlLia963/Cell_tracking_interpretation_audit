@@ -1,0 +1,142 @@
+﻿source_file_id,output_file_id,basis,output_locator
+43217,43227,same_notebook_directory_output_candidate,IWS/0929最后一次提交窗口/0929最后一次补充社区组/Biohub 0.953 LB  ORIGINAL/output/submission.csv
+43387,43397,same_notebook_directory_output_candidate,IWS/0929最后一次提交窗口/0929最后一次补充社区组/Biohub Harmonic Fusion V3/output/submission.csv
+47696,47701,same_notebook_directory_output_candidate,IWS/0929最后一次提交窗口/SDY_handoff_GPT6Pro/04_INFRA/local_harness/SVM4/notebooks/SVM4A/output/submission.csv
+56427,56439,existing_registry_output_link,IWS/9月4日起补充的社区组/0.940（他就叫这名字）/output/submission.csv
+56727,56739,existing_registry_output_link,IWS/9月4日起补充的社区组/Biohub LB  941/output/submission.csv
+57027,57041,existing_registry_output_link,IWS/9月7日后补充社区组/Biohub Harmonic Fusion/output/submission.csv
+57461,57475,existing_registry_output_link,IWS/9月7日后补充社区组/转折0.946社区组(最早的0.946公开组)/output/submission.csv
+57896,57908,existing_registry_output_link,IWS/IWS0/IWS0A/output/submission.csv
+58062,58074,existing_registry_output_link,IWS/IWS0/IWS0B/output/submission.csv
+58231,58243,existing_registry_output_link,IWS/IWS1/IWS1A/output/submission.csv
+58401,58413,existing_registry_output_link,IWS/IWS1/IWS1B/output/submission.csv
+58573,58585,existing_registry_output_link,IWS/IWS2/IWS2A/output/submission.csv
+58743,58755,existing_registry_output_link,IWS/IWS2/IWS2B/output/submission.csv
+58919,58933,existing_registry_output_link,IWS/IWS3/IWS3A-E和R0/IWS3A/output/submission.csv
+58920,58933,existing_registry_output_link,IWS/IWS3/IWS3A-E和R0/IWS3A/output/submission.csv
+59087,59099,existing_registry_output_link,IWS/IWS3/IWS3A-E和R0/IWS3B/output/submission.csv
+59253,59265,existing_registry_output_link,IWS/IWS3/IWS3A-E和R0/IWS3C/output/submission.csv
+59419,59431,existing_registry_output_link,IWS/IWS3/IWS3A-E和R0/IWS3D/output/submission.csv
+59585,59597,existing_registry_output_link,IWS/IWS3/IWS3A-E和R0/IWS3E/output/submission.csv
+60941,60953,existing_registry_output_link,IWS/IWS3后继续对话/2026.9月5-6日新增的社区组/.941_biohub-fresh-adaptive-assoc/output/submission.csv
+61241,61253,existing_registry_output_link,IWS/IWS3后继续对话/2026.9月5-6日新增的社区组/Biohub - Track Your Cells Development/output/submission.csv
+61541,61553,existing_registry_output_link,IWS/IWS3后继续对话/2026.9月5-6日新增的社区组/Biohub Cell Tracking v/output/submission.csv
+61846,61860,existing_registry_output_link,IWS/IWS4/9月6日晚补充的社区组/biohub-gpu-rerun-20260905/output/submission.csv
+62214,62228,existing_registry_output_link,IWS/IWS4/9月7日补充的社区组/Biohub LB 942/output/submission.csv
+62648,62660,existing_registry_output_link,IWS/IWS4/9月7日补充的社区组/biohub-run77/output/submission.csv
+62948,62961,existing_registry_output_link,IWS/IWS4/IWS4A/output/submission.csv
+63115,63128,existing_registry_output_link,IWS/IWS4/IWS4B/output/submission.csv
+63282,63295,existing_registry_output_link,IWS/IWS4/IWS4C/output/submission.csv
+63449,63462,existing_registry_output_link,IWS/IWS4/IWS4D/output/submission.csv
+64175,64188,existing_registry_output_link,IWS/IWS6/notebooks/IWS6A/output/submission.csv
+64342,64353,existing_registry_output_link,IWS/IWS6/notebooks/IWS6B/output/submission.csv
+64507,64518,existing_registry_output_link,IWS/IWS6/notebooks/IWS6C/output/submission.csv
+64672,64683,existing_registry_output_link,IWS/IWS6/notebooks/IWS6C0/output/submission.csv
+64837,64850,existing_registry_output_link,IWS/IWS6/notebooks/IWS6D/output/submission.csv
+66688,66698,same_notebook_directory_output_candidate,IWS/IWSS/IWSS1/notebooks/IWSS1A/output/submission.csv
+66853,66863,same_notebook_directory_output_candidate,IWS/IWSS/IWSS1/notebooks/IWSS1B/output/submission.csv
+67018,67029,same_notebook_directory_output_candidate,IWS/IWSS/IWSS1/notebooks/IWSS1C/output/submission.csv
+67018,67030,same_notebook_directory_output_candidate,IWS/IWSS/IWSS1/notebooks/IWSS1C/output/submission_iwss1a_baseline.csv
+67597,67607,same_notebook_directory_output_candidate,IWS/IWSS/IWSS2/notebooks/IWSS2A/output/submission.csv
+67762,67772,same_notebook_directory_output_candidate,IWS/IWSS/IWSS2/notebooks/IWSS2B/output/submission.csv
+67928,67938,same_notebook_directory_output_candidate,IWS/IWSS/IWSS2/notebooks/IWSS2C/output/submission.csv
+68934,68947,same_notebook_directory_output_candidate,IWS/IWSS/社区/9.10补充的社区组/biohub-lf-dctta-v020/output/submission.csv
+68500,68513,same_notebook_directory_output_candidate,IWS/IWSS/社区/9.10补充的社区组/biohub-lf-dctta/output/submission.csv
+69368,69379,same_notebook_directory_output_candidate,IWS/IWSS/社区/9.9补充的社区组/Biohub 0.942 LB PROXY_SCORE=0.9417/output/submission.csv
+69668,69681,same_notebook_directory_output_candidate,IWS/IWSS/社区/9.9补充的社区组/Biohub Lineage Forge — Precision Tracking/output/submission.csv
+70102,70115,same_notebook_directory_output_candidate,IWS/IWSS/社区/9.9补充的社区组/biohub-harmonic-fusion-fork/output/submission.csv
+91960,91965,same_notebook_directory_output_candidate,IWS/SVM/SVM4/notebooks/SVM4A/output/submission.csv
+92755,92764,same_notebook_directory_output_candidate,IWS/SVM/SVM5/notebooks/SVM5A/output/submission.csv
+92923,92934,same_notebook_directory_output_candidate,IWS/SVM/SVM5/notebooks/SVM5B/output/submission.csv
+93225,93236,same_notebook_directory_output_candidate,IWS/SVM/SVM5/notebooks/SVM5C/output/submission.csv
+93527,93536,same_notebook_directory_output_candidate,IWS/SVM/SVM5/notebooks/SVM5D/output/submission.csv
+82652,82665,same_notebook_directory_output_candidate,IWS/SVM/community/Biohub Geometric Fusion/output/submission.csv
+28957,28963,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/Atropos/0.926_and_0.927_community/0.926_0.926-biohub-divsub/output/submission.csv
+29118,29124,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/Atropos/0.926_and_0.927_community/0.926_new_Biohub Cell Tracking 92.6%/output/submission.csv
+29285,29292,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/Atropos/0.926_and_0.927_community/0.927_Biohub 0.927 LB/Reverse/reverse_0.927_output/submission.csv
+29278,29283,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/Atropos/0.926_and_0.927_community/0.927_Biohub 0.927 LB/output/submission.csv
+29305,29316,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/Atropos/0.926_and_0.927_community/0.927_new_Biohub - Track Your Cells Development/output/submission.csv
+29607,29618,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/Atropos/0.926_and_0.927_community/0.927_new_biohub-sdw60/output/submission.csv
+29990,29996,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/Atropos/AHR_v6_submit/AHR_v6_output/submission.csv
+30024,30031,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/Atropos/qita/vNext_CausalMatrix_output/submission.csv
+33374,33381,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/8月28日晚补充的社区组文件/Biohub Harmonic Fusion/output/submission.csv
+33535,33547,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/8月28日晚补充的社区组文件/biohub-934-sdw70/output/submission.csv
+33835,33846,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/8月29日早补充的社区组文件/best-score/output/submission.csv
+34000,34012,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/8月29日早补充的社区组文件/biohub-938-sdw85/output/submission.csv
+34300,34312,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/8月29日早补充的社区组文件/pls upvote & share higher scoring ideas/output/submission.csv
+34600,34612,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/8月30日晚补充的社区组文件/.933_biohub_bidir30/output/submission.csv
+34900,34912,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/8月30日晚补充的社区组文件/Biohub - Track Your Cells Development/output/submission.csv
+35203,35215,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/8月30日晚补充的社区组文件/Biohub 0.931 LB/output/submission.csv
+35503,35515,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/9月1日补充的社区组文件/biohub-948_sew20/output/submission.csv
+35803,35815,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/9月1日补充的社区组文件/biohub-c35-fallback-detection-cleanroom-20260831/output/submission.csv
+36403,36415,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/9月1日补充的社区组文件/晚间/Kimi Notebook v18/output/submission.csv
+36103,36115,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/9月1日补充的社区组文件/晚间/biohub-946_dc_ours/output/submission.csv
+36703,36715,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/9月3日补充的社区组文件/0.938/0.938（他就叫这名字）/output/submission.csv
+37003,37015,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/9月3日补充的社区组文件/0.938/Biohub V19A Public 0938 Div45 Exact/output/submission.csv
+37603,37615,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/9月3日补充的社区组文件/0.938/Kimi Notebook v19/output/submission.csv
+37303,37315,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/9月3日补充的社区组文件/0.938/biohub-div45-stack/output/submission.csv
+37903,37915,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/9月3日补充的社区组文件/0.939/biohub-v19c-public0939-sis14-only/output/submission.csv
+38204,38214,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_ADF1_causal_dual_seed_router_2500s_submit/output/submission.csv
+38369,38382,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_CRG1_0931xsdw85_guarded_composition_2500s_submit/output/submission.csv
+38670,38683,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_CSG1_0934_complementary_spatial_guard_2500s_submit/output/submission.csv
+39266,39277,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_DSG1_0936root_sdw85_spatial_guard_2500s_submit/output/submission.csv
+39728,39740,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_GDA1_0936root_geometry_dominant_association_2500s_submit/output/submission.csv
+40028,40040,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_HCG1_0933xsdw85_strict_spatial_guard_2500s_submit/output/submission.csv
+40328,40340,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_JDG1_joint_division_evidence_arbitration_2500s_submit/output/submission.csv
+41422,41436,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_LJGO1_symmetric_motion_component_refinement_2500s_submit/output/submission.csv
+41724,41745,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_MRA1_selective_reciprocal_arbitration_2500s/output/submission.csv
+42037,42050,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_SCG2_equal_count_spatial_guard_2500s_submit/output/submission.csv
+42338,42350,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_SDG1_learned_edge_division_gate_2500s_submit/output/submission.csv
+42639,42648,existing_registry_output_link,D:/CELL数据暂存/TRANSDATA（只读勿动）/从8月28日晚开始_继续的工作/biohub_UGO1_0936root_unified_graph_objective_2500s_submit/output/submission.csv
+2268,12052,existing_registry_output_link,cell/output/v7.0/submission.csv
+2269,14060,existing_registry_output_link,cell/output/v7.5/submission.csv
+2270,14219,existing_registry_output_link,cell/output/v7.6/submission.csv
+2271,15014,existing_registry_output_link,cell/output/v8.2/submission_v8.2.csv
+569,578,existing_registry_output_link,cell/community_download/0.916_Biohub - Track Your Cells Development/output_log/submission.csv
+733,744,existing_registry_output_link,cell/community_download/0.917_Biohub M001 ens3 sm6 sim2/output_log/submission_m001.csv
+750,757,existing_registry_output_link,cell/community_download/0.920_1/submission.csv
+1051,1058,existing_registry_output_link,cell/community_download/0.923_2/submission.csv
+1348,1350,existing_registry_output_link,cell/community_download/已用过_0.916_[new LB0.916]infer ensemble lf exp002/output_log/submission.csv
+10835,12555,existing_registry_output_link,cell/output/v7.4/submission.csv
+10836,14219,existing_registry_output_link,cell/output/v7.6/submission.csv
+10837,14695,existing_registry_output_link,cell/output/v8.0/submission.csv
+10838,14855,existing_registry_output_link,cell/output/v8.1/submission.csv
+10839,15014,existing_registry_output_link,cell/output/v8.2/submission_v8.2.csv
+10840,15761,existing_registry_output_link,cell/output/v8.3/submission.csv
+10841,15931,existing_registry_output_link,cell/output/v8.4/submission.csv
+18594,11550,existing_registry_output_link,cell/output/v5.2.1/submission.csv
+18595,11543,existing_registry_output_link,cell/output/v5.2/submission.csv
+18596,11543,existing_registry_output_link,cell/output/v5.2/submission.csv
+18597,11557,existing_registry_output_link,cell/output/v5.3/submission.csv
+18598,11563,existing_registry_output_link,cell/output/v5.4/submission.csv
+18599,11568,existing_registry_output_link,cell/output/v5.5/submission.csv
+18603,11794,existing_registry_output_link,cell/output/v5.7_CV/submission.csv
+18604,11839,existing_registry_output_link,cell/output/v5.8/submission.csv
+18605,11847,existing_registry_output_link,cell/output/v5.8_CV/submission.csv
+18606,11894,existing_registry_output_link,cell/output/v6.0/submission.csv
+18607,11894,existing_registry_output_link,cell/output/v6.0/submission.csv
+19010,19016,same_notebook_directory_output_candidate,cell/vex_temporal_transformer_consensus/output/submission.csv
+19010,19017,same_notebook_directory_output_candidate,cell/vex_temporal_transformer_consensus/output/submission_m001.csv
+19010,19018,same_notebook_directory_output_candidate,cell/vex_temporal_transformer_consensus/output/submission_trackastra_expert.csv
+19010,19019,same_notebook_directory_output_candidate,cell/vex_temporal_transformer_consensus/output/submission_vex_base.csv
+19010,19020,same_notebook_directory_output_candidate,cell/vex_temporal_transformer_consensus/output/submission_vk20.csv
+19840,19845,existing_registry_output_link,cell/vk/vk1/output/submission_baseline.csv
+20022,20025,same_notebook_directory_output_candidate,cell/vk/vk19_division_production/output/submission.csv
+20022,20027,same_notebook_directory_output_candidate,cell/vk/vk19_division_production/output/submission_vk1_baseline.csv
+20649,20656,existing_registry_output_link,cell/vk/vk2_combined_plugin_probe/output/submission.csv
+20839,20843,existing_registry_output_link,cell/vk/vk2_preilp_probe/output/submission.csv
+21022,21029,existing_registry_output_link,cell/vk/vk2_top3_ilp030/output/submission.csv
+21207,21216,existing_registry_output_link,cell/vk/vk3_rich_evidence_probe/submission.csv
+21397,21401,existing_registry_output_link,cell/vk/vk4_secondary_gate110/output/submission.csv
+21579,21583,existing_registry_output_link,cell/vk/vk5_secondary_gate125/output/submission.csv
+21827,21831,existing_registry_output_link,cell/vk/vk6_density_gate125/output/submission.csv
+27335,27342,existing_registry_output_link,cell/vk1_community0923_direct/output/submission.csv
+27520,27527,existing_registry_output_link,cell/vk1_community0923_no_deepcenter/output/submission.csv
+27704,27713,existing_registry_output_link,cell/vk20_new/output/submission_vk20.csv
+27707,27713,existing_registry_output_link,cell/vk20_new/output/submission_vk20.csv
+27708,27713,existing_registry_output_link,cell/vk20_new/output/submission_vk20.csv
+27709,27713,existing_registry_output_link,cell/vk20_new/output/submission_vk20.csv
+27710,27713,existing_registry_output_link,cell/vk20_new/output/submission_vk20.csv
+28873,28876,existing_registry_output_link,cell/vk26_heterogeneous_consensus/submission_local_replay.csv
+27,15190,measurement_source_configuration_and_matching_runtime_tags,cell/output/v8.2_measure/submission_v8.2measure.csv
+17986,16103,measurement_source_configuration_and_matching_runtime_tags,cell/output/v8.4_measure/submission.csv

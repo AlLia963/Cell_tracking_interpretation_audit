@@ -1,0 +1,18 @@
+"""Actual pinned-source authority boundaries on supplied first real carrier."""
+from pathlib import Path
+import argparse, copy, json, sys
+from run_archive import HERE,read,write,sha,require,module
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--input-root',type=Path,default=HERE/'fixed_archive_root');ap.add_argument('--authority',type=Path,default=HERE/'results/standalone_clean_run01/duties/authority.json');ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();out=a.output.resolve();require(not out.exists(),'Absent output');out.mkdir(parents=True);base=HERE/'sources/legacy';sys.path.insert(0,str(base/'reusable_analysis_package_v0.1'));sys.path.insert(0,str(base/'real_policy_contract_v0.1'));old=module(base/'real_policy_contract_v0.1/run_controls.py');m=module(base/'real_policy_contract_v0.2/contract_accounting.py');doc=read(a.authority);authority=m['load_authority'](a.authority,sha(a.authority));r=doc['contracts'][0];film=r['film'];c=r['contract'];groot=a.input_root/'article_strengthening_20261004_v1/reproduction_LOCAL_ONLY_v0.1/3d_original_pixel_stage_exports'/film;b=old['load'](groot/'S2_gap_closing.npz');d=old['load'](groot/'S3_safe_divisions.npz');pair=tuple(c['required_additions'][0]);domain=set(map(tuple,c['candidate_domain']));required=set(map(tuple,c['required_additions']));excluded=sorted(domain-required)[0];origin_edges=set(map(tuple,b.edges.tolist()));rows=[]
+    def case(name,before=b,after=d,contract=c,auth=authority,candidate=pair):
+        rows.append({'case':name,'actual':m['check'](before,after,candidate,contract,authority=auth,film=film)})
+    case('intact');case('missing_contract',contract=None);case('missing_authority',auth=None);tamper=copy.deepcopy(c);tamper['required_additions']=[];case('changed_contract_vs_pinned',contract=tamper);case('stale_input',before=old['changed'](b,input_shift=True));case('candidate_outside_audited_domain',candidate=(int(b.ids[0]),int(b.ids[0])));case('output_domain_shift',after=old['changed'](d,input_shift=True));case('missing_required_edge',after=old['changed'](d,removed=[pair]));case('removed_input_edge',after=old['changed'](d,removed=[next(iter(origin_edges))]));case('unexpected_added_edge',after=old['changed'](d,added=[excluded]))
+    for name,mutate,pin in [('authority_hash_mismatch',None,'0'*64),('authority_schema_mismatch',lambda q:q.update(schema='unrecognized'),None),('duplicate_authority_film',lambda q:q['contracts'].append(copy.deepcopy(q['contracts'][0])),None)]:
+        target=a.authority
+        if mutate:
+            q=copy.deepcopy(doc);mutate(q);target=out/(name+'.json');write(target,q);pin=sha(target)
+        try:m['load_authority'](target,pin);rows.append({'case':name,'rejected':False})
+        except ValueError as e:rows.append({'case':name,'rejected':True,'exception':str(e)})
+    require(rows[0]['actual']['decision']=='satisfied','Intact authority');require(all(r['actual']['decision']=='withheld' for r in rows[1:7]),'Missing/stale/content/domain should withhold');require(all(r['actual']['output_contract_decision']=='violated' for r in rows[7:10]),'Whole-output faults');require(all(r['rejected'] for r in rows[10:]),'Invalid authority rejected')
+    write(out/'RESULT.json',{'all13_boundaries_passed':True,'cases':rows,'film':film,'authority_origin':str(a.authority),'authority_sha256':sha(a.authority),'before_sha256':sha(groot/'S2_gap_closing.npz'),'after_sha256':sha(groot/'S3_safe_divisions.npz'),'checker_sha256':sha(base/'real_policy_contract_v0.2/contract_accounting.py'),'scope':'Pinning caller trust root and producer append-domain checks, not signed or biological proof'})
+if __name__=='__main__':main()

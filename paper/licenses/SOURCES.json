@@ -1,0 +1,17 @@
+[
+  {
+    "file": "Cell-TRACTR-APACHE-2.0.txt",
+    "source": "https://gitlab.com/dunloplab/Cell-TRACTR/-/raw/main/LICENSE",
+    "sha256": "b208c52b00a2df2c8f4c3298c34407bf2bfe409968213372251c91fcc737a1a5"
+  },
+  {
+    "file": "TrackFormer-APACHE-2.0.txt",
+    "source": "https://raw.githubusercontent.com/timmeinhardt/trackformer/main/LICENSE",
+    "sha256": "b208c52b00a2df2c8f4c3298c34407bf2bfe409968213372251c91fcc737a1a5"
+  },
+  {
+    "file": "py-ctcmetrics-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/CellTrackingChallenge/py-ctcmetrics/59481c48a62d4376fe34bed3e3606b4ec4d60972/LICENSE.txt",
+    "sha256": "b8a076a1dd8714e600b78cb89ff5d8d91c0a97abb38a431d5c8d46ba52ef1d6f"
+  }
+]

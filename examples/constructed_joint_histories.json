@@ -1,0 +1,45 @@
+{
+  "reference_edge_ids": [
+    [
+      "constructed",
+      1,
+      2
+    ],
+    [
+      "constructed",
+      2,
+      3
+    ]
+  ],
+  "stage_count": 2,
+  "fixed_histories": [],
+  "components": [
+    {
+      "reference_edge_ids": [
+        [
+          "constructed",
+          1,
+          2
+        ],
+        [
+          "constructed",
+          2,
+          3
+        ]
+      ],
+      "configurations": [
+        [
+          "11",
+          "00"
+        ],
+        [
+          "00",
+          "11"
+        ]
+      ]
+    }
+  ],
+  "completeness_asserted_by_caller": true,
+  "product_factorization_asserted_by_caller": true,
+  "joint_family_rule": "Constructed two-history correlated component; separate upper2 is unattainable, joint visible count1"
+}

@@ -1,0 +1,9 @@
+{
+  "completeness_asserted_by_user": true,
+  "correspondence_rule": "Constructed finite rule: stage 0 has the listed single map; stage 1 permits exactly either listed whole map. This toy declaration is not a claim about real-data matching optimality.",
+  "cross_stage_constraints": "none_in_correspondence_estimand",
+  "mapping_families": [
+    [[[101,201],[102,202],[103,203]]],
+    [[[101,301],[102,303],[103,304]],[[101,302],[102,303],[103,304]]]
+  ]
+}

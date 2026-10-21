@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cell-tracking-interpretation-audit"
+version = "0.1.0"
+description = "Reference-relative tracking histories, shared correspondence bounds and endpoint witnesses"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2"]
+
+[project.urls]
+Repository = "https://github.com/AlLia963/cell-tracking-interpretation-audit"
+
+[project.scripts]
+tracking-audit = "portable_analysis_candidate.cli:main"
+portable-analysis = "portable_analysis_candidate.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

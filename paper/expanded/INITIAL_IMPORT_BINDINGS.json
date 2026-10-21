@@ -1,0 +1,50 @@
+{
+  "scope": "Initial integration snapshot; not current source hashes. Source strings are author-assembly locators and are not executable paths. Current sources are bound in SOURCE_BINDINGS.json.",
+  "entries": [
+    {
+      "path": "paper/expanded/audit_engine.py",
+      "sha256": "488d906f33295bc882a2b9a02c0849bd88169d864dadd386cfd30f45d20ab269",
+      "source": "D:\\1013工作大修\\src\\audit_engine.py"
+    },
+    {
+      "path": "paper/expanded/compare.py",
+      "sha256": "46e58269d860e9f5e9462eb7cdd6005f86c97073af3a7fd47a82d68f4de84526",
+      "source": "D:\\1013工作大修\\src\\compare.py"
+    },
+    {
+      "path": "paper/expanded/linked_contrast.py",
+      "sha256": "1194e9e014d6aa7ee45048ad44b90a38b703cf220f925b9f76e4caa7ba00053d",
+      "source": "D:\\1013工作大修\\src\\linked_contrast.py"
+    },
+    {
+      "path": "paper/expanded/orientation.py",
+      "sha256": "567f6833fca645d6a87ac8284d0a579af7bbfd45335efa5c4a546a30ad6e10e8",
+      "source": "D:\\1013工作大修\\src\\orientation.py"
+    },
+    {
+      "path": "paper/expanded/verify_endpoints.py",
+      "sha256": "ff532efc3c12ecf06f73ed69de91b31c0a80c63f43ebc3b491f33dfddf1d29be",
+      "source": "D:\\1013工作大修\\src\\verify_endpoints.py"
+    },
+    {
+      "path": "paper/expanded/reference_backend/LICENSE",
+      "sha256": "73d335ec9c200b0d5bbb873f5cad552f76640843bc5ca41133f10115c38c2da8",
+      "source": "D:\\1013工作大修\\src\\reference_backend\\LICENSE"
+    },
+    {
+      "path": "paper/expanded/reference_backend/reconstruct.py",
+      "sha256": "24d6000a5abea7b5d738e93cd3967831ce3c6be43489e3d88391bd683b51a9b8",
+      "source": "D:\\1013工作大修\\src\\reference_backend\\reconstruct.py"
+    },
+    {
+      "path": "paper/expanded/reference_backend/UPSTREAM_NOTICE.md",
+      "sha256": "bf5d484ef1a7e2744b252da8003be9592feafe69fcbf832226f34511113f4fb8",
+      "source": "D:\\1013工作大修\\src\\reference_backend\\UPSTREAM_NOTICE.md"
+    },
+    {
+      "path": "paper/expanded/reference_backend/sources/executed/stage_accounting.py",
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "source": "D:\\1013工作大修\\src\\reference_backend\\sources\\executed\\stage_accounting.py"
+    }
+  ]
+}

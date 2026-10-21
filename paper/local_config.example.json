@@ -1,0 +1,21 @@
+{
+  "companion_root": "<absolute path to companion_root>",
+  "runtime_root": "<absolute path to runtime_root>",
+  "natural_input_root": "<absolute path to natural_input_root>",
+  "bacterial_input_root": "<absolute path to bacterial_input_root>",
+  "common_carrier_root": "<absolute path to common_carrier_root>",
+  "epithelial_archive": "<absolute path to epithelial_archive>",
+  "native_map_patch": "<absolute path to native_map_patch>",
+  "timing_measurement_root": "<absolute path to timing_measurement_root>",
+  "chains_measurement_root": "<absolute path to chains_measurement_root>",
+  "native_window_root": "<absolute path to native_window_root>",
+  "natural_measurement_root": "<absolute path to natural_measurement_root>",
+  "common_generation_root": "<absolute path; configure_bundle.py fills this automatically>",
+  "generated_common_root": "<absolute path; configure_bundle.py fills this automatically>",
+  "iws_root": "<absolute path; configure_bundle.py fills this automatically>",
+  "allocation_scores": "<absolute path; configure_bundle.py fills this automatically>",
+  "extra_input_root": "<absolute path; configure_bundle.py fills this automatically>",
+  "decision_ledger": "<absolute path; configure_bundle.py fills this automatically>",
+  "duty_authority": "<absolute path; configure_bundle.py fills this automatically>",
+  "article_root": "<absolute path; configure_bundle.py fills this automatically>"
+}

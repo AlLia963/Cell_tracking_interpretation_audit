@@ -1,0 +1,2496 @@
+{
+  "repository": "https://github.com/AlLia963/cell-tracking-interpretation-audit",
+  "scope": "Distributed source and catalog files except this manifest; the Git commit identifies the complete tree.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 275,
+      "sha256": "68a68093f93145d28f47eb235b3f075c632305e7f1ba78147339cf4fbc0cccb0"
+    },
+    {
+      "path": ".github/workflows/checks.yml",
+      "bytes": 479,
+      "sha256": "44a008c2f6bdd1dee14eb147de5b74725bd6664c095a5a98fa5dc3b38efab638"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 304,
+      "sha256": "9c00f738ed4d71db5b23aacb0ecf4ed3e478680df6f247c053d7631afc01d02c"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "73d335ec9c200b0d5bbb873f5cad552f76640843bc5ca41133f10115c38c2da8"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 1106,
+      "sha256": "30224e983dd40258ed7dc6efdce80125a40d8c3cc4118399f7e7875d6b8ef1cd"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4628,
+      "sha256": "954cdafb6eeefbe9f7aa135520ace31039a0882835a85e03204a9541c366e368"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 14028,
+      "sha256": "41b60936857b7f893572fed91ab0a2bee8acc2d37d1e026d72b08a6aa3c5f1ee"
+    },
+    {
+      "path": "data/catalog/assets.csv",
+      "bytes": 481106,
+      "sha256": "5528331e5f9f5b419c3eb3051e7fe337133d7bdcbdf75276cb4876b90fda9aef"
+    },
+    {
+      "path": "data/catalog/focused_comparisons.csv",
+      "bytes": 114888,
+      "sha256": "793cfcae762aa8033296589a5861a5b8378b494f7f5449dc27d4123a13c1a02e"
+    },
+    {
+      "path": "data/catalog/graphs.csv",
+      "bytes": 494366,
+      "sha256": "74a014a923681e1a4474b446ca323badd4e9cf46c73b80862682358988c6ef4e"
+    },
+    {
+      "path": "data/catalog/module_conditions.csv",
+      "bytes": 7297,
+      "sha256": "83b0df3276440305ea3c3693c8004ac8f313c4c937504e7b30dcf96b67744891"
+    },
+    {
+      "path": "data/catalog/notebooks.csv",
+      "bytes": 89860,
+      "sha256": "12fb53843d4dff4e6908373a3675d69863b1fe69f3a1336bca70c68dd9743bb9"
+    },
+    {
+      "path": "data/catalog/score_records.csv",
+      "bytes": 9947,
+      "sha256": "2c981cc61724ce3c15a067f819275adc9ce879588986289e21458f23c136c9f7"
+    },
+    {
+      "path": "data/catalog/source_output_links.csv",
+      "bytes": 18092,
+      "sha256": "f30865131e8cf43ec866d985c7eaf12596d6dc13e762b57479a1a502d3bec9ff"
+    },
+    {
+      "path": "data/catalog/summary.json",
+      "bytes": 632,
+      "sha256": "d9e31192e24e19cb026ba0b5557a7d13de630300dff17c2a06ae89800194d550"
+    },
+    {
+      "path": "docs/D44_CURRENT_SUMMARY.json",
+      "bytes": 726,
+      "sha256": "d3c7ab597b181f164daeaa30168ca2635d66f603463716101da66f236817752d"
+    },
+    {
+      "path": "docs/DATA_ACCESS.md",
+      "bytes": 3119,
+      "sha256": "3e4a534ccbe687162d35ab2f2cc741d3de48e65846263bec8ae74dcd429ef4f8"
+    },
+    {
+      "path": "docs/EXPERIMENT_ROUTES.csv",
+      "bytes": 16285,
+      "sha256": "1f3ac910f2b096810e7a47a4327f9a4cb8a1aa0319413e1c0c97dba96eb7f662"
+    },
+    {
+      "path": "docs/FIGURE_CASES.md",
+      "bytes": 3804,
+      "sha256": "6e0f5c3a045dc2ff9a6adddf69ff63b5b5ab2ad7014aba07852a8bacf88ecdce"
+    },
+    {
+      "path": "docs/REPRODUCING.md",
+      "bytes": 4924,
+      "sha256": "94fcec182c1e28f5b29a75434f7395c74e8a41351e8c8709edaca98bc0fd400b"
+    },
+    {
+      "path": "docs/TYPED_WINDOW_INPUT_CONTRACT.md",
+      "bytes": 3726,
+      "sha256": "2774dfa98ac77cf966782a1a196b31e04870dbeac7b19333a94fecb3505726de"
+    },
+    {
+      "path": "examples/constructed_joint_histories.json",
+      "bytes": 753,
+      "sha256": "27d8578835461c899a0f468f9a3d1a70bdda6bb8a811facb38d469d77066c35c"
+    },
+    {
+      "path": "examples/coordinate_families.json",
+      "bytes": 456,
+      "sha256": "cab2e922b3bc8c59ca9e375885f2166ca9cdfea77ef0051a0ea1a944844e78d4"
+    },
+    {
+      "path": "examples/coordinate_reference.json",
+      "bytes": 108,
+      "sha256": "54b1752eab75583b1c3cff49498e4e9d4fc0cde300e7f9dc6e8d22cbcff6ea14"
+    },
+    {
+      "path": "examples/coordinate_stage_0.json",
+      "bytes": 108,
+      "sha256": "0b9e7d6b65decf79b257e98359ba9800e73a55c0bc32031e941f50b7d496345e"
+    },
+    {
+      "path": "examples/coordinate_stage_1.json",
+      "bytes": 122,
+      "sha256": "8e78dcb6ca70cd4dc56468edece39100dbdece6721b6535168cdaa57b33ac08a"
+    },
+    {
+      "path": "examples/generate_coordinate_inputs.py",
+      "bytes": 3707,
+      "sha256": "a20198ecd827cd87bb89243c9aa0d093041a7c600ed98418de41a591e84c1cdd"
+    },
+    {
+      "path": "examples/generate_review_inputs.py",
+      "bytes": 1813,
+      "sha256": "0e7333123d9a59e53fc5289d469b6e61d94b4fc807787a9c6337eae1facbebcc"
+    },
+    {
+      "path": "examples/mask_prediction.json",
+      "bytes": 387,
+      "sha256": "6e578a0640cb381a38d5f1dda3049f517eb3c7ef993cc0cceb70fbcb170ba996"
+    },
+    {
+      "path": "examples/mask_reference.json",
+      "bytes": 321,
+      "sha256": "42e4c2996a76faf0edb80896ce7edd1aa5e5766c5014cfabeaaee471210d173e"
+    },
+    {
+      "path": "examples/run_examples.py",
+      "bytes": 5798,
+      "sha256": "b62ebd751379d853a818f1bfba41606a339b10db7243ec923911a143e178dcb7"
+    },
+    {
+      "path": "examples/typed_matches.json",
+      "bytes": 64,
+      "sha256": "a9e4617169f313e991eae66d03aca80e9cf579e47e29624380b521632a20711b"
+    },
+    {
+      "path": "examples/typed_raw_stage.json",
+      "bytes": 84,
+      "sha256": "f6d8e72d68c73416ff0b7a16920be244373a0acbe17fb0e761a725f02cb465ee"
+    },
+    {
+      "path": "examples/typed_reference.json",
+      "bytes": 84,
+      "sha256": "498f93fef8f22c8e2ea1d85ad129e60205a11f9b7fce4f190284a158f1386629"
+    },
+    {
+      "path": "examples/typed_views.json",
+      "bytes": 72,
+      "sha256": "5680232df8a8d3c02f74f96bc966c13cefb2a148a79106ecdf528228e6480db0"
+    },
+    {
+      "path": "paper/NOTICE.md",
+      "bytes": 2364,
+      "sha256": "ff00388fe722fa67370933596c97e347831ce618b0f5c55c34a868385e2f6bae"
+    },
+    {
+      "path": "paper/PATH_ADAPTATIONS.json",
+      "bytes": 1924,
+      "sha256": "cf9cbdf1399136226abc8eca7596b06c4fa9c7d6eb364f9dd70ba6b1d737e717"
+    },
+    {
+      "path": "paper/PROTOCOL_RESOURCES_v1.2.md",
+      "bytes": 1845,
+      "sha256": "e4d0204b8adf8e1ac71fca40d0d50fa8260ba729e1c35001888ffcdf8da00359"
+    },
+    {
+      "path": "paper/README.md",
+      "bytes": 6583,
+      "sha256": "588d276c437c7abe5a3e8c783396bfff5dbe886077c7116a6b28b17f6ea5ebc0"
+    },
+    {
+      "path": "paper/SOURCE_INDEX.json",
+      "bytes": 85262,
+      "sha256": "884c40300d35d3fc834d34452467de5fddb482bc6bbcf76c8fd1b02c90a380e6"
+    },
+    {
+      "path": "paper/adapters/allocation.py",
+      "bytes": 7939,
+      "sha256": "a4fac520fe1333de33505323ab7a31a6aac8b4588a3b128ef5b84794b374ca69"
+    },
+    {
+      "path": "paper/adapters/common_score.py",
+      "bytes": 1986,
+      "sha256": "8705a971a323c1dc234c09381a6cd8d4439e1b4a4bfa4f41314ccce2b9611202"
+    },
+    {
+      "path": "paper/adapters/extras.py",
+      "bytes": 7082,
+      "sha256": "82dd5eaefc4702551b0bc109abbe8dee71251df8c10cfd9da2db24f729c11455"
+    },
+    {
+      "path": "paper/adapters/historical.py",
+      "bytes": 5351,
+      "sha256": "6423204a8e881da8938019d8181b6dae0dddb22918bd8710f2d8f8f50392c68c"
+    },
+    {
+      "path": "paper/analysis_task.py",
+      "bytes": 1446,
+      "sha256": "e47b95bd9718a5c36cd252e700aca789de425410828bf9bada4d83222280e5fd"
+    },
+    {
+      "path": "paper/build_extra_inputs.py",
+      "bytes": 4430,
+      "sha256": "fa5bbe3325d5894016f835b1edb0b4b5379dc84cf2503efdf6724d3a2bcadf50"
+    },
+    {
+      "path": "paper/configure_bundle.py",
+      "bytes": 2800,
+      "sha256": "4328eeec3fd91a186d3f100fc3efc3d80386d58450b3e3e035954a8f56039757"
+    },
+    {
+      "path": "paper/expanded/INITIAL_IMPORT_BINDINGS.json",
+      "bytes": 2302,
+      "sha256": "923784cad4aa75f8c53250141e762c8dae0be51fec92a0069d3264105f339cc8"
+    },
+    {
+      "path": "paper/expanded/SOURCE_BINDINGS.json",
+      "bytes": 9515,
+      "sha256": "cdb79580e88fd907328de5a299a75114d478f8dfb34f245573c34aa536c886cb"
+    },
+    {
+      "path": "paper/expanded/audit_engine.py",
+      "bytes": 18516,
+      "sha256": "488d906f33295bc882a2b9a02c0849bd88169d864dadd386cfd30f45d20ab269"
+    },
+    {
+      "path": "paper/expanded/compare.py",
+      "bytes": 3858,
+      "sha256": "561f20a194aa5f9b95330a0aaa9530b28c73df683fa8e503ddfeaf821d3ff358"
+    },
+    {
+      "path": "paper/expanded/historical_producers/01_inventory.py",
+      "bytes": 5317,
+      "sha256": "6e366f01eb5fe74ffaa36afb25f3f276176f05fcaecc6e3af64c201ad8dcda6e"
+    },
+    {
+      "path": "paper/expanded/historical_producers/02_extend_and_profile.py",
+      "bytes": 2831,
+      "sha256": "45b9ef6ba3cc6b7f31c93e835a58c03b20721cace1d4eaa589b106abedb1d51e"
+    },
+    {
+      "path": "paper/expanded/historical_producers/03_source_and_record_catalog.py",
+      "bytes": 7943,
+      "sha256": "de58b488a22647e2fcb753198102b733ebd203e21ed53b49fb4a0a072522df44"
+    },
+    {
+      "path": "paper/expanded/historical_producers/04_graph_asset_catalog.py",
+      "bytes": 3572,
+      "sha256": "859412e747e24a5db7bd43d7cbd93de2f8c5e9e55884074468f117edcc47dfe4"
+    },
+    {
+      "path": "paper/expanded/historical_producers/04b_repair_header_reader.py",
+      "bytes": 2844,
+      "sha256": "25d7f041497448bf8fb8d30bcf1cf3dd49d4b6b9fe269b212074d91828641d13"
+    },
+    {
+      "path": "paper/expanded/historical_producers/05_score_identity_crosswalk.py",
+      "bytes": 4475,
+      "sha256": "723c601d4da8b2ba261bf189f6a05869e49b6cae98250ed0ac78ee371334a6c8"
+    },
+    {
+      "path": "paper/expanded/historical_producers/06_submission_asset_census.py",
+      "bytes": 2859,
+      "sha256": "64c771710abd01b38e1ab93ed8e803bc7311318db001828d1fdd455fab4df3e5"
+    },
+    {
+      "path": "paper/expanded/historical_producers/07_read_kaggle_submission_identities.py",
+      "bytes": 2622,
+      "sha256": "9ca8b6bce1ec49518980d51daa7086cfd74a069019063a3ec83e485d462eea7c"
+    },
+    {
+      "path": "paper/expanded/historical_producers/08_archive_intake.py",
+      "bytes": 3913,
+      "sha256": "13eafe9c0c20d3ec9069a6c6acc736ef44aa1fe1aa318ea2316741b9498e7491"
+    },
+    {
+      "path": "paper/expanded/historical_producers/09_mechanism_and_artifact_links.py",
+      "bytes": 8708,
+      "sha256": "0ad886a45cf457c64f34305930af20e1f34107ffb2aa0d3ee80ccd2acaf074f8"
+    },
+    {
+      "path": "paper/expanded/historical_producers/10_nonzip_archive_intake.py",
+      "bytes": 2678,
+      "sha256": "05145dd19dc36b1c3f909656f33ca513493097b8f75aa61ea96f84944b0f394c"
+    },
+    {
+      "path": "paper/expanded/historical_producers/11_prepare_graph_corpus.py",
+      "bytes": 11011,
+      "sha256": "476fdcfb79bfa2545bb2d4f94289021a9e473c883956fc6a260ab038a571f734"
+    },
+    {
+      "path": "paper/expanded/historical_producers/12_verify_new_adapter.py",
+      "bytes": 4520,
+      "sha256": "875d661c5a86df9f581d0760afaae414f797cd9724f14af9637de8ba91108af0"
+    },
+    {
+      "path": "paper/expanded/historical_producers/13_run_complete_graph_audit.py",
+      "bytes": 4387,
+      "sha256": "2fb06657c56adb5a15e1073e4df266f420fd2b09e86c59131fc9070d235fb793"
+    },
+    {
+      "path": "paper/expanded/historical_producers/14_score_descriptive_analysis.py",
+      "bytes": 3419,
+      "sha256": "a08b49ecc5801d1daf4972284b1d5d314429baeb51433f3532c6f34979cb97ed"
+    },
+    {
+      "path": "paper/expanded/historical_producers/15_all_within_movie_contrasts.py",
+      "bytes": 7555,
+      "sha256": "78b25205674c0a03d2286ffceb351d258c4ecf4a5cd9f010cda4e63f7487e644"
+    },
+    {
+      "path": "paper/expanded/historical_producers/16_summarize_corpus.py",
+      "bytes": 6442,
+      "sha256": "2a4f242782dcb513028fc05bff29336bf909cb56aaf1939422447b2b90c33087"
+    },
+    {
+      "path": "paper/expanded/historical_producers/17_focused_contrasts.py",
+      "bytes": 5535,
+      "sha256": "0a0c4fa14a20122dc048c983e86b7bbae4f873579b625da678dda084f61483dd"
+    },
+    {
+      "path": "paper/expanded/historical_producers/18_package_targeted_evidence.py",
+      "bytes": 6155,
+      "sha256": "1e5049ccd450aaacdd38e66d15bc28388288a8cd3141deb4b62078b00dff218d"
+    },
+    {
+      "path": "paper/expanded/historical_producers/19_finalize_lineage.py",
+      "bytes": 6377,
+      "sha256": "78678a54023c4ee39c90c80cedcecf0c1286250027603d5a9d329456065353f7"
+    },
+    {
+      "path": "paper/expanded/historical_producers/20_targeted_result_verification.py",
+      "bytes": 1374,
+      "sha256": "44c258f6f3998e1ad7a84d1cd8e4e1022661d2b05c9e07962a3266550b2c61e8"
+    },
+    {
+      "path": "paper/expanded/historical_producers/21_legacy_count_crosscheck.py",
+      "bytes": 2093,
+      "sha256": "e5f43e7d955b5e1478a9a365377b49cb5da95a6c1cde49c396ad1d750b040aa8"
+    },
+    {
+      "path": "paper/expanded/historical_producers/22_resolve_legacy_differences.py",
+      "bytes": 3475,
+      "sha256": "91f209b95df198c45f7f583240f593d216c450dfd0074c168dedc6ee0adc5486"
+    },
+    {
+      "path": "paper/expanded/historical_producers/23_check_legacy_tie_compatibility.py",
+      "bytes": 2129,
+      "sha256": "2af6902eb79c1c2f08261b5ab04b20a2dc6f4962774dabb12c2aeba5c19dffac"
+    },
+    {
+      "path": "paper/expanded/historical_producers/24_delivery.py",
+      "bytes": 6827,
+      "sha256": "a77e79054ffe46ddf349889ed183400ab157e542f22171e146a4a3e20fef4de9"
+    },
+    {
+      "path": "paper/expanded/historical_producers/25_finish_delivery_checks.py",
+      "bytes": 3521,
+      "sha256": "6cf76f6a8cd437070a2447ee87d2ddd6b5ab754e7fd130adb528cb0d54d59ff5"
+    },
+    {
+      "path": "paper/expanded/historical_producers/archived_module_ablation.py",
+      "bytes": 8187,
+      "sha256": "a26f41902735a67952ab335bd37db079f7d8e4228ea46711ede32fcf4dd64deb"
+    },
+    {
+      "path": "paper/expanded/historical_producers/audit_engine.py",
+      "bytes": 18516,
+      "sha256": "488d906f33295bc882a2b9a02c0849bd88169d864dadd386cfd30f45d20ab269"
+    },
+    {
+      "path": "paper/expanded/historical_producers/audit_motion_intervention.py",
+      "bytes": 6659,
+      "sha256": "a9ca75e49cc419673c546a7a0f8fc85aac6e10c55abdab826961da3742f99574"
+    },
+    {
+      "path": "paper/expanded/historical_producers/linked_contrast.py",
+      "bytes": 6914,
+      "sha256": "1194e9e014d6aa7ee45048ad44b90a38b703cf220f925b9f76e4caa7ba00053d"
+    },
+    {
+      "path": "paper/expanded/historical_producers/orientation.py",
+      "bytes": 1587,
+      "sha256": "567f6833fca645d6a87ac8284d0a579af7bbfd45335efa5c4a546a30ad6e10e8"
+    },
+    {
+      "path": "paper/expanded/historical_producers/replay_local_smoother.py",
+      "bytes": 1866,
+      "sha256": "1281536ffb2e10388189c8fe95f26168e6211be681e980b80b9a68ac8348dff0"
+    },
+    {
+      "path": "paper/expanded/historical_producers/replay_record.py",
+      "bytes": 3940,
+      "sha256": "5fe58f0923a0e3066bc8e2f86130485ce0a4580dd2d3e2f9867c745ce994ead0"
+    },
+    {
+      "path": "paper/expanded/historical_producers/run_linked_focused.py",
+      "bytes": 3529,
+      "sha256": "fe2b640f7a1cc58051a28fffd4d8f08e967d7a74d189939a259b0b02829cf3e3"
+    },
+    {
+      "path": "paper/expanded/historical_producers/verify_linked_contrast.py",
+      "bytes": 3741,
+      "sha256": "90e26aca88ffd3257b09a7f61c6e673614d7e019d0556e7746b534d9b09a0521"
+    },
+    {
+      "path": "paper/expanded/linked_contrast.py",
+      "bytes": 7388,
+      "sha256": "5a5219b2d101a1aa6d09435b4c71f07338ad8a8b4289d0ff124bc4d6a60c6e74"
+    },
+    {
+      "path": "paper/expanded/orientation.py",
+      "bytes": 1587,
+      "sha256": "567f6833fca645d6a87ac8284d0a579af7bbfd45335efa5c4a546a30ad6e10e8"
+    },
+    {
+      "path": "paper/expanded/reference_backend/LICENSE",
+      "bytes": 1065,
+      "sha256": "73d335ec9c200b0d5bbb873f5cad552f76640843bc5ca41133f10115c38c2da8"
+    },
+    {
+      "path": "paper/expanded/reference_backend/UPSTREAM_NOTICE.md",
+      "bytes": 1069,
+      "sha256": "bf5d484ef1a7e2744b252da8003be9592feafe69fcbf832226f34511113f4fb8"
+    },
+    {
+      "path": "paper/expanded/reference_backend/reconstruct.py",
+      "bytes": 23398,
+      "sha256": "24d6000a5abea7b5d738e93cd3967831ce3c6be43489e3d88391bd683b51a9b8"
+    },
+    {
+      "path": "paper/expanded/reference_backend/sources/executed/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/expanded/replay_saved.py",
+      "bytes": 861,
+      "sha256": "94912da9e316943cfe2a8267a3ce9a5e63c820a120f9f0d9849d3d004e5db978"
+    },
+    {
+      "path": "paper/expanded/review_example.py",
+      "bytes": 2421,
+      "sha256": "9291e4fa3ad017c31e05c1158adb465f7ea38471d672a7dcaf87465fed20f68f"
+    },
+    {
+      "path": "paper/expanded/review_linked_records.py",
+      "bytes": 1587,
+      "sha256": "f924b23e6f5e369948ee5dace077bce33f817b0ff8f43f17b5a50cc18060e396"
+    },
+    {
+      "path": "paper/expanded/summarize_focused_inputs.py",
+      "bytes": 2850,
+      "sha256": "9edbc8ed489a24f8561c11432b86b7a05fc58c57e45107371cf2e13d133fffb9"
+    },
+    {
+      "path": "paper/expanded/verify_endpoints.py",
+      "bytes": 10368,
+      "sha256": "9f711b4f855c44c677e91eb11f3edfa7a4f95792aab9ef1c68453c7edb25cb19"
+    },
+    {
+      "path": "paper/export_inputs.py",
+      "bytes": 5585,
+      "sha256": "f641ba9d8428114dcdebd1c0a5ff36a66ae77efe45d3a9a46c436a6b9896c590"
+    },
+    {
+      "path": "paper/export_results.py",
+      "bytes": 8478,
+      "sha256": "fb7c8a22545b73e338e2e289aa649897554585fc0158392408c130d5e0f6fc50"
+    },
+    {
+      "path": "paper/figures/build_integrated.py",
+      "bytes": 19291,
+      "sha256": "ff51fa1abbea317c0a9412bc7127f539bc1163d462aae05d991a937cb506fc08"
+    },
+    {
+      "path": "paper/figures/export_case.py",
+      "bytes": 14520,
+      "sha256": "35838f5b4206e56f4c4df7c7e643a01cd8d577d805d38057ec81798d4cbcf76f"
+    },
+    {
+      "path": "paper/figures/reader_wording.py",
+      "bytes": 8064,
+      "sha256": "38f7980131174e7bf6f4cd2c6198fa6e465d80a1e069f6f67b2a56e3a17d4f43"
+    },
+    {
+      "path": "paper/figures/requirements.txt",
+      "bytes": 117,
+      "sha256": "3a951333e769b9480e0374cd095ed7972ae65e8e802817fdccd15e3f14f221b9"
+    },
+    {
+      "path": "paper/figures/retained_build_figures.py",
+      "bytes": 20459,
+      "sha256": "bc42f6169dfbd12119e3431d6f385748b441069f9ad9db6f5596cd965425af86"
+    },
+    {
+      "path": "paper/historical_validation_scripts/README.md",
+      "bytes": 710,
+      "sha256": "e071c66e2a478cf9830236c5c552ad16e4759476b4b81fd708cbbd4623dffebc"
+    },
+    {
+      "path": "paper/historical_validation_scripts/execute_delivery_and_premise_probes.py",
+      "bytes": 7403,
+      "sha256": "d8f54ec63cf13b506bbb8f110c71f15fa974f2db15cd6907a3c4d2e3c9325c95"
+    },
+    {
+      "path": "paper/historical_validation_scripts/final_checks_v02.py",
+      "bytes": 6471,
+      "sha256": "b80bf8c061b1e98316e59bf57256a47d81dfdbed6d7c0ad56f06c3b81a06a767"
+    },
+    {
+      "path": "paper/licenses/Cell-TRACTR-APACHE-2.0.txt",
+      "bytes": 11354,
+      "sha256": "b208c52b00a2df2c8f4c3298c34407bf2bfe409968213372251c91fcc737a1a5"
+    },
+    {
+      "path": "paper/licenses/Harmonic-Fusion-APACHE-2.0.txt",
+      "bytes": 11354,
+      "sha256": "b208c52b00a2df2c8f4c3298c34407bf2bfe409968213372251c91fcc737a1a5"
+    },
+    {
+      "path": "paper/licenses/Harmonic-Fusion-NOTICE.md",
+      "bytes": 1127,
+      "sha256": "ab1aaef2cbb84475db0c73bb1ec8b9536b763f20397640e9eaa3417470b377cf"
+    },
+    {
+      "path": "paper/licenses/SOURCES.json",
+      "bytes": 719,
+      "sha256": "cfbab77280a44edb8738c660b8b577efe5f6c7835a1ea62a13d0f1ec0c8aae99"
+    },
+    {
+      "path": "paper/licenses/TrackFormer-APACHE-2.0.txt",
+      "bytes": 11354,
+      "sha256": "b208c52b00a2df2c8f4c3298c34407bf2bfe409968213372251c91fcc737a1a5"
+    },
+    {
+      "path": "paper/licenses/py-ctcmetrics-LICENSE.txt",
+      "bytes": 1306,
+      "sha256": "b8a076a1dd8714e600b78cb89ff5d8d91c0a97abb38a431d5c8d46ba52ef1d6f"
+    },
+    {
+      "path": "paper/local_config.example.json",
+      "bytes": 1424,
+      "sha256": "ce8f095aae494d164445526953153452adef0cc96dee37e3be8008599b63220d"
+    },
+    {
+      "path": "paper/measure_coupled_resources.py",
+      "bytes": 8172,
+      "sha256": "873437c2dba37bd0e1d803d0664eb2cecdc5762188300e2c2ab234d0bbe0af91"
+    },
+    {
+      "path": "paper/measure_d47_resources.py",
+      "bytes": 3335,
+      "sha256": "19dcb9761ba42d3750a1631d7498cebb3f4b72729a2f4b1ea48742e34cc215f1"
+    },
+    {
+      "path": "paper/prepare_local.py",
+      "bytes": 7306,
+      "sha256": "a7244d6c538c98b6e8a799bb21af9b40c05bd68584be6f3c9f0226cc93f8207d"
+    },
+    {
+      "path": "paper/probe_contracts.py",
+      "bytes": 7946,
+      "sha256": "3a25cfbf8af9a554d2f7e3b1713776c768b4f7299c74d6f67b231289866db290"
+    },
+    {
+      "path": "paper/protocols/geometry_scenarios.json",
+      "bytes": 5398,
+      "sha256": "dd73ed4458859fc98b9bcd1115796476071b1ccd541592e4d131e15a14ea9dc0"
+    },
+    {
+      "path": "paper/reaggregate_d44.py",
+      "bytes": 3074,
+      "sha256": "afda37d4add923bad3ef32390414bfd6999185ceebe35aacdd53972455d2690c"
+    },
+    {
+      "path": "paper/replay_path_witness.py",
+      "bytes": 3937,
+      "sha256": "16941455d33fd411933d23381b46d75cb704da2faf55c8b6f767ecb24c0c9907"
+    },
+    {
+      "path": "paper/requirements-paper.txt",
+      "bytes": 150,
+      "sha256": "fd1588a7643087926cbd947bebd83d0bdb2f6c32fd2285e0c2daed6739dd5e55"
+    },
+    {
+      "path": "paper/resources_v1_1/PROTOCOL.md",
+      "bytes": 2494,
+      "sha256": "5763aba7cfbb683714a71a51a8339439daa3554f49a1f9aa4d3f3f2e16fea89e"
+    },
+    {
+      "path": "paper/resources_v1_1/measure_adoption_cost.py",
+      "bytes": 11724,
+      "sha256": "277869776aac5f52379504a9bdbe8bcdee0a56a28fb19c8569ce10de27341454"
+    },
+    {
+      "path": "paper/resources_v1_1/measure_component_baseline_v02.py",
+      "bytes": 3334,
+      "sha256": "869cbe095281150b638c4f4faac677b7648be6ef9595b8453f64868072f09064"
+    },
+    {
+      "path": "paper/review_d47.py",
+      "bytes": 4290,
+      "sha256": "a5da7177db696fdf15fdc0afda5abaa3d2fc3b8799032d12fe6ee7402382a159"
+    },
+    {
+      "path": "paper/review_smoke.py",
+      "bytes": 13315,
+      "sha256": "85c49ee1c44d23966ada7168fbab95d0d9d896586040c8a87e29cb10e56d9953"
+    },
+    {
+      "path": "paper/routes.json",
+      "bytes": 5809,
+      "sha256": "84158775d70f31dd7fc537ce8374ed8b52c59e7eb56e3b4ddf3c4e360e969234"
+    },
+    {
+      "path": "paper/run.py",
+      "bytes": 10943,
+      "sha256": "02c592d76c6b6d9baf1b8e2cdb36238d0e53ec7feeec5d5f2a0752b82a5c61d0"
+    },
+    {
+      "path": "paper/run_suite.py",
+      "bytes": 3327,
+      "sha256": "049706f00bf0df6ac64899ae950aa8e8005c8cbccd769515251aaf3447521905"
+    },
+    {
+      "path": "paper/scientific/acquire_pinned_public_archive.py",
+      "bytes": 1258,
+      "sha256": "6e703140bdcd2ced31fdc7b039c71d7c0813912273d889ee1bc93e08c369dc85"
+    },
+    {
+      "path": "paper/scientific/complete_resumed_r1.py",
+      "bytes": 5487,
+      "sha256": "6ce099ac4f162ab763446c0b60b70a22bfe8aedfcd38a2b796cd6bf640787c05"
+    },
+    {
+      "path": "paper/scientific/extensions/natural/literal_constrained_baseline_v03.py",
+      "bytes": 8714,
+      "sha256": "e9b9dd8e87099d4bdbd1ffbed7acdcffa9a52c40fe5f275c2592fbf581cee3be"
+    },
+    {
+      "path": "paper/scientific/extensions/natural/reproduce_natural.py",
+      "bytes": 8879,
+      "sha256": "88983a897a1054a6c24182c1334f37305dc4d4adc1392c88b5606377f0a36770"
+    },
+    {
+      "path": "paper/scientific/extensions/natural/sources/family/reconstruct.py",
+      "bytes": 23398,
+      "sha256": "24d6000a5abea7b5d738e93cd3967831ce3c6be43489e3d88391bd683b51a9b8"
+    },
+    {
+      "path": "paper/scientific/extensions/natural/sources/family/sources/executed/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/scientific/extensions/natural/sources/local/local_graph_core.py",
+      "bytes": 3634,
+      "sha256": "36ef1a068a3fdb0ec9f68c0f142c4bf97944ec2e8639c1c9ac087f3000e5a749"
+    },
+    {
+      "path": "paper/scientific/extensions/natural/sources/local/scientific_backend/reconstruct.py",
+      "bytes": 23287,
+      "sha256": "eb44114ed985fc3bd5f02ce6e76d9861712465c47fb9f14195876bb3bf886427"
+    },
+    {
+      "path": "paper/scientific/extensions/natural/sources/local/scientific_backend/sources/executed/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/scientific/extensions/natural/sources/local/workflow.py",
+      "bytes": 17945,
+      "sha256": "03d5c33dbebc55d00cf92cf3288aba5155b4b67b4db335a2f9f9232a6b57668f"
+    },
+    {
+      "path": "paper/scientific/extensions/operating_envelope/audit_from_raw.py",
+      "bytes": 7817,
+      "sha256": "ed29ac8508dd8257f7ccf5c87ce3a805e928a3bc48a706abbeb754f96a4df954"
+    },
+    {
+      "path": "paper/scientific/extensions/operating_envelope/factor_frames.py",
+      "bytes": 3964,
+      "sha256": "8787e5a7eff5f6fb5b2360b61cff347032cb8a2780de974b10fb3212d96ff319"
+    },
+    {
+      "path": "paper/scientific/extensions/operating_envelope/run_operating_envelope.py",
+      "bytes": 10031,
+      "sha256": "a94048343331d0829cb9d669c00b80b1bf6385df3c160093c65fc5b765522f0d"
+    },
+    {
+      "path": "paper/scientific/extras/analyst/audit_path_statement.py",
+      "bytes": 7883,
+      "sha256": "0481a8100e7c8f1e2bbf905bbf1178a1ba95d7c53f8f4b9a4f5e1f4dde1c8a92"
+    },
+    {
+      "path": "paper/scientific/extras/analyst/constructor/reconstruct.py",
+      "bytes": 23398,
+      "sha256": "24d6000a5abea7b5d738e93cd3967831ce3c6be43489e3d88391bd683b51a9b8"
+    },
+    {
+      "path": "paper/scientific/extras/analyst/constructor/sources/executed/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/scientific/extras/run_common_carrier_family_census_r2.py",
+      "bytes": 8034,
+      "sha256": "cf9a6d9134d59f088147423bf83753babc86309e6eda0b07fae31881bc5b2c05"
+    },
+    {
+      "path": "paper/scientific/historical_sources/family_operating_domain_stress_v0.1/run_stress.py",
+      "bytes": 34078,
+      "sha256": "497ee729af1251f7f3ae34d5e02789483c5b052dff7479f1d123168a6212a119"
+    },
+    {
+      "path": "paper/scientific/historical_sources/family_operating_domain_stress_v0.1/sources/joint_history.py",
+      "bytes": 9414,
+      "sha256": "330ddac2d61022cbbbb547d53ac91c4111f92f122e91c401fd5333d4db4d1b31"
+    },
+    {
+      "path": "paper/scientific/historical_sources/family_operating_domain_stress_v0.1/sources/reconstruct.py",
+      "bytes": 23168,
+      "sha256": "d733a59f98518e83d7138f8fcfa3172e70642f206afe491d8bb086423ce6fba4"
+    },
+    {
+      "path": "paper/scientific/historical_sources/family_operating_domain_stress_v0.1/sources/sources/executed/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/scientific/historical_sources/family_operating_domain_stress_v0.1/sources/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/scientific/historical_sources/family_operating_domain_stress_v0.1/verify_outputs.py",
+      "bytes": 9735,
+      "sha256": "1e06b3ff67a5083fe20ec5bcc3af77388129d06d8ab4ecca892153379816b5f2"
+    },
+    {
+      "path": "paper/scientific/historical_sources/geometry_sensitivity_v0.1/source/make_report.py",
+      "bytes": 15336,
+      "sha256": "e3a76111d24def2746cdde984e6f5f87435d7ef13967adc06eb34b42edf6fb59"
+    },
+    {
+      "path": "paper/scientific/historical_sources/geometry_sensitivity_v0.1/source/prepare.py",
+      "bytes": 15006,
+      "sha256": "907035cdc67b5bf8d7af14edf3535bd84f2c5de710a58d628bbbb5daa11e63ac"
+    },
+    {
+      "path": "paper/scientific/historical_sources/geometry_sensitivity_v0.1/source/reconstruct.py",
+      "bytes": 23176,
+      "sha256": "33c0532b1e51237dc22243707b6ff29886c6708661c56e771b0ed9e995455f4c"
+    },
+    {
+      "path": "paper/scientific/historical_sources/geometry_sensitivity_v0.1/source/sensitivity.py",
+      "bytes": 23947,
+      "sha256": "9abe341548ac43a233d07bbc1adedca09ed9fe9d4cdcacceeb04e48e5105a36d"
+    },
+    {
+      "path": "paper/scientific/historical_sources/geometry_sensitivity_v0.1/source/sources/executed/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/scientific/historical_sources/geometry_sensitivity_v0.1/source/verify.py",
+      "bytes": 10322,
+      "sha256": "acceda22ef04ae7fd90d3e121f30ef792e2eb226dded86225c428b025cdcb986"
+    },
+    {
+      "path": "paper/scientific/historical_sources/legacy_negative/stage_accounting.py",
+      "bytes": 4329,
+      "sha256": "02d10a64d9059eafde217d8149ed9f7e12bea252258094f9d13262f50a6f96a1"
+    },
+    {
+      "path": "paper/scientific/historical_sources/original3d_multigate_family_v0.1/analyze_full_gate_families_v01.py",
+      "bytes": 6564,
+      "sha256": "67711130496310079340ace78b43202354f94fc5c1a2e572ba614e5677a88eb4"
+    },
+    {
+      "path": "paper/scientific/historical_sources/original3d_multigate_family_v0.1/prepare_multigate_producer_v01.py",
+      "bytes": 4675,
+      "sha256": "4c6c7361579ab1de73afac68231d12043dce27cbe57c15edcd7eb521d9e60b42"
+    },
+    {
+      "path": "paper/scientific/historical_sources/original3d_multigate_family_v0.1/prepare_multigate_producer_v02.py",
+      "bytes": 580,
+      "sha256": "52cb870ad6573bb148f6a9f3151b68f03d0653e2e6f81fa398f55dd7f573679e"
+    },
+    {
+      "path": "paper/scientific/historical_sources/original3d_multigate_family_v0.1/run_finite_objective_family_v04.py",
+      "bytes": 1294,
+      "sha256": "cf874280ad6a214aa7e42890e554fcc98672aac5e6ccaa066da02f0fa7bf8cd7"
+    },
+    {
+      "path": "paper/scientific/historical_sources/original3d_multigate_family_v0.1/run_general_numerical_family_v02.py",
+      "bytes": 10555,
+      "sha256": "8d3151f00f0dc9e92fdd76355a3b46b46a7139a33d043dabae4412638b5746dc"
+    },
+    {
+      "path": "paper/scientific/historical_sources/original3d_multigate_family_v0.1/run_general_numerical_family_v03.py",
+      "bytes": 669,
+      "sha256": "a9dd7321e542dcd52f8ebcc24afb57215fa94dcaaf843652067ee8f0320fee03"
+    },
+    {
+      "path": "paper/scientific/historical_sources/original3d_multigate_family_v0.1/run_multigate_family_v01.py",
+      "bytes": 12825,
+      "sha256": "e46079f98bbb0aac0e16d3bc0cd19e88bf20adf2088e1d7cb177f48138b42f73"
+    },
+    {
+      "path": "paper/scientific/historical_sources/original3d_multigate_family_v0.1/run_multigate_margin_v01.py",
+      "bytes": 11108,
+      "sha256": "312845e53ac00b2b7c9e9792c89836b2e48d2b854825331d9728f01f5ca066c2"
+    },
+    {
+      "path": "paper/scientific/historical_sources/projection/analyze.py",
+      "bytes": 5835,
+      "sha256": "43ab80f678473fc8bad54e62ab5075751dfb5e958646c9d81fdc57e3fe79cf74"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/acquire_public_inputs.py",
+      "bytes": 2752,
+      "sha256": "bbde2f009326803f52532452982d24c1757a50619f9ed0d35e1e4dd5147bae02"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/audit_resize.py",
+      "bytes": 3634,
+      "sha256": "32392f72c856ce13862d83ed8e74c6560740e7f9f1a3d066d182d949be6053b2"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/build_extension.py",
+      "bytes": 7143,
+      "sha256": "eac7cf319ed7b1ad72d0df1e012d93fff433b0eccaca4a3d8d63f6a64775cab1"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/build_fixed_inputs.py",
+      "bytes": 6928,
+      "sha256": "9db84b3b08d93adfa3fc90cc94f7faa0274c4a7ad29762b44472062e265e6adb"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/compare_scientific_records.py",
+      "bytes": 4595,
+      "sha256": "af0394f593c6642a84245b7196208b5b89a2e3052d8aa297157c8c8a7aafff1f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/export_scientific_tables.py",
+      "bytes": 2480,
+      "sha256": "5ce6a983bc597d2b5995c457d85959d9c75cee947a85a0dbc0f973cf2bd480fe"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/finalize_extension.py",
+      "bytes": 22588,
+      "sha256": "31ba7c7d309c3e2c09b9713814ad2feb0f99c4545eb3ad8e838f97122679e7c4"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/fixed_archive_root/pulse_factorial_control_v0.1/source_preparation_v0.3/run_factorial_arm.py",
+      "bytes": 12634,
+      "sha256": "cea80cf920be16fb4ab4cb020ca5d1629bc92c3e8c8bf2ad6da29862bf6d0345"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/fixed_archive_root/pulse_factorial_control_v0.1/source_preparation_v0.3/source/src/trackformer/engine.py",
+      "bytes": 60881,
+      "sha256": "0049d7c5ee0831a87eabe4cca65f6dc8b9e578cb9db19ded057e48bf4bd903b0"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/generate_common.py",
+      "bytes": 5849,
+      "sha256": "b1987ba1b01b36ac924240083723b0244071b34863c9c42c6fd281dbac8e94d3"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/identity_crosswalk.py",
+      "bytes": 10718,
+      "sha256": "784d8b992c576112483e965d48510d6c2521370f7c80e2b2eaa291ce96c4e2b4"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/inputs_LOCAL_ONLY/common_carrier96/reproduce96.py",
+      "bytes": 2041,
+      "sha256": "18a44677205fab80c8220bc75457bc23a0e269dedc9f3a365c120e240d31057f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/inputs_LOCAL_ONLY/common_carrier96/source_relative_score.py",
+      "bytes": 1913,
+      "sha256": "d7cad2926e0c54fbfd9430ba67513f70fa355830ce7a4b10a1bd7ad24cb4e957"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/prepare_new_inference.py",
+      "bytes": 3684,
+      "sha256": "d1a9fbd4bd11be7c7e8b7c7351f377b43a33c929019631e37f6e6bd0e587bfc0"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/rematch_stage.py",
+      "bytes": 9361,
+      "sha256": "10cc77e97632231673900c0c3b0a78f5be3db8335b96a6848ec8c10930949d22"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/run_archive.py",
+      "bytes": 19410,
+      "sha256": "d43f923ff6a13de06b66b96de012064b43334e56342698e475afbdcd74a071ef"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/run_clean_archive.py",
+      "bytes": 1838,
+      "sha256": "4f9dcc392677b3013fbc91d939f1cbc05b2c09dfbd442a63aceda14cb9e13aa5"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/cca_existing_cohort_v0.1/analyze.py",
+      "bytes": 9604,
+      "sha256": "589f383edf42d7da1a13e5509a8e49d3cb358ae9ac2e4ec2612fa2f75ba655b7"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/cca_existing_cohort_v0.1/compare_endpoint_estimands.py",
+      "bytes": 4221,
+      "sha256": "655f8ae753fdf692efbfca6b6c16b4699f2ba85b20fdbcf7e59d3bf7f4deb6e9"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/closest_prior_lineage_definitions_v0.1/bc.py",
+      "bytes": 8707,
+      "sha256": "cab0b299382ca6d1c041a7a142261f1c1813f5c03bbf27758576cd3a8581c56d"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/closest_prior_lineage_definitions_v0.1/cca.py",
+      "bytes": 2398,
+      "sha256": "63fdc447afcbeae350a1cb5f8df301ed62cb96089d81d8d2f399f50785873b62"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/closest_prior_lineage_definitions_v0.1/chota.py",
+      "bytes": 4690,
+      "sha256": "c82866ff229cff82a8a1b8150c101ca6c4d3a30cddae05848a4651bba382c5fc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/closest_prior_lineage_definitions_v0.1/ct.py",
+      "bytes": 2556,
+      "sha256": "76fedefda6c28284a0b27e55c28fe931738c768bd74324884d6229e7f559e742"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/common_policy/execute_common_carrier_v01.py",
+      "bytes": 7152,
+      "sha256": "bde5be054b6c9b8bec77a66ae16ab160a4a0260615b03006ec32f90bab12ef09"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/common_policy/policies/event_gate/affirmative_veto.py",
+      "bytes": 5246,
+      "sha256": "5057f39ac0a0609be35ec98205664a2ba49af9c6bc40a7e8668a6bbb8543074e"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/common_policy/policies/event_gate/event_consensus.py",
+      "bytes": 8076,
+      "sha256": "2ef0af317c9c86a0cf367d292ce1a5eb0fb45b5ed3255a0ee7dfdadcac8e1b74"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/common_policy/policies/measurement_fusion/measurement_fusion.py",
+      "bytes": 736,
+      "sha256": "36c96b9bf3f33c4f6cef647ba6b2c2308b639336470e496ab6c10d76bee06940"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/common_policy/policies/topology/endpoint_consistency.py",
+      "bytes": 2581,
+      "sha256": "ff8d364b472d5cf68257000e485dcaf791fc54a51366ea004ff6d8a13f4ff8a8"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/common_policy/recount_sdy_sparse_v01.py",
+      "bytes": 6490,
+      "sha256": "7851a6de98c00070d520bf3efed33a6cbda25c191dafd60b914e28ce160f9f72"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/common_policy/replay_svm_topology_v02.py",
+      "bytes": 11291,
+      "sha256": "0e504570ee86b816435f722750c86279f1e474109813d5b37bac2036681775ac"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/division_timing_sensitivity_v0.1/analyze.py",
+      "bytes": 10290,
+      "sha256": "85d1ecfe5985c34965b7f1e54cc212b42aa88228c7b257b6071abad9cfec240e"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/division_timing_sensitivity_v0.1/compare_event_identities.py",
+      "bytes": 2218,
+      "sha256": "ed1345fabfac8076a2eed4024b5810b6a38ec4858c540ab53b7c0068f94eda1c"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/division_timing_sensitivity_v0.1/join_strict_chain_birth_cases.py",
+      "bytes": 3467,
+      "sha256": "ed13821ae172e923e7d846766d50638a675fb00bcecff0dbce66abffe5c6c37d"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/division_timing_sensitivity_v0.1/summarize_contracts.py",
+      "bytes": 6104,
+      "sha256": "6e977828f527085f452477de03096471c2358fea555e5f74eb3e2c732b0f01e2"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/division_window_controls_v0.1/generate.py",
+      "bytes": 6252,
+      "sha256": "43074db4529d598b69c39d35b3300ca82bbd733e80d8ff2aa81ea64038cbc8a2"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/division_window_controls_v0.1/generate_v02.py",
+      "bytes": 6258,
+      "sha256": "e2d2186e6d124e899d67f3dcca8ec2ba6d60f0f4e1089fa7afe2f7b39fb2dad8"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/division_window_controls_v0.1/measure.py",
+      "bytes": 9224,
+      "sha256": "94b4899d3de7e5a83aa09f80c19daaf5a4ccf03b502a71dea8fa5b591fabf6fc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/final_only.py",
+      "bytes": 7674,
+      "sha256": "36b967ebc0acb5d9e40a3c4c2d657c27175a59283963666c7b8495415d19b586"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/native_stage_observer_v04.py",
+      "bytes": 5668,
+      "sha256": "fc9371ea6370e4c01b91c76114bcc0405864fb5c157d1353e1213bf3eacb884b"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/scripts/create_coco_dataset_from_CTC.py",
+      "bytes": 4387,
+      "sha256": "20c998d7f468e30768e2ccdf52e8690fa99e16a9d052ffe6a4bccb03236f2d56"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/scripts/utils_coco.py",
+      "bytes": 27468,
+      "sha256": "ac250aad6867f8b47643bba38576a11b5f31fb84941cb801fdbf8e90468b5c14"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/setup.py",
+      "bytes": 184,
+      "sha256": "a3ca30d3914d508495621f5589aa0190dcb80f9b90217b4c675ec69af5bcba92"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/old_functions/display_worst_loss_and_score_samples.py",
+      "bytes": 8231,
+      "sha256": "7c860ab599873330448bbdf0aa6c8ea8655b2067bd4d997559f23bb2d4fb744c"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/old_functions/engine_stitch_and_crop.py",
+      "bytes": 102386,
+      "sha256": "d1bf6d27b241942ce3ab8f6d2b5b38d39c3b4698f2c91cc900baacde38047d81"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/pipeline.py",
+      "bytes": 3801,
+      "sha256": "437260806f8b44239ed939ad1c89c9e5edc15eb82f9c69d68fc9f7e70b27ef82"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/datasets/__init__.py",
+      "bytes": 907,
+      "sha256": "b4918b3c4e97c26ac2468c3fabab21b1f60a1cbc7188a9444a3103ec17f57910"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/datasets/coco.py",
+      "bytes": 11000,
+      "sha256": "a0018fe5b841591985358859b90981a19be96c1777b7fb35c0899dfe5707761a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/datasets/coco_eval.py",
+      "bytes": 8865,
+      "sha256": "e5468ce67db715d4159b4a095de9337049bcb082d0335ade2738e5da981c1329"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/datasets/mot.py",
+      "bytes": 8772,
+      "sha256": "f80fe557f526005257f57386c24df95d240c7b3960f86f94480a99ff5c1ae50a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/datasets/transforms.py",
+      "bytes": 19019,
+      "sha256": "2d9baaeb2559a040c70e112eca96ef6970a20ea99f628a4af2a4f251cd31750f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/engine.py",
+      "bytes": 58662,
+      "sha256": "f2d26d9464db10fca938cc1940edb6e3dc5066fd8d6dfcf34ad36d891a1e9bad"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/__init__.py",
+      "bytes": 6972,
+      "sha256": "a63d8ba059b0f42e2ca51b9656cf1ad561de1e66c85ceb79e3e68f1d5384cb72"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/backbone.py",
+      "bytes": 5785,
+      "sha256": "1867ba574a81d069ef10bbebeea998d216d6a75f80eab82f02a308b415d26976"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/deformable_detr.py",
+      "bytes": 20086,
+      "sha256": "34c9c8d4f858d98be6c2c2595a5a9868897e1eedc9dc84854e5f13e5701175dc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/deformable_transformer.py",
+      "bytes": 40027,
+      "sha256": "1dbb6ad25f8cfc9ff6227c91a9dbdd97f0df00b77a47f8b3997afd0f80bc5fda"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/detr.py",
+      "bytes": 19480,
+      "sha256": "2e46a780806c9e308b6ad8350ad4c35b176512d90c95d5aad95b972436844606"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/detr_segmentation.py",
+      "bytes": 6091,
+      "sha256": "121343a15a5a9d12913be563759acde25c0365f9e3f6887e7474fdb74476a122"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/detr_tracking.py",
+      "bytes": 39626,
+      "sha256": "19121f59f636fc29767cf03502cc1dedb9bd66b773512aed3c3cf890ef1a1de6"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/matcher.py",
+      "bytes": 16018,
+      "sha256": "7650fb8bdcd0de3f2cd8bcec29daf68b348681d7c9bc49cd3d566c0c64e02497"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/functions/__init__.py",
+      "bytes": 119,
+      "sha256": "55600551d8a50168840a18478c0bf2e383758c12092f0837cc3e9ad43df99e3f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/functions/ms_deform_attn_func.py",
+      "bytes": 5068,
+      "sha256": "20ea18c02a5e5e462d7e01519f8e97908f0d0a6eecc8370ecbdf94ed41e1c810"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/modules/__init__.py",
+      "bytes": 42,
+      "sha256": "25042b9749f112c19e6928418b4bd197abe7dada5b7a2079c2b8f61c52fa1384"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/modules/ms_deform_attn.py",
+      "bytes": 4681,
+      "sha256": "407a73c8f7b2f728ade047822f5e7553a79023913e128952c15031e42bdd72af"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/setup.py",
+      "bytes": 2015,
+      "sha256": "df75d38cc7724c844c13efe42d6589b392fb7e021e4bdc8cacd9805da661269a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/test.py",
+      "bytes": 7051,
+      "sha256": "11b4b0e806d6eee2a0ce62f8d2e0ee053d2a86ee67d35032b204d869ca1fa6a9"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops/test_double_precision.py",
+      "bytes": 7186,
+      "sha256": "acaabfddd15a02273669f6f21cd73c734ad524c1a9980c775047524b7af2bcd3"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/__init__.py",
+      "bytes": 598,
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/ms_deform_attn_func.py",
+      "bytes": 3298,
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/__init__.py",
+      "bytes": 584,
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/ms_deform_attn.py",
+      "bytes": 6270,
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/functions/__init__.py",
+      "bytes": 598,
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/functions/ms_deform_attn_func.py",
+      "bytes": 3298,
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/modules/__init__.py",
+      "bytes": 584,
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/modules/ms_deform_attn.py",
+      "bytes": 6270,
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/setup.py",
+      "bytes": 2559,
+      "sha256": "167e8f8ffa224514c1f195b5091b5ed6f7cfcabfe8b967719ddede3c402a103f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/ops_deform/test.py",
+      "bytes": 4087,
+      "sha256": "6066519322d749265c9983117ba8b012b35b6fbd46505d5b7842751eeb706942"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/position_encoding.py",
+      "bytes": 7303,
+      "sha256": "2e877a16afbf8024875658fcede838205d295d353fd4916d19c18a4f72c5bbee"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/tracker.py",
+      "bytes": 23373,
+      "sha256": "3fcb0b2aa121bb3c4d6f537a15756edd6b1e6e46a60c8b894eda1a381971c2e6"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/models/transformer.py",
+      "bytes": 13716,
+      "sha256": "5a34321a2e0bcd3fc71c8ca010a255df50e9bcb1ccf4d22a4cc88333b9a9820c"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/util/__init__.py",
+      "bytes": 71,
+      "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/util/box_ops.py",
+      "bytes": 9870,
+      "sha256": "1e1ff7096ddaecd01a676d290e54dedf41455ce49351cd8a13673551130e4394"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/util/data_viz.py",
+      "bytes": 53858,
+      "sha256": "8de3cdb427e1a843d12e9200630b7a5cb3ef36c3accad5b1872b90c8a112efa3"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/util/flex_div.py",
+      "bytes": 47871,
+      "sha256": "0632ba37f94fb3f12275c5cf5b91d0df40fd838c8b09ba1d8aa22a66af80b0a2"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/util/misc.py",
+      "bytes": 60809,
+      "sha256": "6ceffee9df81537e0127634faa947367e96fb08f53f33a142aa02b985f3fd9d8"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/trackformer/vis.py",
+      "bytes": 11159,
+      "sha256": "78b7a99ecb7b37b2d8288935bab7ee3913ade0aef954701dfec530d5e3490050"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/train.py",
+      "bytes": 7796,
+      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/scripts/create_coco_dataset_from_CTC.py",
+      "bytes": 4387,
+      "sha256": "20c998d7f468e30768e2ccdf52e8690fa99e16a9d052ffe6a4bccb03236f2d56"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/scripts/utils_coco.py",
+      "bytes": 27468,
+      "sha256": "ac250aad6867f8b47643bba38576a11b5f31fb84941cb801fdbf8e90468b5c14"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/setup.py",
+      "bytes": 184,
+      "sha256": "a3ca30d3914d508495621f5589aa0190dcb80f9b90217b4c675ec69af5bcba92"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/old_functions/display_worst_loss_and_score_samples.py",
+      "bytes": 8231,
+      "sha256": "7c860ab599873330448bbdf0aa6c8ea8655b2067bd4d997559f23bb2d4fb744c"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/old_functions/engine_stitch_and_crop.py",
+      "bytes": 102386,
+      "sha256": "d1bf6d27b241942ce3ab8f6d2b5b38d39c3b4698f2c91cc900baacde38047d81"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/pipeline.py",
+      "bytes": 3801,
+      "sha256": "437260806f8b44239ed939ad1c89c9e5edc15eb82f9c69d68fc9f7e70b27ef82"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/datasets/__init__.py",
+      "bytes": 907,
+      "sha256": "b4918b3c4e97c26ac2468c3fabab21b1f60a1cbc7188a9444a3103ec17f57910"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/datasets/coco.py",
+      "bytes": 11000,
+      "sha256": "a0018fe5b841591985358859b90981a19be96c1777b7fb35c0899dfe5707761a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/datasets/coco_eval.py",
+      "bytes": 8865,
+      "sha256": "e5468ce67db715d4159b4a095de9337049bcb082d0335ade2738e5da981c1329"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/datasets/mot.py",
+      "bytes": 8772,
+      "sha256": "f80fe557f526005257f57386c24df95d240c7b3960f86f94480a99ff5c1ae50a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/datasets/transforms.py",
+      "bytes": 19019,
+      "sha256": "2d9baaeb2559a040c70e112eca96ef6970a20ea99f628a4af2a4f251cd31750f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/engine.py",
+      "bytes": 58621,
+      "sha256": "01fda847994c5766da61de3409dd5b27364faf2defb5fd83b1ceeff5b3575422"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/__init__.py",
+      "bytes": 6972,
+      "sha256": "a63d8ba059b0f42e2ca51b9656cf1ad561de1e66c85ceb79e3e68f1d5384cb72"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/backbone.py",
+      "bytes": 5785,
+      "sha256": "1867ba574a81d069ef10bbebeea998d216d6a75f80eab82f02a308b415d26976"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/deformable_detr.py",
+      "bytes": 20086,
+      "sha256": "34c9c8d4f858d98be6c2c2595a5a9868897e1eedc9dc84854e5f13e5701175dc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/deformable_transformer.py",
+      "bytes": 40027,
+      "sha256": "1dbb6ad25f8cfc9ff6227c91a9dbdd97f0df00b77a47f8b3997afd0f80bc5fda"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/detr.py",
+      "bytes": 19480,
+      "sha256": "2e46a780806c9e308b6ad8350ad4c35b176512d90c95d5aad95b972436844606"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/detr_segmentation.py",
+      "bytes": 6091,
+      "sha256": "121343a15a5a9d12913be563759acde25c0365f9e3f6887e7474fdb74476a122"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/detr_tracking.py",
+      "bytes": 39626,
+      "sha256": "19121f59f636fc29767cf03502cc1dedb9bd66b773512aed3c3cf890ef1a1de6"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/matcher.py",
+      "bytes": 16018,
+      "sha256": "7650fb8bdcd0de3f2cd8bcec29daf68b348681d7c9bc49cd3d566c0c64e02497"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/functions/__init__.py",
+      "bytes": 119,
+      "sha256": "55600551d8a50168840a18478c0bf2e383758c12092f0837cc3e9ad43df99e3f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/functions/ms_deform_attn_func.py",
+      "bytes": 5068,
+      "sha256": "20ea18c02a5e5e462d7e01519f8e97908f0d0a6eecc8370ecbdf94ed41e1c810"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/modules/__init__.py",
+      "bytes": 42,
+      "sha256": "25042b9749f112c19e6928418b4bd197abe7dada5b7a2079c2b8f61c52fa1384"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/modules/ms_deform_attn.py",
+      "bytes": 4681,
+      "sha256": "407a73c8f7b2f728ade047822f5e7553a79023913e128952c15031e42bdd72af"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/setup.py",
+      "bytes": 2015,
+      "sha256": "df75d38cc7724c844c13efe42d6589b392fb7e021e4bdc8cacd9805da661269a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/test.py",
+      "bytes": 7051,
+      "sha256": "11b4b0e806d6eee2a0ce62f8d2e0ee053d2a86ee67d35032b204d869ca1fa6a9"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops/test_double_precision.py",
+      "bytes": 7186,
+      "sha256": "acaabfddd15a02273669f6f21cd73c734ad524c1a9980c775047524b7af2bcd3"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/__init__.py",
+      "bytes": 598,
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/ms_deform_attn_func.py",
+      "bytes": 3298,
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/__init__.py",
+      "bytes": 584,
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/ms_deform_attn.py",
+      "bytes": 6270,
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/functions/__init__.py",
+      "bytes": 598,
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/functions/ms_deform_attn_func.py",
+      "bytes": 3298,
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/modules/__init__.py",
+      "bytes": 584,
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/modules/ms_deform_attn.py",
+      "bytes": 6270,
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/setup.py",
+      "bytes": 2559,
+      "sha256": "167e8f8ffa224514c1f195b5091b5ed6f7cfcabfe8b967719ddede3c402a103f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/ops_deform/test.py",
+      "bytes": 4087,
+      "sha256": "6066519322d749265c9983117ba8b012b35b6fbd46505d5b7842751eeb706942"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/position_encoding.py",
+      "bytes": 7303,
+      "sha256": "2e877a16afbf8024875658fcede838205d295d353fd4916d19c18a4f72c5bbee"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/tracker.py",
+      "bytes": 23373,
+      "sha256": "3fcb0b2aa121bb3c4d6f537a15756edd6b1e6e46a60c8b894eda1a381971c2e6"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/models/transformer.py",
+      "bytes": 13716,
+      "sha256": "5a34321a2e0bcd3fc71c8ca010a255df50e9bcb1ccf4d22a4cc88333b9a9820c"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/util/__init__.py",
+      "bytes": 71,
+      "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/util/box_ops.py",
+      "bytes": 9870,
+      "sha256": "1e1ff7096ddaecd01a676d290e54dedf41455ce49351cd8a13673551130e4394"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/util/data_viz.py",
+      "bytes": 53858,
+      "sha256": "8de3cdb427e1a843d12e9200630b7a5cb3ef36c3accad5b1872b90c8a112efa3"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/util/flex_div.py",
+      "bytes": 47871,
+      "sha256": "0632ba37f94fb3f12275c5cf5b91d0df40fd838c8b09ba1d8aa22a66af80b0a2"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/util/misc.py",
+      "bytes": 60809,
+      "sha256": "6ceffee9df81537e0127634faa947367e96fb08f53f33a142aa02b985f3fd9d8"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/trackformer/vis.py",
+      "bytes": 11159,
+      "sha256": "78b7a99ecb7b37b2d8288935bab7ee3913ade0aef954701dfec530d5e3490050"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/train.py",
+      "bytes": 7796,
+      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/scripts/create_coco_dataset_from_CTC.py",
+      "bytes": 4387,
+      "sha256": "20c998d7f468e30768e2ccdf52e8690fa99e16a9d052ffe6a4bccb03236f2d56"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/scripts/utils_coco.py",
+      "bytes": 27468,
+      "sha256": "ac250aad6867f8b47643bba38576a11b5f31fb84941cb801fdbf8e90468b5c14"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/setup.py",
+      "bytes": 184,
+      "sha256": "a3ca30d3914d508495621f5589aa0190dcb80f9b90217b4c675ec69af5bcba92"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/old_functions/display_worst_loss_and_score_samples.py",
+      "bytes": 8231,
+      "sha256": "7c860ab599873330448bbdf0aa6c8ea8655b2067bd4d997559f23bb2d4fb744c"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/old_functions/engine_stitch_and_crop.py",
+      "bytes": 102386,
+      "sha256": "d1bf6d27b241942ce3ab8f6d2b5b38d39c3b4698f2c91cc900baacde38047d81"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/pipeline.py",
+      "bytes": 3801,
+      "sha256": "437260806f8b44239ed939ad1c89c9e5edc15eb82f9c69d68fc9f7e70b27ef82"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/datasets/__init__.py",
+      "bytes": 907,
+      "sha256": "b4918b3c4e97c26ac2468c3fabab21b1f60a1cbc7188a9444a3103ec17f57910"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/datasets/coco.py",
+      "bytes": 11000,
+      "sha256": "a0018fe5b841591985358859b90981a19be96c1777b7fb35c0899dfe5707761a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/datasets/coco_eval.py",
+      "bytes": 8865,
+      "sha256": "e5468ce67db715d4159b4a095de9337049bcb082d0335ade2738e5da981c1329"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/datasets/mot.py",
+      "bytes": 8772,
+      "sha256": "f80fe557f526005257f57386c24df95d240c7b3960f86f94480a99ff5c1ae50a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/datasets/transforms.py",
+      "bytes": 19019,
+      "sha256": "2d9baaeb2559a040c70e112eca96ef6970a20ea99f628a4af2a4f251cd31750f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/engine.py",
+      "bytes": 58621,
+      "sha256": "116e804f811d5dd259c20a6855dd4a291b95b32adc881c809457099737f334de"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/__init__.py",
+      "bytes": 6972,
+      "sha256": "a63d8ba059b0f42e2ca51b9656cf1ad561de1e66c85ceb79e3e68f1d5384cb72"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/backbone.py",
+      "bytes": 5785,
+      "sha256": "1867ba574a81d069ef10bbebeea998d216d6a75f80eab82f02a308b415d26976"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/deformable_detr.py",
+      "bytes": 20086,
+      "sha256": "34c9c8d4f858d98be6c2c2595a5a9868897e1eedc9dc84854e5f13e5701175dc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/deformable_transformer.py",
+      "bytes": 40027,
+      "sha256": "1dbb6ad25f8cfc9ff6227c91a9dbdd97f0df00b77a47f8b3997afd0f80bc5fda"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/detr.py",
+      "bytes": 19480,
+      "sha256": "2e46a780806c9e308b6ad8350ad4c35b176512d90c95d5aad95b972436844606"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/detr_segmentation.py",
+      "bytes": 6091,
+      "sha256": "121343a15a5a9d12913be563759acde25c0365f9e3f6887e7474fdb74476a122"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/detr_tracking.py",
+      "bytes": 39626,
+      "sha256": "19121f59f636fc29767cf03502cc1dedb9bd66b773512aed3c3cf890ef1a1de6"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/matcher.py",
+      "bytes": 16018,
+      "sha256": "7650fb8bdcd0de3f2cd8bcec29daf68b348681d7c9bc49cd3d566c0c64e02497"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/functions/__init__.py",
+      "bytes": 119,
+      "sha256": "55600551d8a50168840a18478c0bf2e383758c12092f0837cc3e9ad43df99e3f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/functions/ms_deform_attn_func.py",
+      "bytes": 5068,
+      "sha256": "20ea18c02a5e5e462d7e01519f8e97908f0d0a6eecc8370ecbdf94ed41e1c810"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/modules/__init__.py",
+      "bytes": 42,
+      "sha256": "25042b9749f112c19e6928418b4bd197abe7dada5b7a2079c2b8f61c52fa1384"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/modules/ms_deform_attn.py",
+      "bytes": 4681,
+      "sha256": "407a73c8f7b2f728ade047822f5e7553a79023913e128952c15031e42bdd72af"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/setup.py",
+      "bytes": 2015,
+      "sha256": "df75d38cc7724c844c13efe42d6589b392fb7e021e4bdc8cacd9805da661269a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/test.py",
+      "bytes": 7051,
+      "sha256": "11b4b0e806d6eee2a0ce62f8d2e0ee053d2a86ee67d35032b204d869ca1fa6a9"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops/test_double_precision.py",
+      "bytes": 7186,
+      "sha256": "acaabfddd15a02273669f6f21cd73c734ad524c1a9980c775047524b7af2bcd3"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/__init__.py",
+      "bytes": 598,
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/ms_deform_attn_func.py",
+      "bytes": 3298,
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/__init__.py",
+      "bytes": 584,
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/ms_deform_attn.py",
+      "bytes": 6270,
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/functions/__init__.py",
+      "bytes": 598,
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/functions/ms_deform_attn_func.py",
+      "bytes": 3298,
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/modules/__init__.py",
+      "bytes": 584,
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/modules/ms_deform_attn.py",
+      "bytes": 6270,
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/setup.py",
+      "bytes": 2559,
+      "sha256": "167e8f8ffa224514c1f195b5091b5ed6f7cfcabfe8b967719ddede3c402a103f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/ops_deform/test.py",
+      "bytes": 4087,
+      "sha256": "6066519322d749265c9983117ba8b012b35b6fbd46505d5b7842751eeb706942"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/position_encoding.py",
+      "bytes": 7303,
+      "sha256": "2e877a16afbf8024875658fcede838205d295d353fd4916d19c18a4f72c5bbee"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/tracker.py",
+      "bytes": 23373,
+      "sha256": "3fcb0b2aa121bb3c4d6f537a15756edd6b1e6e46a60c8b894eda1a381971c2e6"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/models/transformer.py",
+      "bytes": 13716,
+      "sha256": "5a34321a2e0bcd3fc71c8ca010a255df50e9bcb1ccf4d22a4cc88333b9a9820c"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/util/__init__.py",
+      "bytes": 71,
+      "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/util/box_ops.py",
+      "bytes": 9870,
+      "sha256": "1e1ff7096ddaecd01a676d290e54dedf41455ce49351cd8a13673551130e4394"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/util/data_viz.py",
+      "bytes": 53858,
+      "sha256": "8de3cdb427e1a843d12e9200630b7a5cb3ef36c3accad5b1872b90c8a112efa3"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/util/flex_div.py",
+      "bytes": 47871,
+      "sha256": "0632ba37f94fb3f12275c5cf5b91d0df40fd838c8b09ba1d8aa22a66af80b0a2"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/util/misc.py",
+      "bytes": 60809,
+      "sha256": "6ceffee9df81537e0127634faa947367e96fb08f53f33a142aa02b985f3fd9d8"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/vis.py",
+      "bytes": 11159,
+      "sha256": "78b7a99ecb7b37b2d8288935bab7ee3913ade0aef954701dfec530d5e3490050"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/train.py",
+      "bytes": 7796,
+      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/inference/run_arm.py",
+      "bytes": 9074,
+      "sha256": "ce543e282ecf826100928d641f5d0fff4d5089823da95cd0086b299c5ae424b9"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/analysis_framework_v0.8/mask_correspondence.py",
+      "bytes": 2328,
+      "sha256": "35df456c04ac18ba7c7fa62195faf69daf5451ec05c57ab3ef97e99be855df0d"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/analysis_framework_v0.8/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/common_carrier96/reproduce96.py",
+      "bytes": 2041,
+      "sha256": "18a44677205fab80c8220bc75457bc23a0e269dedc9f3a365c120e240d31057f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/common_carrier96/source_relative_score.py",
+      "bytes": 1913,
+      "sha256": "d7cad2926e0c54fbfd9430ba67513f70fa355830ce7a4b10a1bd7ad24cb4e957"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/external_full/reproduce_external_from_labels.py",
+      "bytes": 7230,
+      "sha256": "daca8da5f089c8cfbaa5ec76f119ba3a55d11ba2f36a2ab191cb38a775f05baf"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/external_natural/reproduce_natural_from_supports.py",
+      "bytes": 6691,
+      "sha256": "3c9c3d9b59cc2b07b7254aa2f2649919e4938e88730a7ab798b686ee6f8cd3f4"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/generate_native_noisy_controls_v02.py",
+      "bytes": 6580,
+      "sha256": "9dc82da98ff88729240712ffd724e56401f04b6fcb34b314e5d126fbbe85a4c7"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/mask_ambiguity_v0.1/exact_disjoint_envelope.py",
+      "bytes": 1980,
+      "sha256": "864c95d22820ab0cfd607b795f7f71c0fe16d0c6ce0c971b24e755ef8d37514c"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/real_policy_contract_v0.1/contract_accounting.py",
+      "bytes": 2837,
+      "sha256": "480d856d799da739bbbb3b63f5ffd6fa50f9dbd6ea5391ec2086f5bc35cecd13"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/real_policy_contract_v0.1/run_controls.py",
+      "bytes": 6556,
+      "sha256": "fdb2b78c3541ccd67d928e7dfc55059d9e1f8cb15c00ece230ed18abf3d37ef5"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/real_policy_contract_v0.2/contract_accounting.py",
+      "bytes": 4310,
+      "sha256": "0a2159943ba7626ea17cef9bc659d68c1f44caa624bc2251441c226b070ab591"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/real_policy_contract_v0.2/run_controls.py",
+      "bytes": 3469,
+      "sha256": "0143d96073a929e5f64fe1628dfb58bd06123e68e0a6f71bb7f9c2b65acb2ea9"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/reusable_analysis_package_v0.1/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/run_native_noisy_validation_v03.py",
+      "bytes": 11445,
+      "sha256": "eea1e6f9e992a176687e908126602aa213a053b470c9d90c5b6c66209bb48f53"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/legacy/typed_pathway_adapter_v0.2/typed_pathways.py",
+      "bytes": 1990,
+      "sha256": "5b7f83ea1217a91a4c121b39c3915d0a123b43f4f87e2b1e0e2ad6b7fe812ac6"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/lineage_consequence_v0.1/analyze.py",
+      "bytes": 10306,
+      "sha256": "0c37b1a8843fc5689245754bcc9aabc22a90371041a434aaf9b730d2895dda22"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/lineage_consequence_v0.1/analyze_v02.py",
+      "bytes": 10536,
+      "sha256": "44ed32b364753ed92e6abc290726b9f3cdce9fbc478a37ca8de53bc515ae1cf1"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_cohort_adapter_preparation_v0.6/actual_checker_contract_v0_1.py",
+      "bytes": 5068,
+      "sha256": "aad0faf5a6bd299931ee069ec815850b3b5b906257e174c04b50daf744de67bf"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_cohort_adapter_preparation_v0.6/normalize_cohort_v0_13.py",
+      "bytes": 29785,
+      "sha256": "9f28ff99f8cc3573a86812644c97e95fec1cbe2b9e0e4fb41ed39a69309e8789"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_cohort_adapter_preparation_v0.6/raw_adapters_v0_4.py",
+      "bytes": 14762,
+      "sha256": "b44737aff9bf0222d15a46e07fafb58a2199412e9b124fcb25db45c763a35c50"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_comparator_preparation_v0.4/analysis_v0_6.py",
+      "bytes": 39309,
+      "sha256": "89058bc77357554d4c896222075778a585ec81701d1ae626138449fa8ae5b4cf"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_comparator_preparation_v0.4/cpu_native_domain_guards.py",
+      "bytes": 7824,
+      "sha256": "b3fdb7493d0bcb81f2971081cb907f3b291bef54f7093d574bb298be52ad6b03"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_comparator_preparation_v0.4/finalize_native04.py",
+      "bytes": 8946,
+      "sha256": "5ae13a7ec3c5f1637f3523d60f6c65a289befbd2da995941825e53f8569ef88f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_comparator_preparation_v0.4/prepare_native_fix.py",
+      "bytes": 7747,
+      "sha256": "a8cbbeb39495af81dce507cfdcc8bec8fea04cf11d3bef19d96897654aa84137"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_comparator_preparation_v0.4/refresh_before_cpu.py",
+      "bytes": 1353,
+      "sha256": "27bfa9c982dc352d244665765989aa070df129740e512a9892388d048c7ab6c8"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_scientific_measurement_preparation_v0.3/measurement_driver_v0_9.py",
+      "bytes": 32929,
+      "sha256": "cb98d77996b956a454035f874228b943b22ead8b86a08e6fd512a60bcdefbe7e"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/fourcell_stage_exposure_preparation_v0.3/stage_exposure_v0_3.py",
+      "bytes": 21471,
+      "sha256": "4a99ca10b5416fa07d81d5daa5e415186b67843d8453a975d82e7e2b264fe427"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/reference_stage_matcher_preparation_v0.2/check_minimal_v03.py",
+      "bytes": 4148,
+      "sha256": "429d1f4d2433008904f9fe44663c1e7a81766082c1e578afc4b59efad7cf7f70"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/reference_stage_matcher_preparation_v0.2/derive_v03.py",
+      "bytes": 5463,
+      "sha256": "bf0daf971e8239526d17f79d91412a8f38967cc31401fa27ec03cd7d3d1dfe8d"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/reference_stage_matcher_preparation_v0.2/finalize.py",
+      "bytes": 4347,
+      "sha256": "c28e6745ef610548b2fa83ceced70b5efb66abe819495fc8bb8af2a9b6bab9bd"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/reference_stage_matcher_preparation_v0.2/stage_matcher_v0_3.py",
+      "bytes": 8281,
+      "sha256": "c75a4f3e2bbf646782d0f9771f1cf783ab672ed32d6412fde6e39c98c88bc0c5"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/anchor_verifier_v03.py",
+      "bytes": 4482,
+      "sha256": "e4ef2ebd83443fc776efa1bc7e3df42bae0ca966284aab9cc5be6a12c6e0e1a0"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/direct_input_observer_v0.1.py",
+      "bytes": 10615,
+      "sha256": "17b81e62f4a766cc2e059966ebe84d70e16da13ecb49f16e2df05c3a92250a35"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/direct_input_observer_v0_1.py",
+      "bytes": 10615,
+      "sha256": "17b81e62f4a766cc2e059966ebe84d70e16da13ecb49f16e2df05c3a92250a35"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/failure_receipt_v03.py",
+      "bytes": 2579,
+      "sha256": "18a34b86efc04764c6e5926995d4a3b0e175765cd728569de3f82976e6389de0"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/native_stage_observer_v04_copy.py",
+      "bytes": 5668,
+      "sha256": "fc9371ea6370e4c01b91c76114bcc0405864fb5c157d1353e1213bf3eacb884b"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/run_factorial_arm.py",
+      "bytes": 12634,
+      "sha256": "cea80cf920be16fb4ab4cb020ca5d1629bc92c3e8c8bf2ad6da29862bf6d0345"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/old_functions/display_worst_loss_and_score_samples.py",
+      "bytes": 8231,
+      "sha256": "7c860ab599873330448bbdf0aa6c8ea8655b2067bd4d997559f23bb2d4fb744c"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/old_functions/engine_stitch_and_crop.py",
+      "bytes": 102386,
+      "sha256": "d1bf6d27b241942ce3ab8f6d2b5b38d39c3b4698f2c91cc900baacde38047d81"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/pipeline.py",
+      "bytes": 3801,
+      "sha256": "437260806f8b44239ed939ad1c89c9e5edc15eb82f9c69d68fc9f7e70b27ef82"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/datasets/__init__.py",
+      "bytes": 907,
+      "sha256": "b4918b3c4e97c26ac2468c3fabab21b1f60a1cbc7188a9444a3103ec17f57910"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/datasets/coco.py",
+      "bytes": 11000,
+      "sha256": "a0018fe5b841591985358859b90981a19be96c1777b7fb35c0899dfe5707761a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/datasets/coco_eval.py",
+      "bytes": 8865,
+      "sha256": "e5468ce67db715d4159b4a095de9337049bcb082d0335ade2738e5da981c1329"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/datasets/mot.py",
+      "bytes": 8772,
+      "sha256": "f80fe557f526005257f57386c24df95d240c7b3960f86f94480a99ff5c1ae50a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/datasets/transforms.py",
+      "bytes": 19019,
+      "sha256": "2d9baaeb2559a040c70e112eca96ef6970a20ea99f628a4af2a4f251cd31750f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/engine.py",
+      "bytes": 60881,
+      "sha256": "0049d7c5ee0831a87eabe4cca65f6dc8b9e578cb9db19ded057e48bf4bd903b0"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/__init__.py",
+      "bytes": 6972,
+      "sha256": "a63d8ba059b0f42e2ca51b9656cf1ad561de1e66c85ceb79e3e68f1d5384cb72"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/backbone.py",
+      "bytes": 5785,
+      "sha256": "1867ba574a81d069ef10bbebeea998d216d6a75f80eab82f02a308b415d26976"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/deformable_detr.py",
+      "bytes": 20086,
+      "sha256": "34c9c8d4f858d98be6c2c2595a5a9868897e1eedc9dc84854e5f13e5701175dc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/deformable_transformer.py",
+      "bytes": 40027,
+      "sha256": "1dbb6ad25f8cfc9ff6227c91a9dbdd97f0df00b77a47f8b3997afd0f80bc5fda"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/detr.py",
+      "bytes": 19480,
+      "sha256": "2e46a780806c9e308b6ad8350ad4c35b176512d90c95d5aad95b972436844606"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/detr_segmentation.py",
+      "bytes": 6091,
+      "sha256": "121343a15a5a9d12913be563759acde25c0365f9e3f6887e7474fdb74476a122"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/detr_tracking.py",
+      "bytes": 39626,
+      "sha256": "19121f59f636fc29767cf03502cc1dedb9bd66b773512aed3c3cf890ef1a1de6"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/matcher.py",
+      "bytes": 16018,
+      "sha256": "7650fb8bdcd0de3f2cd8bcec29daf68b348681d7c9bc49cd3d566c0c64e02497"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/functions/__init__.py",
+      "bytes": 119,
+      "sha256": "55600551d8a50168840a18478c0bf2e383758c12092f0837cc3e9ad43df99e3f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/functions/ms_deform_attn_func.py",
+      "bytes": 5068,
+      "sha256": "20ea18c02a5e5e462d7e01519f8e97908f0d0a6eecc8370ecbdf94ed41e1c810"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/modules/__init__.py",
+      "bytes": 42,
+      "sha256": "25042b9749f112c19e6928418b4bd197abe7dada5b7a2079c2b8f61c52fa1384"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/modules/ms_deform_attn.py",
+      "bytes": 4681,
+      "sha256": "407a73c8f7b2f728ade047822f5e7553a79023913e128952c15031e42bdd72af"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/setup.py",
+      "bytes": 2015,
+      "sha256": "df75d38cc7724c844c13efe42d6589b392fb7e021e4bdc8cacd9805da661269a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/test.py",
+      "bytes": 7051,
+      "sha256": "11b4b0e806d6eee2a0ce62f8d2e0ee053d2a86ee67d35032b204d869ca1fa6a9"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops/test_double_precision.py",
+      "bytes": 7186,
+      "sha256": "acaabfddd15a02273669f6f21cd73c734ad524c1a9980c775047524b7af2bcd3"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/__init__.py",
+      "bytes": 598,
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/functions/ms_deform_attn_func.py",
+      "bytes": 3298,
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/__init__.py",
+      "bytes": 584,
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/build/lib.linux-x86_64-3.7/modules/ms_deform_attn.py",
+      "bytes": 6270,
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/functions/__init__.py",
+      "bytes": 598,
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/functions/ms_deform_attn_func.py",
+      "bytes": 3298,
+      "sha256": "dd9906037ce7dc45b9ef6f39d4934bb4dddefc3e09049024496827714b6738bc"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/modules/__init__.py",
+      "bytes": 584,
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/modules/ms_deform_attn.py",
+      "bytes": 6270,
+      "sha256": "1a093690d4fd1cb50aadba936f3450b54f7919dbed7dc68410a1ee622a40e408"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/setup.py",
+      "bytes": 2559,
+      "sha256": "167e8f8ffa224514c1f195b5091b5ed6f7cfcabfe8b967719ddede3c402a103f"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/ops_deform/test.py",
+      "bytes": 4087,
+      "sha256": "6066519322d749265c9983117ba8b012b35b6fbd46505d5b7842751eeb706942"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/position_encoding.py",
+      "bytes": 7303,
+      "sha256": "2e877a16afbf8024875658fcede838205d295d353fd4916d19c18a4f72c5bbee"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/tracker.py",
+      "bytes": 23373,
+      "sha256": "3fcb0b2aa121bb3c4d6f537a15756edd6b1e6e46a60c8b894eda1a381971c2e6"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/models/transformer.py",
+      "bytes": 13716,
+      "sha256": "5a34321a2e0bcd3fc71c8ca010a255df50e9bcb1ccf4d22a4cc88333b9a9820c"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/util/__init__.py",
+      "bytes": 71,
+      "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/util/box_ops.py",
+      "bytes": 9870,
+      "sha256": "1e1ff7096ddaecd01a676d290e54dedf41455ce49351cd8a13673551130e4394"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/util/data_viz.py",
+      "bytes": 53858,
+      "sha256": "8de3cdb427e1a843d12e9200630b7a5cb3ef36c3accad5b1872b90c8a112efa3"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/util/flex_div.py",
+      "bytes": 47871,
+      "sha256": "0632ba37f94fb3f12275c5cf5b91d0df40fd838c8b09ba1d8aa22a66af80b0a2"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/util/misc.py",
+      "bytes": 60809,
+      "sha256": "6ceffee9df81537e0127634faa947367e96fb08f53f33a142aa02b985f3fd9d8"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/trackformer/vis.py",
+      "bytes": 11159,
+      "sha256": "78b7a99ecb7b37b2d8288935bab7ee3913ade0aef954701dfec530d5e3490050"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/train.py",
+      "bytes": 7796,
+      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/source_duty/audit_s3_image_policy_v02.py",
+      "bytes": 4745,
+      "sha256": "502d1cae8f0755434a62c1c822539e0a0a55e1792d03f12fcc395d0bf66ab075"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/source_duty/executed_producer.py",
+      "bytes": 211317,
+      "sha256": "8b4f1d48096a86345de4718ed1aec01074dfbbada35284d6eba13b532ee9ce9b"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/source_duty/infer_s3_image_veto_strict_v01.py",
+      "bytes": 3669,
+      "sha256": "817b58642214d98ab143a376eb984327b132334e456352fbb1a2b0ffa1a28607"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/source_duty/real_S3_policy_sensitivity_v0.1/run_sensitivity.py",
+      "bytes": 5425,
+      "sha256": "3675800efbcbf5ab4850ef31375a3937ff08efaff79a625d0b6f2e8cfcd3b574"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/source_duty/replay_s3_image_veto_v01.py",
+      "bytes": 3324,
+      "sha256": "aef691355b7423126cd4ba14cd839c482de2d781948ec9c2b221fbb2c589952d"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/sources/source_duty/trace_s3_allocation_v01.py",
+      "bytes": 4495,
+      "sha256": "e8cc871e32956f24eb439f439c56556279acd5f33185ba11555a428e8bd005d1"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/summarize_evidence.py",
+      "bytes": 4207,
+      "sha256": "8fe531d6a51c7464c925a3c2f6638bc8addf91dcf6e6e86b77ebec903e27b2e9"
+    },
+    {
+      "path": "paper/scientific/inputs_LOCAL_ONLY/bacterial/validate_duty_boundary.py",
+      "bytes": 3671,
+      "sha256": "991105cd0b327a545d183e10f39cacca3ddfa4445cd3ea060b682d05b7d2320a"
+    },
+    {
+      "path": "paper/scientific/normalize_query_metadata_r1.py",
+      "bytes": 2765,
+      "sha256": "dc0ddde7aeb431534cc03e397edc9a8d344f0aeaca7a467781ea30321f70d4c4"
+    },
+    {
+      "path": "paper/scientific/prepare_constructed.py",
+      "bytes": 3734,
+      "sha256": "8a5328f4da4dadd744069a773dd84b9c8b1b7e5c14843ad144cb4d328ae42fdc"
+    },
+    {
+      "path": "paper/scientific/r1_witness_replay.py",
+      "bytes": 10657,
+      "sha256": "85526b1f6c3fcf7d3250b70787d17cc7200d9c9d075528a7be2d2fded917d641"
+    },
+    {
+      "path": "paper/scientific/reproduce_all.py",
+      "bytes": 28649,
+      "sha256": "aefbf5f8adcae70b19fd6d81cb161a4a41a4fc5f5fff6399eb0e2df33af3a12a"
+    },
+    {
+      "path": "paper/scientific/run_bacterial_packaged.py",
+      "bytes": 8642,
+      "sha256": "ed14676582345158d9654198ce69c350b2fb56ae84d255a881bf2d7b30035154"
+    },
+    {
+      "path": "paper/scientific/run_supplied_family.py",
+      "bytes": 300,
+      "sha256": "9c16fb1394fb89ceb48e00ac53232bed0a172408bc7dd121f3cea861694542fe"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/__init__.py",
+      "bytes": 1924,
+      "sha256": "29c5aecbe7dc0c9d504d94e1a6af93900bf757828b70194899801aabdbb9e6d1"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/_upstream/__init__.py",
+      "bytes": 80,
+      "sha256": "d6b56a6155d08e5006a0a8a6d089ca381a033f353c37431644a043e91fe2269b"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/_upstream/coupled_accounting.py",
+      "bytes": 10362,
+      "sha256": "19d58332f6a89718474217f3b1ea49de9cd605fcba439e553faed2a906554503"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/_upstream/exact_disjoint_envelope.py",
+      "bytes": 1980,
+      "sha256": "864c95d22820ab0cfd607b795f7f71c0fe16d0c6ce0c971b24e755ef8d37514c"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/_upstream/family_accounting.py",
+      "bytes": 5489,
+      "sha256": "8c3fabd427df413e1bc68fa59c6fcb0f5851767f07b2431cd6a4d4a9897e0067"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/_upstream/mask_correspondence.py",
+      "bytes": 2328,
+      "sha256": "35df456c04ac18ba7c7fa62195faf69daf5451ec05c57ab3ef97e99be855df0d"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/_upstream/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/_upstream/typed_pathways.py",
+      "bytes": 1990,
+      "sha256": "5b7f83ea1217a91a4c121b39c3915d0a123b43f4f87e2b1e0e2ad6b7fe812ac6"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/cli.py",
+      "bytes": 6802,
+      "sha256": "1b7f130e805f72f0683fbae4802dfe92f9135673cd79be91f37cd3e88d026f79"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/io.py",
+      "bytes": 6372,
+      "sha256": "03a71fd60a8e5c6bb14f686b391913c47d0ce205e2f91de7be65437b765781d1"
+    },
+    {
+      "path": "paper/scientific/sources/portable/src/portable_analysis_candidate/typed.py",
+      "bytes": 4148,
+      "sha256": "bba885d539cbe4b0c358a57295c5e111345920a5da51940e48b1c215b00efacd"
+    },
+    {
+      "path": "paper/scientific/sources/primitive/local_graph_core.py",
+      "bytes": 3634,
+      "sha256": "36ef1a068a3fdb0ec9f68c0f142c4bf97944ec2e8639c1c9ac087f3000e5a749"
+    },
+    {
+      "path": "paper/scientific/sources/primitive/scientific_backend/reconstruct.py",
+      "bytes": 23287,
+      "sha256": "eb44114ed985fc3bd5f02ce6e76d9861712465c47fb9f14195876bb3bf886427"
+    },
+    {
+      "path": "paper/scientific/sources/primitive/scientific_backend/sources/executed/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/scientific/sources/primitive/workflow.py",
+      "bytes": 17945,
+      "sha256": "03d5c33dbebc55d00cf92cf3288aba5155b4b67b4db335a2f9f9232a6b57668f"
+    },
+    {
+      "path": "paper/scientific/sources/public/additional_public_tracking_domain_v0.1/generate_raw_stages_v0_1.py",
+      "bytes": 6536,
+      "sha256": "6489eeca2a4e5d1a707e264eca6c7ac6650ea3626ad025b2d32743bb0e4eb50e"
+    },
+    {
+      "path": "paper/scientific/sources/public/additional_public_tracking_domain_v0.1/measure_reference_graph_v0_1.py",
+      "bytes": 8784,
+      "sha256": "49701a3029bdd7b708fb70333d3501afce4e08f82de730a8eaf5371c99638365"
+    },
+    {
+      "path": "paper/scientific/sources/public/generic_raw_local_workflow_v0.1/local_graph_core.py",
+      "bytes": 3634,
+      "sha256": "36ef1a068a3fdb0ec9f68c0f142c4bf97944ec2e8639c1c9ac087f3000e5a749"
+    },
+    {
+      "path": "paper/scientific/sources/public/replay.py",
+      "bytes": 4940,
+      "sha256": "7ddf14df3bc4d69e3944694288899b691e703f459e1a0e4bbba5fbcb1eb2efb2"
+    },
+    {
+      "path": "paper/scientific/sources/typed/evaluate_typed_binary.py",
+      "bytes": 10866,
+      "sha256": "9a483b4a91b8a56255929e6ae93bdf3dff76c6784ec3ae4299c80b4b647b1e5e"
+    },
+    {
+      "path": "paper/summarize_module_context.py",
+      "bytes": 2977,
+      "sha256": "ea61520867a01173990e2e8952f1a9e9db610f89fc966b98bb74545eedb0ad60"
+    },
+    {
+      "path": "paper/validate_reconstruction.py",
+      "bytes": 11591,
+      "sha256": "720c336b752c5db8060c13c74422d8d2976d398757d78b66391e293b045e8848"
+    },
+    {
+      "path": "paper/verify_completion.py",
+      "bytes": 5408,
+      "sha256": "9b7405d7b3c1dd14f6e9ee51e8cb79597d7da5fa170bd5fbbdc960f5129624da"
+    },
+    {
+      "path": "paper/verify_primitive_path.py",
+      "bytes": 13479,
+      "sha256": "6ab34a4da9fd57245940600379b93c02be3b8a32829a300ad357354bfc83add9"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 680,
+      "sha256": "dfb8c276ed676ea5c64ba7ff9024eeb38ce6950b9beab25348d75ce7570ea2d3"
+    },
+    {
+      "path": "requirements-verified.txt",
+      "bytes": 27,
+      "sha256": "38881b5beca7e843c663e74ccc68f9626fd04f69c3d1d510998ef6fd229039c6"
+    },
+    {
+      "path": "src/portable_analysis_candidate/__init__.py",
+      "bytes": 2235,
+      "sha256": "256fedab829c8890c7eafd41275772acdbb004ab17c82bac781cd32215fbac85"
+    },
+    {
+      "path": "src/portable_analysis_candidate/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "src/portable_analysis_candidate/_upstream/__init__.py",
+      "bytes": 80,
+      "sha256": "d6b56a6155d08e5006a0a8a6d089ca381a033f353c37431644a043e91fe2269b"
+    },
+    {
+      "path": "src/portable_analysis_candidate/_upstream/coupled_accounting.py",
+      "bytes": 10362,
+      "sha256": "19d58332f6a89718474217f3b1ea49de9cd605fcba439e553faed2a906554503"
+    },
+    {
+      "path": "src/portable_analysis_candidate/_upstream/exact_disjoint_envelope.py",
+      "bytes": 1980,
+      "sha256": "864c95d22820ab0cfd607b795f7f71c0fe16d0c6ce0c971b24e755ef8d37514c"
+    },
+    {
+      "path": "src/portable_analysis_candidate/_upstream/family_accounting.py",
+      "bytes": 5489,
+      "sha256": "8c3fabd427df413e1bc68fa59c6fcb0f5851767f07b2431cd6a4d4a9897e0067"
+    },
+    {
+      "path": "src/portable_analysis_candidate/_upstream/mask_correspondence.py",
+      "bytes": 2285,
+      "sha256": "e3bf295c2ca33b06b43ed00ece23e13bde4c0eac517feda398c668bbe76b22ee"
+    },
+    {
+      "path": "src/portable_analysis_candidate/_upstream/stage_accounting.py",
+      "bytes": 8702,
+      "sha256": "81259d828248cb3be116578ea8f11a52e73ae2570b903cef9b647c8bcfc817ec"
+    },
+    {
+      "path": "src/portable_analysis_candidate/_upstream/typed_pathways.py",
+      "bytes": 1990,
+      "sha256": "5b7f83ea1217a91a4c121b39c3915d0a123b43f4f87e2b1e0e2ad6b7fe812ac6"
+    },
+    {
+      "path": "src/portable_analysis_candidate/cli.py",
+      "bytes": 8371,
+      "sha256": "96e5e284e7527e5b4cec265a9566a7468fd90e8c87b6d1aaa6544ca222ca30af"
+    },
+    {
+      "path": "src/portable_analysis_candidate/io.py",
+      "bytes": 6814,
+      "sha256": "ff10e572d9129fec0672ae5c7b9d3bfa9dc95f32d96478b751995d1b2ce101d2"
+    },
+    {
+      "path": "src/portable_analysis_candidate/joint_history.py",
+      "bytes": 9414,
+      "sha256": "330ddac2d61022cbbbb547d53ac91c4111f92f122e91c401fd5333d4db4d1b31"
+    },
+    {
+      "path": "src/portable_analysis_candidate/typed.py",
+      "bytes": 4148,
+      "sha256": "bba885d539cbe4b0c358a57295c5e111345920a5da51940e48b1c215b00efacd"
+    },
+    {
+      "path": "src/portable_analysis_candidate/typed_window.py",
+      "bytes": 10391,
+      "sha256": "7c57ef26c60d5c83fa184306f5095d36b920e1a3e545604ee4bcf054dc9e1d0f"
+    },
+    {
+      "path": "tests/test_expanded_interfaces.py",
+      "bytes": 9458,
+      "sha256": "6b28e1fae61689006e1bc841aac58c7a30341d67b005196dae504d6ee62b8dba"
+    },
+    {
+      "path": "tests/test_image_case_axes.py",
+      "bytes": 2289,
+      "sha256": "37e9927aea73e93b6b5607bb8d45d6de8d9a151346a3080105c3724b600e117b"
+    },
+    {
+      "path": "tests/test_synthetic_contracts.py",
+      "bytes": 5969,
+      "sha256": "491b2dae38b318a675076f5de9ce18658aad7c08bc7469092a44df1d14aa185e"
+    },
+    {
+      "path": "workflows/coordinate/local_graph_core.py",
+      "bytes": 3634,
+      "sha256": "36ef1a068a3fdb0ec9f68c0f142c4bf97944ec2e8639c1c9ac087f3000e5a749"
+    },
+    {
+      "path": "workflows/coordinate/scientific_backend/reconstruct.py",
+      "bytes": 8045,
+      "sha256": "155684c632b1dfc320e633a8f2e14917a62f9101dfbd85d89601cc9a08ffe98a"
+    },
+    {
+      "path": "workflows/coordinate/scientific_backend/sources/executed/stage_accounting.py",
+      "bytes": 8702,
+      "sha256": "81259d828248cb3be116578ea8f11a52e73ae2570b903cef9b647c8bcfc817ec"
+    },
+    {
+      "path": "workflows/coordinate/scientific_backend/stage_accounting.py",
+      "bytes": 8702,
+      "sha256": "81259d828248cb3be116578ea8f11a52e73ae2570b903cef9b647c8bcfc817ec"
+    },
+    {
+      "path": "workflows/coordinate/workflow.py",
+      "bytes": 17646,
+      "sha256": "0f32c9d86d0fae9d04789e52626a0f9d3da609dd47005e83be0a3525e9600307"
+    }
+  ]
+}

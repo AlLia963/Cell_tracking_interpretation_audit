@@ -1,0 +1,8 @@
+numpy==2.4.6
+scipy==1.18.0
+scikit-image==0.26.0
+tifffile==2026.7.31
+imagecodecs==2026.6.26
+psutil==7.2.2
+opencv-python-headless==5.0.0.93
+zarr==3.3.0

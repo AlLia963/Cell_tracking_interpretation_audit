@@ -1,0 +1,24 @@
+{
+  "notebook_files": 419,
+  "loose_unique_contents": 351,
+  "archive_only_contents": 2,
+  "total_unique_contents": 353,
+  "contents_associated_with_outputs": 134,
+  "source_output_associations": 141,
+  "score_records": 125,
+  "scored_successes": 114,
+  "statuses": {
+    "Succeeded": 114,
+    "Submission Scoring Error": 3,
+    "Notebook Threw Exception": 2,
+    "Notebook Timeout": 5,
+    "Notebook Out of Memory": 1
+  },
+  "normalized_graphs": 2738,
+  "movies": 199,
+  "tables": {
+    "sources": "notebooks.csv",
+    "output_associations": "source_output_links.csv",
+    "scores": "score_records.csv"
+  }
+}

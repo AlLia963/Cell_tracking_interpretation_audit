@@ -1,0 +1,7 @@
+* -text
+# Every delivered source file retains its manifested bytes across platforms.
+# Frozen historical snapshots retain exact bytes, including original whitespace.
+paper/scientific/** -text -whitespace
+paper/licenses/** -text -whitespace
+
+docs/history/** -text -whitespace

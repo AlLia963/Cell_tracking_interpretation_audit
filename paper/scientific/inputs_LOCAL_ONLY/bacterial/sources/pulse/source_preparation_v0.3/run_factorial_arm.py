@@ -1,0 +1,208 @@
+"""Strict-load author checkpoint and one raw image using author inference core.
+
+No reference masks, reference coordinates, GT IDs or lineage data are loaded.
+The extension shim routes inference to the author's own debug PyTorch core.
+No claim of parity with the original compiled extension is made.
+"""
+import sys
+sys.dont_write_bytecode=True
+import argparse
+import importlib
+import importlib.metadata
+import json
+from pathlib import Path
+import time
+import types
+import torch
+
+ROOT=Path('legacy_inputs/论文工作区/10_长期研究推进/2026-10-02_启动/external_end_to_end_feasibility_v0.1')
+EXP=Path(__file__).resolve().parent
+ARM=sys.argv[1]
+assert ARM in ['WW','AA','AW','WA']
+LABEL=sys.argv[2] if len(sys.argv)>2 else ARM
+SHAM=LABEL in ('WW_sham_1','WW_sham_2')
+assert (LABEL==ARM) or (ARM=='WW' and SHAM)
+sys.path.insert(0,str(ROOT))
+sys.path.insert(0,str(EXP/'source'/'src'))
+sys.path.insert(0,str(EXP))
+backend=types.ModuleType('MultiScaleDeformableAttention')
+def forward(value,shapes,locations,weights,step):
+    module=importlib.import_module('trackformer.models.ops.functions.ms_deform_attn_func')
+    return module.ms_deform_attn_core_pytorch(value,shapes,locations,weights)
+def backward(*args):
+    raise RuntimeError('Inference-only author PyTorch core shim; backward forbidden')
+backend.ms_deform_attn_forward=forward
+backend.ms_deform_attn_backward=backward
+sys.modules['MultiScaleDeformableAttention']=backend
+
+def main():
+    import shutil
+    # Full raw heads + actual input/consumer traces; no automatic deletion.
+    if shutil.disk_usage(EXP).free<40*1024**3:raise RuntimeError('Preflight storage NO-GO: require 40 GiB free for one arm; trace per-frame floor 8 GiB')
+    out=EXP.parent/'runs_v0.3'/LABEL
+    out.parent.mkdir(exist_ok=True)
+    out.mkdir(exist_ok=True)
+    import hashlib
+    from anchor_verifier_v03 import compare_replay
+    anchors=json.loads((EXP/'actual_anchor_binding_v02.json').read_text(encoding='utf-8'))
+    inherited=json.loads((EXP.parent/'source_preparation_v0.2/delivery_hashes_v02.json').read_text(encoding='utf-8'))
+    assert hashlib.sha256((EXP/'actual_anchor_binding_v02.json').read_bytes()).hexdigest()==inherited['files']['actual_anchor_binding_v02.json']
+    (out/'historical_anchor_binding.json').write_text(json.dumps(anchors,indent=2),encoding='utf-8')
+    assert torch.cuda.is_available()
+    torch.serialization.add_safe_globals([argparse.Namespace])
+    checkpoint=torch.load(ROOT/'checkpoint_moma.pth',map_location='cpu',weights_only=True)
+    args=checkpoint['args']
+    args.device='cuda'
+    # Author YAML training-only freeze default; checkpoint predates this flag.
+    args.freeze_backbone_and_encoder=False
+    args.eval_only=True
+    args.hooks=False
+    args.avg_attn_weight_maps=False
+    args.output_dir=out/'native'
+    args.output_dir.mkdir()
+    import hashlib
+    import importlib.metadata
+    from datetime import datetime,timezone
+    def fingerprint(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+    raw_manifest=json.loads((ROOT/'raw_all29_manifest.json').read_text())
+    selected_inputs={}
+    for file in sorted((ROOT/'raw_all29_v0.1').glob('*/*.tif')):
+        key=f'CTC/test/{file.parent.name}/{file.name}'
+        actual=fingerprint(file)
+        assert actual==raw_manifest['input_sha256'][key]
+        selected_inputs[key]=actual
+    assert args.tracking and args.masks and args.init_boxes_from_masks
+    assert len(selected_inputs)==5340 and len({k.split('/')[2] for k in selected_inputs})==29
+    binding={'created_UTC':datetime.now(timezone.utc).isoformat(),'raw_manifest_SHA256':fingerprint(ROOT/'raw_all29_manifest.json'),
+        'selected_raw_SHA256':selected_inputs,'checkpoint_SHA256':fingerprint(ROOT/'checkpoint_moma.pth'),
+        'runner_SHA256':fingerprint(Path(__file__)),'observer_SHA256':fingerprint(EXP/'direct_input_observer_v0.1.py'),'observer49_SHA256':fingerprint(EXP/'native_stage_observer_v04_copy.py'),'fixed_schedule_SHA256':fingerprint(EXP/'fixed_schedule.json'),
+        'historical_anchor_binding_SHA256':fingerprint(out/'historical_anchor_binding.json'),'anchor_verifier_SHA256':fingerprint(EXP/'anchor_verifier_v03.py'),
+        'protocol_SHA256':fingerprint(EXP.parent/'PROTOCOL_DRAFT.md'),
+        'execution_source_SHA256':{str(p.relative_to(EXP/'source')):fingerprint(p) for p in sorted((EXP/'source').rglob('*.py'))},
+        'effective_args':vars(args),'versions':{name:importlib.metadata.version(name) for name in ['torch','torchvision','numpy','scipy','scikit-image','opencv-python']},
+        'scope':'Local pre-inference binding; no external timestamp or historical training-isolation proof'}
+    (out/'provenance_before_inference.json').write_text(json.dumps(binding,indent=2,default=str),encoding='utf-8')
+
+    torch.manual_seed(42)
+    torch.cuda.manual_seed_all(42)
+    from trackformer.models import build_model
+    import cv2
+    import numpy as np
+    import tempfile
+    original_read=cv2.imread
+    original_write=cv2.imwrite
+    def unicode_read(filename,flags=cv2.IMREAD_COLOR):
+        return cv2.imdecode(np.fromfile(filename,dtype=np.uint8),flags)
+    def unicode_write(filename,image,params=None):
+        ok,data=cv2.imencode(Path(filename).suffix,image,[] if params is None else params)
+        if not ok:return False
+        Path(filename).write_bytes(data.tobytes())
+        return True
+    # Verify exact native/OpenCV pixel equivalence on an ASCII filesystem path.
+    raw=sorted((ROOT/'raw_input_v0.1/01').glob('*.tif'))[0]
+    with tempfile.TemporaryDirectory(prefix='celltractr_unicode_QC_') as temp:
+        ascii_path=Path(temp)/'input.tif'
+        ascii_path.write_bytes(raw.read_bytes())
+        expected=original_read(str(ascii_path),cv2.IMREAD_ANYDEPTH)
+        decoded=unicode_read(raw,cv2.IMREAD_ANYDEPTH)
+        assert np.array_equal(expected,decoded)
+        test_path=Path(temp)/'roundtrip.tif'
+        assert unicode_write(test_path,expected)
+        assert np.array_equal(expected,original_read(str(test_path),cv2.IMREAD_ANYDEPTH))
+    cv2.imread=unicode_read
+    cv2.imwrite=unicode_write
+    from trackformer.engine import pipeline
+    from trackformer.models.ops.functions.ms_deform_attn_func import ms_deform_attn_core_pytorch
+    errors=[]
+    # Existing unchanged core/backend validation bound below; no repeated GPU probes.
+    if False:
+        for seed in range(20):
+            generator=torch.Generator().manual_seed(seed)
+            shapes=torch.tensor([[8,8],[4,4],[2,2]])
+            value=torch.randn(1,84,8,18,generator=generator)
+            locations=torch.rand(1,7,8,3,4,2,generator=generator)*2-.5
+            weights=torch.rand(1,7,8,3,4,generator=generator)
+            weights=weights/weights.sum((-1,-2),keepdim=True)
+            cpu=ms_deform_attn_core_pytorch(value,shapes,locations,weights)
+            gpu=ms_deform_attn_core_pytorch(value.cuda(),shapes.cuda(),locations.cuda(),weights.cuda()).cpu()
+            error=(cpu-gpu).abs().max().item()
+            assert error<1e-5
+            errors.append(error)
+    model,criterion=build_model(args)
+    incompatible=model.load_state_dict(checkpoint['model'],strict=True)
+    assert not incompatible.missing_keys and not incompatible.unexpected_keys
+    model.to('cuda').eval()
+    model.train_model=False
+    criterion.eval_only=True
+    import hashlib
+    import traceback
+    reports=[]
+    schedule=json.loads((EXP/'fixed_schedule.json').read_text(encoding='utf-8'))['tau_by_video']
+    for folder in sorted((ROOT/'raw_all29_v0.1').iterdir()):
+        if SHAM and folder.name not in ('02','10'):continue
+        files=sorted(folder.glob('*.tif'))
+        started=time.perf_counter()
+        predictor=None
+        try:
+            if shutil.disk_usage(out).free<8*1024**3:raise RuntimeError('Per-film storage NO-GO')
+            predictor=pipeline(model,files,args)
+            predictor._factorial_arm=ARM
+            predictor._factorial_tau=schedule[folder.name]
+            predictor.write_video=False
+            predictor.display_enc_map=lambda *a,**kw:None
+            from direct_input_observer_v0_1 import install_observer
+            close=install_observer(predictor)
+            try:predictor.forward()
+            finally:close()
+            torch.cuda.synchronize()
+            pulse_history = getattr(predictor, '_pulse_history', [])
+            selected=[r['frame'] for r in pulse_history if r['active']]
+            assert selected==([] if schedule[folder.name] is None else [schedule[folder.name]])
+            (out/f'{folder.name}_pulse_history.json').write_text(json.dumps(pulse_history,indent=2),encoding='utf-8')
+            masks=sorted(predictor.output_dir.glob('mask*.tif'))
+            lineage=predictor.output_dir/'res_track.txt'
+            assert len(masks)==len(files) and lineage.exists()
+            frozen=json.loads((ROOT/'native_all29_v0.1/manifest.json').read_text())
+            expected=next(r for r in frozen['all_video_reports'] if r['video']==folder.name)['output_hashes']
+            parity=all(hashlib.sha256(p.read_bytes()).hexdigest()==expected[p.name] for p in masks+[lineage])
+            replay_anchor=None
+            if ARM in ('WW','AA'):
+                replay_anchor=compare_replay(EXP,anchors,ARM,folder.name,predictor.output_dir)
+                assert replay_anchor['PASS']
+            report={'video':folder.name,'input_frames':len(files),'output_masks':len(masks),'status':'completed', 'final_output_byte_parity_vs_old_native_baseline':parity,'historical_replay_anchor':replay_anchor, 'arm':ARM,
+                'seconds':time.perf_counter()-started,
+                'output_hashes':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in masks+[lineage]}}
+        except Exception:
+            report={'video':folder.name,'input_frames':len(files),'status':'failed-or-partial',
+                'seconds':time.perf_counter()-started,'traceback':traceback.format_exc(),
+                'partial_masks':len(list((out/'native'/folder.name).glob('mask*.tif')))}
+        if report['status']!='completed':
+            from failure_receipt_v03 import persist_failure
+            report.update(persist_failure(out,folder.name,predictor,report['traceback']))
+        (out/f'{folder.name}_execution_report.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+        reports.append(report)
+        print('COMPLETED-STATE',folder.name,report['status'],flush=True)
+        if report['status']!='completed':break
+    intended=['02','10'] if SHAM else [f'{i:02d}' for i in range(1,30)]
+    reports.extend({'video':v,'status':'not-executed-after-fail-stop'} for v in intended if v not in {r['video'] for r in reports})
+    manifest={'all_video_reports':reports,'completed':sum(r['status']=='completed' for r in reports),
+        'selected_video_count':2 if SHAM else 29,'reference_input':False,'torch':torch.__version__,'cuda':torch.version.cuda,
+        'checkpoint_strict_load':True,'core_cpu_gpu_probes':0,'existing_core_validation_manifest_SHA256':fingerprint(ROOT/'native_all29_v0.1/manifest.json'),
+        'backend':'author debug PyTorch core forward shim, compiled-extension parity unverified',
+        'compatibility':['signed int32 div_track sentinel','Unicode decode/encode path shim pixel-parity QC',
+            'training-only freeze_backbone_and_encoder=False','optional final encoder visualization/video disabled'],
+        'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        'arm':ARM,'scope':'Four-cell fixed-schedule single intervention; actual trace observer; post-discovery same29; noGT; not pure mediation or utility certification'}
+    (out/'manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
+    print('All selected:',len(reports),'completed:',manifest['completed'],flush=True)
+
+def durable_entry():
+    from failure_receipt_v03 import run_durable
+    import hashlib
+    destination=EXP.parent/'runs_v0.3'/LABEL
+    intended=['02','10'] if SHAM else [f'{i:02d}' for i in range(1,30)]
+    assets=[Path(__file__),EXP/'direct_input_observer_v0_1.py',EXP/'native_stage_observer_v04_copy.py',EXP/'source/src/trackformer/engine.py',EXP/'fixed_schedule.json',EXP/'delivery_hashes_v03.json',ROOT/'raw_all29_manifest.json',ROOT/'checkpoint_moma.pth']
+    binding={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in assets}
+    return run_durable(destination,intended,main,binding)
+
+if __name__=='__main__':durable_entry()

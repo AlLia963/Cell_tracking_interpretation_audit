@@ -1,0 +1,9 @@
+{
+  "ids":[401,402],
+  "masks":[
+    [[true,true,false],[true,false,false],[false,false,false]],
+    [[false,false,false],[false,false,true],[false,true,true]]
+  ],
+  "frame":0,
+  "support_definition":"Constructed 3x3 Boolean supports on the same abstract registered pixel grid; no image or biological interpretation."
+}

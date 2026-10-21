@@ -1,0 +1,41 @@
+{
+  "changes": [
+    {
+      "file": "inputs_LOCAL_ONLY/bacterial/build_extension.py",
+      "original_sha256": "48323a49ebe9e54d4089d4848b4f847888cf2a9216203dec5fee0680958d1ae3",
+      "sha256": "eac7cf319ed7b1ad72d0df1e012d93fff433b0eccaca4a3d8d63f6a64775cab1",
+      "path_literals": 1
+    },
+    {
+      "file": "inputs_LOCAL_ONLY/bacterial/fixed_archive_root/pulse_factorial_control_v0.1/source_preparation_v0.3/run_factorial_arm.py",
+      "original_sha256": "796bb8894f09521c918a3a783e16727195559a2bf32fda1ad8a51b4c3f4bbdb9",
+      "sha256": "cea80cf920be16fb4ab4cb020ca5d1629bc92c3e8c8bf2ad6da29862bf6d0345",
+      "path_literals": 1
+    },
+    {
+      "file": "inputs_LOCAL_ONLY/bacterial/sources/common_policy/recount_sdy_sparse_v01.py",
+      "original_sha256": "63e9adfad38762ec54b679b176c1687d17f7f07274f1d61e9a29fb27be28e6bf",
+      "sha256": "7851a6de98c00070d520bf3efed33a6cbda25c191dafd60b914e28ce160f9f72",
+      "path_literals": 2
+    },
+    {
+      "file": "inputs_LOCAL_ONLY/bacterial/sources/common_policy/replay_svm_topology_v02.py",
+      "original_sha256": "df644a25291fc8525727e807396af72d1d8de5f41d89808b71f666882af8e813",
+      "sha256": "0e504570ee86b816435f722750c86279f1e474109813d5b37bac2036681775ac",
+      "path_literals": 2
+    },
+    {
+      "file": "inputs_LOCAL_ONLY/bacterial/sources/inference/run_arm.py",
+      "original_sha256": "09fce6febab75ed03655b43558a1a54a2b7a69d6463a35026a569af915cb0687",
+      "sha256": "ce543e282ecf826100928d641f5d0fff4d5089823da95cd0086b299c5ae424b9",
+      "path_literals": 1
+    },
+    {
+      "file": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/run_factorial_arm.py",
+      "original_sha256": "796bb8894f09521c918a3a783e16727195559a2bf32fda1ad8a51b4c3f4bbdb9",
+      "sha256": "cea80cf920be16fb4ab4cb020ca5d1629bc92c3e8c8bf2ad6da29862bf6d0345",
+      "path_literals": 1
+    }
+  ],
+  "scientific_function_logic_changed": false
+}

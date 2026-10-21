@@ -1,0 +1,250 @@
+{
+  "scope": "Current comparison/case software identity; immutable executed matching engine retained. Hashes identify files and do not establish scientific correctness.",
+  "files": [
+    {
+      "path": "paper/expanded/audit_engine.py",
+      "bytes": 18516,
+      "sha256": "488d906f33295bc882a2b9a02c0849bd88169d864dadd386cfd30f45d20ab269"
+    },
+    {
+      "path": "paper/expanded/compare.py",
+      "bytes": 3858,
+      "sha256": "561f20a194aa5f9b95330a0aaa9530b28c73df683fa8e503ddfeaf821d3ff358"
+    },
+    {
+      "path": "paper/expanded/historical_producers/01_inventory.py",
+      "bytes": 5317,
+      "sha256": "6e366f01eb5fe74ffaa36afb25f3f276176f05fcaecc6e3af64c201ad8dcda6e"
+    },
+    {
+      "path": "paper/expanded/historical_producers/02_extend_and_profile.py",
+      "bytes": 2831,
+      "sha256": "45b9ef6ba3cc6b7f31c93e835a58c03b20721cace1d4eaa589b106abedb1d51e"
+    },
+    {
+      "path": "paper/expanded/historical_producers/03_source_and_record_catalog.py",
+      "bytes": 7943,
+      "sha256": "de58b488a22647e2fcb753198102b733ebd203e21ed53b49fb4a0a072522df44"
+    },
+    {
+      "path": "paper/expanded/historical_producers/04_graph_asset_catalog.py",
+      "bytes": 3572,
+      "sha256": "859412e747e24a5db7bd43d7cbd93de2f8c5e9e55884074468f117edcc47dfe4"
+    },
+    {
+      "path": "paper/expanded/historical_producers/04b_repair_header_reader.py",
+      "bytes": 2844,
+      "sha256": "25d7f041497448bf8fb8d30bcf1cf3dd49d4b6b9fe269b212074d91828641d13"
+    },
+    {
+      "path": "paper/expanded/historical_producers/05_score_identity_crosswalk.py",
+      "bytes": 4475,
+      "sha256": "723c601d4da8b2ba261bf189f6a05869e49b6cae98250ed0ac78ee371334a6c8"
+    },
+    {
+      "path": "paper/expanded/historical_producers/06_submission_asset_census.py",
+      "bytes": 2859,
+      "sha256": "64c771710abd01b38e1ab93ed8e803bc7311318db001828d1fdd455fab4df3e5"
+    },
+    {
+      "path": "paper/expanded/historical_producers/07_read_kaggle_submission_identities.py",
+      "bytes": 2622,
+      "sha256": "9ca8b6bce1ec49518980d51daa7086cfd74a069019063a3ec83e485d462eea7c"
+    },
+    {
+      "path": "paper/expanded/historical_producers/08_archive_intake.py",
+      "bytes": 3913,
+      "sha256": "13eafe9c0c20d3ec9069a6c6acc736ef44aa1fe1aa318ea2316741b9498e7491"
+    },
+    {
+      "path": "paper/expanded/historical_producers/09_mechanism_and_artifact_links.py",
+      "bytes": 8708,
+      "sha256": "0ad886a45cf457c64f34305930af20e1f34107ffb2aa0d3ee80ccd2acaf074f8"
+    },
+    {
+      "path": "paper/expanded/historical_producers/10_nonzip_archive_intake.py",
+      "bytes": 2678,
+      "sha256": "05145dd19dc36b1c3f909656f33ca513493097b8f75aa61ea96f84944b0f394c"
+    },
+    {
+      "path": "paper/expanded/historical_producers/11_prepare_graph_corpus.py",
+      "bytes": 11011,
+      "sha256": "476fdcfb79bfa2545bb2d4f94289021a9e473c883956fc6a260ab038a571f734"
+    },
+    {
+      "path": "paper/expanded/historical_producers/12_verify_new_adapter.py",
+      "bytes": 4520,
+      "sha256": "875d661c5a86df9f581d0760afaae414f797cd9724f14af9637de8ba91108af0"
+    },
+    {
+      "path": "paper/expanded/historical_producers/13_run_complete_graph_audit.py",
+      "bytes": 4387,
+      "sha256": "2fb06657c56adb5a15e1073e4df266f420fd2b09e86c59131fc9070d235fb793"
+    },
+    {
+      "path": "paper/expanded/historical_producers/14_score_descriptive_analysis.py",
+      "bytes": 3419,
+      "sha256": "a08b49ecc5801d1daf4972284b1d5d314429baeb51433f3532c6f34979cb97ed"
+    },
+    {
+      "path": "paper/expanded/historical_producers/15_all_within_movie_contrasts.py",
+      "bytes": 7555,
+      "sha256": "78b25205674c0a03d2286ffceb351d258c4ecf4a5cd9f010cda4e63f7487e644"
+    },
+    {
+      "path": "paper/expanded/historical_producers/16_summarize_corpus.py",
+      "bytes": 6442,
+      "sha256": "2a4f242782dcb513028fc05bff29336bf909cb56aaf1939422447b2b90c33087"
+    },
+    {
+      "path": "paper/expanded/historical_producers/17_focused_contrasts.py",
+      "bytes": 5535,
+      "sha256": "0a0c4fa14a20122dc048c983e86b7bbae4f873579b625da678dda084f61483dd"
+    },
+    {
+      "path": "paper/expanded/historical_producers/18_package_targeted_evidence.py",
+      "bytes": 6155,
+      "sha256": "1e5049ccd450aaacdd38e66d15bc28388288a8cd3141deb4b62078b00dff218d"
+    },
+    {
+      "path": "paper/expanded/historical_producers/19_finalize_lineage.py",
+      "bytes": 6377,
+      "sha256": "78678a54023c4ee39c90c80cedcecf0c1286250027603d5a9d329456065353f7"
+    },
+    {
+      "path": "paper/expanded/historical_producers/20_targeted_result_verification.py",
+      "bytes": 1374,
+      "sha256": "44c258f6f3998e1ad7a84d1cd8e4e1022661d2b05c9e07962a3266550b2c61e8"
+    },
+    {
+      "path": "paper/expanded/historical_producers/21_legacy_count_crosscheck.py",
+      "bytes": 2093,
+      "sha256": "e5f43e7d955b5e1478a9a365377b49cb5da95a6c1cde49c396ad1d750b040aa8"
+    },
+    {
+      "path": "paper/expanded/historical_producers/22_resolve_legacy_differences.py",
+      "bytes": 3475,
+      "sha256": "91f209b95df198c45f7f583240f593d216c450dfd0074c168dedc6ee0adc5486"
+    },
+    {
+      "path": "paper/expanded/historical_producers/23_check_legacy_tie_compatibility.py",
+      "bytes": 2129,
+      "sha256": "2af6902eb79c1c2f08261b5ab04b20a2dc6f4962774dabb12c2aeba5c19dffac"
+    },
+    {
+      "path": "paper/expanded/historical_producers/24_delivery.py",
+      "bytes": 6827,
+      "sha256": "a77e79054ffe46ddf349889ed183400ab157e542f22171e146a4a3e20fef4de9"
+    },
+    {
+      "path": "paper/expanded/historical_producers/25_finish_delivery_checks.py",
+      "bytes": 3521,
+      "sha256": "6cf76f6a8cd437070a2447ee87d2ddd6b5ab754e7fd130adb528cb0d54d59ff5"
+    },
+    {
+      "path": "paper/expanded/historical_producers/archived_module_ablation.py",
+      "bytes": 8187,
+      "sha256": "a26f41902735a67952ab335bd37db079f7d8e4228ea46711ede32fcf4dd64deb"
+    },
+    {
+      "path": "paper/expanded/historical_producers/audit_engine.py",
+      "bytes": 18516,
+      "sha256": "488d906f33295bc882a2b9a02c0849bd88169d864dadd386cfd30f45d20ab269"
+    },
+    {
+      "path": "paper/expanded/historical_producers/audit_motion_intervention.py",
+      "bytes": 6659,
+      "sha256": "a9ca75e49cc419673c546a7a0f8fc85aac6e10c55abdab826961da3742f99574"
+    },
+    {
+      "path": "paper/expanded/historical_producers/linked_contrast.py",
+      "bytes": 6914,
+      "sha256": "1194e9e014d6aa7ee45048ad44b90a38b703cf220f925b9f76e4caa7ba00053d"
+    },
+    {
+      "path": "paper/expanded/historical_producers/orientation.py",
+      "bytes": 1587,
+      "sha256": "567f6833fca645d6a87ac8284d0a579af7bbfd45335efa5c4a546a30ad6e10e8"
+    },
+    {
+      "path": "paper/expanded/historical_producers/replay_local_smoother.py",
+      "bytes": 1866,
+      "sha256": "1281536ffb2e10388189c8fe95f26168e6211be681e980b80b9a68ac8348dff0"
+    },
+    {
+      "path": "paper/expanded/historical_producers/replay_record.py",
+      "bytes": 3940,
+      "sha256": "5fe58f0923a0e3066bc8e2f86130485ce0a4580dd2d3e2f9867c745ce994ead0"
+    },
+    {
+      "path": "paper/expanded/historical_producers/run_linked_focused.py",
+      "bytes": 3529,
+      "sha256": "fe2b640f7a1cc58051a28fffd4d8f08e967d7a74d189939a259b0b02829cf3e3"
+    },
+    {
+      "path": "paper/expanded/historical_producers/verify_linked_contrast.py",
+      "bytes": 3741,
+      "sha256": "90e26aca88ffd3257b09a7f61c6e673614d7e019d0556e7746b534d9b09a0521"
+    },
+    {
+      "path": "paper/expanded/INITIAL_IMPORT_BINDINGS.json",
+      "bytes": 2302,
+      "sha256": "923784cad4aa75f8c53250141e762c8dae0be51fec92a0069d3264105f339cc8"
+    },
+    {
+      "path": "paper/expanded/linked_contrast.py",
+      "bytes": 7388,
+      "sha256": "5a5219b2d101a1aa6d09435b4c71f07338ad8a8b4289d0ff124bc4d6a60c6e74"
+    },
+    {
+      "path": "paper/expanded/orientation.py",
+      "bytes": 1587,
+      "sha256": "567f6833fca645d6a87ac8284d0a579af7bbfd45335efa5c4a546a30ad6e10e8"
+    },
+    {
+      "path": "paper/expanded/reference_backend/LICENSE",
+      "bytes": 1065,
+      "sha256": "73d335ec9c200b0d5bbb873f5cad552f76640843bc5ca41133f10115c38c2da8"
+    },
+    {
+      "path": "paper/expanded/reference_backend/reconstruct.py",
+      "bytes": 23398,
+      "sha256": "24d6000a5abea7b5d738e93cd3967831ce3c6be43489e3d88391bd683b51a9b8"
+    },
+    {
+      "path": "paper/expanded/reference_backend/sources/executed/stage_accounting.py",
+      "bytes": 8876,
+      "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
+    },
+    {
+      "path": "paper/expanded/reference_backend/UPSTREAM_NOTICE.md",
+      "bytes": 1069,
+      "sha256": "bf5d484ef1a7e2744b252da8003be9592feafe69fcbf832226f34511113f4fb8"
+    },
+    {
+      "path": "paper/expanded/replay_saved.py",
+      "bytes": 861,
+      "sha256": "94912da9e316943cfe2a8267a3ce9a5e63c820a120f9f0d9849d3d004e5db978"
+    },
+    {
+      "path": "paper/expanded/review_example.py",
+      "bytes": 2421,
+      "sha256": "9291e4fa3ad017c31e05c1158adb465f7ea38471d672a7dcaf87465fed20f68f"
+    },
+    {
+      "path": "paper/expanded/review_linked_records.py",
+      "bytes": 1587,
+      "sha256": "f924b23e6f5e369948ee5dace077bce33f817b0ff8f43f17b5a50cc18060e396"
+    },
+    {
+      "path": "paper/expanded/summarize_focused_inputs.py",
+      "bytes": 2850,
+      "sha256": "9edbc8ed489a24f8561c11432b86b7a05fc58c57e45107371cf2e13d133fffb9"
+    },
+    {
+      "path": "paper/expanded/verify_endpoints.py",
+      "bytes": 10368,
+      "sha256": "9f711b4f855c44c677e91eb11f3edfa7a4f95792aab9ef1c68453c7edb25cb19"
+    }
+  ]
+}
