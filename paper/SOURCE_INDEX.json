@@ -517,11 +517,6 @@
       "bytes": 11159
     },
     {
-      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/train.py",
-      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59",
-      "bytes": 7796
-    },
-    {
       "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/scripts/create_coco_dataset_from_CTC.py",
       "sha256": "20c998d7f468e30768e2ccdf52e8690fa99e16a9d052ffe6a4bccb03236f2d56",
       "bytes": 4387
@@ -757,11 +752,6 @@
       "bytes": 11159
     },
     {
-      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/train.py",
-      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59",
-      "bytes": 7796
-    },
-    {
       "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/scripts/create_coco_dataset_from_CTC.py",
       "sha256": "20c998d7f468e30768e2ccdf52e8690fa99e16a9d052ffe6a4bccb03236f2d56",
       "bytes": 4387
@@ -995,11 +985,6 @@
       "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/trackformer/vis.py",
       "sha256": "78b7a99ecb7b37b2d8288935bab7ee3913ade0aef954701dfec530d5e3490050",
       "bytes": 11159
-    },
-    {
-      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/train.py",
-      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59",
-      "bytes": 7796
     },
     {
       "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/inference/run_arm.py",
@@ -1416,11 +1401,6 @@
       "bytes": 11159
     },
     {
-      "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/train.py",
-      "sha256": "feeb055291b6fb567381c0df21ec43384763017d2e762e6c6064ef5d7db4fc59",
-      "bytes": 7796
-    },
-    {
       "relative_path": "inputs_LOCAL_ONLY/bacterial/sources/source_duty/audit_s3_image_policy_v02.py",
       "sha256": "502d1cae8f0755434a62c1c822539e0a0a55e1792d03f12fcc395d0bf66ab075",
       "bytes": 4745
@@ -1740,5 +1720,11 @@
       "bytes": 4329,
       "provenance": "Original saved-output scientific source, unchanged"
     }
+  ],
+  "excluded_training_entry_points": [
+    "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/all_components/src/train.py",
+    "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/baseline/src/train.py",
+    "inputs_LOCAL_ONLY/bacterial/sources/inference/policies/max_area/src/train.py",
+    "inputs_LOCAL_ONLY/bacterial/sources/pulse/source_preparation_v0.3/source/src/train.py"
   ]
 }

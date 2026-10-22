@@ -144,10 +144,10 @@ def main():
                 else:
                     exec(compile(ast.Module(body=[node], type_ignores=[]), str(script), "exec"), namespace)
             calls.append({"script": str(script), "path_globals_overridden": list(overrides), "execution": "in_process_original_scientific_bodies"})
-        elif name in ("native16", "native-all"):
+        elif name == "native16":
             run("inputs_LOCAL_ONLY/bacterial/rematch_stage.py", ["--input-root", cfg["bacterial_input_root"],
                 "--native-root-map", runtime / "inputs_LOCAL_ONLY/bacterial/SELECTED_NATIVE_ROOT_MAP.json",
-                "--windows", "all" if name == "native-all" else "21:57,21:61,21:62,29:41", "--output", out / "measurement"])
+                "--windows", "21:57,21:61,21:62,29:41", "--output", out / "measurement"])
         elif name == "constructed":
             run("prepare_constructed.py", ["--output", out / "inputs"], "generate")
             run("sources/primitive/workflow.py", ["--manifest", out / "inputs/CONSTRUCTED_VARIABLE_VIEWS.json",

@@ -122,10 +122,6 @@
     "kind": "scientific calculation",
     "scope": "Execute all 13 intact/missing/stale/tampered authority boundary cases."
   },
-  "native-all": {
-    "kind": "scientific calculation",
-    "scope": "Reproject and rematch all native frame windows in all 116 movie-arms; full raw-support calculation (expensive)."
-  },
   "projection": {
     "kind": "captured-pixel calculation",
     "scope": "14 fixed G pulses, all140 actual arrays, next-call boxes and raw heads; no new model inference"

@@ -1,4 +1,4 @@
-"""Run every manuscript analysis route, excluding optional full native rematching.
+"""Run the 30 manuscript analysis routes.
 
 Requires an authorized input companion configured with configure_bundle.py.
 Existing run directories are refused; failed/partial evidence is retained.

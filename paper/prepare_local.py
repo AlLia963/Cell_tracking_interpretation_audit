@@ -38,6 +38,7 @@ def main():
     if local not in target.parents or target.exists():
         raise ValueError("Runtime must be a new directory inside paper/_local")
     index = json.loads((HERE / "SOURCE_INDEX.json").read_text(encoding="utf-8"))
+    excluded_training = set(index.get("excluded_training_entry_points", []))
     controlled = Path(cfg.get("controlled_source_root", source)).resolve()
     replacements = {r["relative_path"]: (controlled if r.get("distribution") == "controlled_source" else HERE / "scientific") / r["relative_path"] for r in index["files"]}
     for rel, path in replacements.items():
@@ -107,7 +108,16 @@ def main():
     if config_path.exists():
         metadata = json.loads(config_path.read_text(encoding="utf-8-sig"))
         changes = []
+        active_sources = []
         for row in metadata["source_files"]:
+            key = "inputs_LOCAL_ONLY/bacterial/" + row["package"]
+            if key in excluded_training:
+                if key in replacements:
+                    raise ValueError("Excluded training entry is still indexed: " + key)
+                records.append({"kind": "excluded_unused_training_entry", "runtime": key,
+                                "historical_sha256": row["sha256"]})
+                continue
+            active_sources.append(row)
             effective = config_path.parent / row["package"]
             if effective.is_file() and row["package"].endswith(".py"):
                 actual = hashlib.sha256(effective.read_bytes()).hexdigest()
@@ -120,7 +130,8 @@ def main():
                     row["historical_sha256"] = row["sha256"]
                     row["sha256"] = actual
                     row["bytes"] = effective.stat().st_size
-        if changes:
+        if changes or len(active_sources) != len(metadata["source_files"]):
+            metadata["source_files"] = active_sources
             config_path.unlink()
             config_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
             (target / "SOURCE_ADAPTATION_BINDINGS.json").write_text(json.dumps(changes, indent=2), encoding="utf-8")

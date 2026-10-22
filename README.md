@@ -1,6 +1,6 @@
 # Cell tracking interpretation audit
 
-Software accompanying **Auditing interpretations of fixed cell tracking outputs across processing changes** (manuscript in preparation).
+This repository provides the analysis code, reproduction workflows and figure-generation scripts supporting the paper **Auditing interpretations of fixed cell tracking outputs across processing changes**.
 
 Given saved tracking graphs, reference objects and a declared matching convention,
 this software evaluates proposed statements about recovered relations, processing

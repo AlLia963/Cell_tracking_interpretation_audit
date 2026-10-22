@@ -68,7 +68,7 @@ python -B -X utf8 paper/run.py projection --config paper/local_config.json --out
 
 Dependencies are supplied automatically by the suite. For manual runs, configure the completed `natural_measurement_root`, `timing_measurement_root`, `chains_measurement_root`, `native_window_root`, `generated_common_root`, `decision_ledger` and `duty_authority` where needed. Some bacterial outputs reside under `measurement/measurement/`; use the actual containing directory.
 
-An additional **31st route**, `native-all`, can rematch all native windows if complete captured native inputs are separately supplied. It was not run in this integration and is not a prerequisite for the archived-certificate reconstruction. Do not describe `bacterial-stage-archive` as new full-cohort pixel rematching.
+Native-stage reconstruction uses the retained full-cohort records in `bacterial-stage-archive`. The `native16` route separately reprojects and rematches four selected windows in all four arms.
 
 ## Checking a run
 

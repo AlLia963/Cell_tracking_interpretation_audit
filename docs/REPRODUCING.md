@@ -66,11 +66,11 @@ python -B -X utf8 paper/run.py list
 python -B -X utf8 paper/run_suite.py --config paper/local_config.json --output outputs/full_study
 ```
 
-All 340 indexed scientific sources are supplied in the repository. On
+All 336 currently indexed scientific sources are supplied in the repository. On
 2026-10-14, the 30-route suite completed in one run from a separate local input
-copy and Python environment. Individual commands describe their actual operation;
-`native-all` remains an optional full-cohort native rematching route requiring
-additional captures. The default archived-certificate route uses retained captures.
+copy and Python environment. Individual commands describe their actual operation.
+The archived-certificate route uses retained captures; `native16` separately
+reprojects and rematches four selected windows in all four arms.
 
 The original absence classification remains 71/135/3, distinct from historical
 canonical 72/137. D44 has 123 relation identities (102/13/8), 64 linked events

@@ -12,16 +12,6 @@
       "sha256": "561f20a194aa5f9b95330a0aaa9530b28c73df683fa8e503ddfeaf821d3ff358"
     },
     {
-      "path": "paper/expanded/historical_producers/01_inventory.py",
-      "bytes": 5317,
-      "sha256": "6e366f01eb5fe74ffaa36afb25f3f276176f05fcaecc6e3af64c201ad8dcda6e"
-    },
-    {
-      "path": "paper/expanded/historical_producers/02_extend_and_profile.py",
-      "bytes": 2831,
-      "sha256": "45b9ef6ba3cc6b7f31c93e835a58c03b20721cace1d4eaa589b106abedb1d51e"
-    },
-    {
       "path": "paper/expanded/historical_producers/03_source_and_record_catalog.py",
       "bytes": 7943,
       "sha256": "de58b488a22647e2fcb753198102b733ebd203e21ed53b49fb4a0a072522df44"
@@ -47,24 +37,9 @@
       "sha256": "64c771710abd01b38e1ab93ed8e803bc7311318db001828d1fdd455fab4df3e5"
     },
     {
-      "path": "paper/expanded/historical_producers/07_read_kaggle_submission_identities.py",
-      "bytes": 2622,
-      "sha256": "9ca8b6bce1ec49518980d51daa7086cfd74a069019063a3ec83e485d462eea7c"
-    },
-    {
-      "path": "paper/expanded/historical_producers/08_archive_intake.py",
-      "bytes": 3913,
-      "sha256": "13eafe9c0c20d3ec9069a6c6acc736ef44aa1fe1aa318ea2316741b9498e7491"
-    },
-    {
       "path": "paper/expanded/historical_producers/09_mechanism_and_artifact_links.py",
       "bytes": 8708,
       "sha256": "0ad886a45cf457c64f34305930af20e1f34107ffb2aa0d3ee80ccd2acaf074f8"
-    },
-    {
-      "path": "paper/expanded/historical_producers/10_nonzip_archive_intake.py",
-      "bytes": 2678,
-      "sha256": "05145dd19dc36b1c3f909656f33ca513493097b8f75aa61ea96f84944b0f394c"
     },
     {
       "path": "paper/expanded/historical_producers/11_prepare_graph_corpus.py",
@@ -135,11 +110,6 @@
       "path": "paper/expanded/historical_producers/24_delivery.py",
       "bytes": 6827,
       "sha256": "a77e79054ffe46ddf349889ed183400ab157e542f22171e146a4a3e20fef4de9"
-    },
-    {
-      "path": "paper/expanded/historical_producers/25_finish_delivery_checks.py",
-      "bytes": 3521,
-      "sha256": "6cf76f6a8cd437070a2447ee87d2ddd6b5ab754e7fd130adb528cb0d54d59ff5"
     },
     {
       "path": "paper/expanded/historical_producers/archived_module_ablation.py",
