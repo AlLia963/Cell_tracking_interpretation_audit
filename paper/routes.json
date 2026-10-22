@@ -96,7 +96,7 @@
   },
   "identity-crosswalk": {
     "kind": "saved-output identity join and pixel measurement",
-    "scope": "123 wrong-type relations,64 linked events,30 chain incoming records and exact Figure4 pixels; needs three completed measurement roots"
+    "scope": "123 wrong-type relations,64 linked events,30 chain incoming records and support pixels for current Figure 6 (historical FIGURE4 filenames); needs three completed measurement roots"
   },
   "historical-geometry": {
     "kind": "scientific calculation",

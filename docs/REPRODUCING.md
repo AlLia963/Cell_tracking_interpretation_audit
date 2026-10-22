@@ -61,6 +61,25 @@ python paper/expanded/historical_producers/15_all_within_movie_contrasts.py --co
 
 To recalculate pairs from the retained completed graph census, set `--audit-root` to that same `04_统一重分析` directory. Use new output directories outside the input corpus. `--limit` supports a bounded execution check and leaves a partial census; omit it for all graphs or pairs. The 175,488 distinct frame geometries and 124,237 pairs are expected outcomes for the exact retained corpus and declared caps. These commands reconstruct matching/query evidence from saved graphs; they do not run detector inference. The 216 endpoint checks above replay retained focused comparisons rather than reconstructing the whole corpus.
 
+To recalculate all 208 focused linked comparisons and the eight saved motion-intervention comparisons, use the graph-pair definitions from Source Data Tables 55–56:
+
+```bash
+python paper/expanded/historical_producers/run_linked_focused.py --corpus path/to/expanded_evidence/04_统一重分析 --audit-root outputs/expanded_graphs --contrasts path/to/55_LINKED_FOCUSED_CONTRASTS.json --motion path/to/56_motion_source_and_result_join.json --output outputs/focused_recalculated
+python paper/expanded/review_linked_records.py --corpus path/to/expanded_evidence/04_统一重分析 --audit-root outputs/expanded_graphs --records outputs/focused_recalculated --output outputs/focused_witness_checks.json
+```
+
+The first command recalculates the linked bounds from graphs and supplied complete-frame families; prior linked result fields in the cohort JSON do not enter the calculation. Set `--audit-root` to the retained corpus to reuse its families, or to a fresh `13_run_complete_graph_audit.py` output for new primitive construction. The second command uses primitive graphs at `--corpus` and the corresponding graph reports/frame families at `--audit-root`, so a fresh audit can be checked without copying inputs or mixing report sets. The eight-movie command remeasures the saved intervention outputs; it does not regenerate their upstream processing.
+
+The historical cached-coordinate estimator replay has an explicit input entry:
+
+```bash
+python paper/expanded/historical_producers/replay_local_smoother.py --input-root "path/to/expanded_evidence/05_补证与核验/16片局部重放_历史证据" --film 44b6_12dfb391 --output outputs/smoother_check.json
+```
+
+Use a film directory actually present under that input root. The command reads its pinned cached coordinates and repaired graph, executes the retained estimator and compares the three output arrays with its frozen target. It does not execute detector inference.
+
+The 72-condition module table is a historical saved-result experiment. `paper/summarize_module_context.py` reaggregates its rows; `archived_module_ablation.py` is an original producer snapshot requiring the legacy simulator, scorer, prediction graphs and their environment, not a standalone reader entry. The current 30-route suite does not regenerate those original module conditions.
+
 The four-fold learned-head negative result is in the expanded evidence companion at `05_补证与核验/四折负结果_历史证据/head_v2_gate.json`, with `train_head_v2.py`, the input map, captures and weights alongside it. Its leave-one-movie-out mean displacement errors yield zero wins for the head and ensemble. This historical training experiment is separate from the fixed-output audit routes.
 
 ## Retained full study routes

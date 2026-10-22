@@ -89,8 +89,8 @@
     },
     {
       "path": "docs/EXPERIMENT_ROUTES.csv",
-      "bytes": 15741,
-      "sha256": "328bf6111367c3c5b81e75314f3a7819523d10c941affc392d5d5e993b390c80"
+      "bytes": 15787,
+      "sha256": "9596fce053d2ca41f76bd6ea76fbd32452488b44ae01d34ef4fe9681cfbcdd57"
     },
     {
       "path": "docs/FIGURE_CASES.md",
@@ -99,8 +99,8 @@
     },
     {
       "path": "docs/REPRODUCING.md",
-      "bytes": 7470,
-      "sha256": "3273d46c82a0c8b33a9bc2845304c268fa15446210e06dadbb5920c53460c9c9"
+      "bytes": 9782,
+      "sha256": "af8317add5a7669a0905089aa5fbf79a2cf3ea94e1df907fe74ee9c999e62205"
     },
     {
       "path": "docs/TYPED_WINDOW_INPUT_CONTRACT.md",
@@ -244,8 +244,8 @@
     },
     {
       "path": "paper/expanded/SOURCE_BINDINGS.json",
-      "bytes": 8921,
-      "sha256": "1b55c041a19583ac6eefc8a590034c789255315c5b099a7a0bdc50f2bead774b"
+      "bytes": 9752,
+      "sha256": "f2a2d0b0e7fac4c9b82bc44d2fc3a42dead72ec1f70e57cd24e0f0b2c785eaac"
     },
     {
       "path": "paper/expanded/audit_engine.py",
@@ -384,8 +384,8 @@
     },
     {
       "path": "paper/expanded/historical_producers/replay_local_smoother.py",
-      "bytes": 1866,
-      "sha256": "1281536ffb2e10388189c8fe95f26168e6211be681e980b80b9a68ac8348dff0"
+      "bytes": 2207,
+      "sha256": "29e7f469dc94c6a3603ad1571dbab4d24612109ca76dcb76913fc0d8d034ffd4"
     },
     {
       "path": "paper/expanded/historical_producers/replay_record.py",
@@ -394,8 +394,8 @@
     },
     {
       "path": "paper/expanded/historical_producers/run_linked_focused.py",
-      "bytes": 3529,
-      "sha256": "fe2b640f7a1cc58051a28fffd4d8f08e967d7a74d189939a259b0b02829cf3e3"
+      "bytes": 5647,
+      "sha256": "813bcc05ac227d27e1efc75d238940544bb396ddd2673d073196aa7be8d337a1"
     },
     {
       "path": "paper/expanded/historical_producers/verify_linked_contrast.py",
@@ -444,8 +444,8 @@
     },
     {
       "path": "paper/expanded/review_linked_records.py",
-      "bytes": 1587,
-      "sha256": "f924b23e6f5e369948ee5dace077bce33f817b0ff8f43f17b5a50cc18060e396"
+      "bytes": 1728,
+      "sha256": "7c21fab683ce83266c02202219458f2fb1bd611dfafec48a47a1184f84ef6b50"
     },
     {
       "path": "paper/expanded/summarize_focused_inputs.py",
@@ -609,8 +609,8 @@
     },
     {
       "path": "paper/routes.json",
-      "bytes": 5622,
-      "sha256": "92beadbb4c424135eefcc83f8e3d92ca59ccc3d0056c1c219c2a893c05d94ccd"
+      "bytes": 5668,
+      "sha256": "d179a19e1a4df4973e3121330de175352be7c3188d8029c81a2730fbde89f927"
     },
     {
       "path": "paper/run.py",

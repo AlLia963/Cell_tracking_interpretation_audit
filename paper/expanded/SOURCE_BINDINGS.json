@@ -142,8 +142,10 @@
     },
     {
       "path": "paper/expanded/historical_producers/replay_local_smoother.py",
-      "bytes": 1866,
-      "sha256": "1281536ffb2e10388189c8fe95f26168e6211be681e980b80b9a68ac8348dff0"
+      "bytes": 2207,
+      "sha256": "29e7f469dc94c6a3603ad1571dbab4d24612109ca76dcb76913fc0d8d034ffd4",
+      "historical_execution_sha256": "1281536ffb2e10388189c8fe95f26168e6211be681e980b80b9a68ac8348dff0",
+      "current_adaptation": "Explicit input/audit/output locations and reader workflow repair; original matching, estimator and scalar-query calculation bodies retained."
     },
     {
       "path": "paper/expanded/historical_producers/replay_record.py",
@@ -152,8 +154,10 @@
     },
     {
       "path": "paper/expanded/historical_producers/run_linked_focused.py",
-      "bytes": 3529,
-      "sha256": "fe2b640f7a1cc58051a28fffd4d8f08e967d7a74d189939a259b0b02829cf3e3"
+      "bytes": 5647,
+      "sha256": "813bcc05ac227d27e1efc75d238940544bb396ddd2673d073196aa7be8d337a1",
+      "historical_execution_sha256": "fe2b640f7a1cc58051a28fffd4d8f08e967d7a74d189939a259b0b02829cf3e3",
+      "current_adaptation": "Explicit input/audit/output locations and reader workflow repair; original matching, estimator and scalar-query calculation bodies retained."
     },
     {
       "path": "paper/expanded/historical_producers/verify_linked_contrast.py",
@@ -207,8 +211,10 @@
     },
     {
       "path": "paper/expanded/review_linked_records.py",
-      "bytes": 1587,
-      "sha256": "f924b23e6f5e369948ee5dace077bce33f817b0ff8f43f17b5a50cc18060e396"
+      "bytes": 1728,
+      "sha256": "7c21fab683ce83266c02202219458f2fb1bd611dfafec48a47a1184f84ef6b50",
+      "historical_execution_sha256": "f924b23e6f5e369948ee5dace077bce33f817b0ff8f43f17b5a50cc18060e396",
+      "current_adaptation": "Explicit input/audit/output locations and reader workflow repair; original matching, estimator and scalar-query calculation bodies retained."
     },
     {
       "path": "paper/expanded/summarize_focused_inputs.py",
