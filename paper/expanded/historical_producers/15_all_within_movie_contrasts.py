@@ -8,11 +8,21 @@ from collections import defaultdict,Counter
 from itertools import combinations,product
 from functools import lru_cache
 from types import SimpleNamespace
-import csv,json,time,hashlib,sys
+import csv,json,time,hashlib,sys,argparse
 import numpy as np
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import audit_engine as E
-R=Path(__file__).resolve().parents[1];O=R/'04_统一重分析';D=O/'paired';D.mkdir(exist_ok=True);cache=O/'frame_cache'
-roster=[json.loads(x)for x in(O/'GRAPH_INDEX.jsonl').read_text(encoding='utf8').splitlines()]
+ap=argparse.ArgumentParser(description=__doc__)
+ap.add_argument('--corpus',type=Path,required=True,help='Normalized primitive corpus containing GRAPH_INDEX.jsonl, graphs and references')
+ap.add_argument('--audit-root',type=Path,help='Completed graph-audit output; defaults to the retained corpus')
+ap.add_argument('--output',type=Path,required=True,help='New absent directory for pair records and witnesses')
+ap.add_argument('--limit',type=int,help='Optional bounded verification run; not a complete pair census')
+args=ap.parse_args()
+if args.limit is not None and args.limit<1:ap.error('--limit must be positive')
+CORPUS=args.corpus.resolve();O=args.audit_root.resolve() if args.audit_root else CORPUS;D=args.output.resolve()
+if any(D==p or p in D.parents for p in [CORPUS,O]):raise ValueError('Output must be outside primitive and audit inputs')
+D.mkdir(parents=True,exist_ok=False);cache=O/'frame_cache'
+roster=[json.loads(x)for x in(CORPUS/'GRAPH_INDEX.jsonl').read_text(encoding='utf8').splitlines()]
 completed=[json.loads(x)for x in(O/'GRAPH_AUDIT_SUMMARIES.jsonl').read_text(encoding='utf8').splitlines()]
 if len(completed)!=len(roster):raise RuntimeError('Complete graph census must finish first')
 byid={x['graph_id']:x for x in roster};byfilm=defaultdict(list)
@@ -21,7 +31,7 @@ summaries={};visibility={};refs={}
 for i,x in enumerate(roster):
     gid=x['graph_id'];summaries[gid]=E.read_json_gz(O/'graph_reports'/(gid+'.json.gz'))
     with np.load(O/'visibility'/(gid+'.npz'),allow_pickle=False)as z:visibility[gid]={k:z[k].copy()for k in z.files}
-    if x['film']not in refs:refs[x['film']]=E.load_graph(O/'references'/(x['film']+'.npz'))
+    if x['film']not in refs:refs[x['film']]=E.load_graph(CORPUS/'references'/(x['film']+'.npz'))
 raw_read=E.read_json_gz
 E.read_json_gz=lru_cache(maxsize=4096)(raw_read)
 @lru_cache(maxsize=1024)
@@ -33,7 +43,7 @@ def projection(gid):
     """
     v=visibility[gid];s=summaries[gid];ref=refs[byid[gid]['film']];uncertain=np.flatnonzero((v['minimum']==0)&(v['maximum']==1))
     if not len(uncertain):return SimpleNamespace(edges=np.empty((0,2),np.int64))
-    full=E.load_graph(O/byid[gid]['path']);pairs=set(map(tuple,full.edges.tolist()));times=dict(zip(map(int,ref.ids),map(int,ref.coords[:,0])));keep=set()
+    full=E.load_graph(CORPUS/byid[gid]['path']);pairs=set(map(tuple,full.edges.tolist()));times=dict(zip(map(int,ref.ids),map(int,ref.coords[:,0])));keep=set()
     for i in uncertain:
         a,b=map(int,ref.edges[i]);fa=E.read_json_gz(cache/s['frame_locators'][str(times[a])]);fb=E.read_json_gz(cache/s['frame_locators'][str(times[b])])
         aa={w.get(a)for w in fa['worlds']};bb={w.get(b)for w in fb['worlds']}
@@ -52,7 +62,9 @@ with target.open('a',encoding='utf-8-sig'if not target.exists()else'utf8',newlin
     writer=csv.DictWriter(f,fieldnames=header)
     if not processed:writer.writeheader()
     for film,gids in sorted(byfilm.items()):
+        if args.limit is not None and total>=args.limit:break
         for a,b in combinations(sorted(gids),2):
+            if args.limit is not None and total>=args.limit:break
             if(film,a,b)in processed:continue
             va,vb=visibility[a],visibility[b];ca,cb=va['canonical'],vb['canonical'];gain=int(((ca==0)&(cb==1)).sum());loss=int(((ca==1)&(cb==0)).sum())
             row={'film':film,'before_graph':a,'after_graph':b,'canonical_before_TP':int(ca.sum()),'canonical_after_TP':int(cb.sum()),'canonical_gains':gain,'canonical_losses':loss,'canonical_net':gain-loss,
@@ -70,7 +82,7 @@ with target.open('a',encoding='utf-8-sig'if not target.exists()else'utf8',newlin
                     pid=hashlib.sha256((film+a+b).encode()).hexdigest();name='witnesses/'+pid[:2]+'/'+pid+'.json.gz'
                     E.save_json_gz(D/name,{'film':film,'before_graph':a,'after_graph':b,**result});row['witness_record']=name
                     if len(verified)<10 and result['status']=='COMPLETE':
-                        full=E.coupled_contrast(E.load_graph(O/byid[a]['path']),E.load_graph(O/byid[b]['path']),refs[film],summaries[a],summaries[b],va,vb,cache)
+                        full=E.coupled_contrast(E.load_graph(CORPUS/byid[a]['path']),E.load_graph(CORPUS/byid[b]['path']),refs[film],summaries[a],summaries[b],va,vb,cache)
                         if full['bounds']!=result['bounds']:raise AssertionError('Reduced relation-pair representation changed exact bounds')
                         verified.append({'film':film,'before':a,'after':b,'all_five_bounds_equal_to_full_graph':True})
                 if result.get('bounds'):
@@ -82,6 +94,6 @@ with target.open('a',encoding='utf-8-sig'if not target.exists()else'utf8',newlin
             if total%1000==0:f.flush();print('PAIRS',total,'seconds',round(time.perf_counter()-start,1),flush=True)
         f.flush()
 summary={'pair_records':total,'expected_pairs':sum(len(g)*(len(g)-1)//2 for g in byfilm.values()),'status_counts':dict(counts),'projection_checks':verified,
-         'direction':'Lexical normalized graph identity; not chronological change','pair_count_not_independent_experiments':True,'strict_examples':strict_examples,'elapsed_seconds_this_process':time.perf_counter()-start}
+         'corpus_root':str(CORPUS),'audit_root':str(O),'bounded_run':args.limit is not None,'direction':'Lexical normalized graph identity; not chronological change','pair_count_not_independent_experiments':True,'strict_examples':strict_examples,'elapsed_seconds_this_process':time.perf_counter()-start}
 with (D/'SUMMARY.json').open('w',encoding='utf8')as f:json.dump(summary,f,ensure_ascii=False,indent=2)
 print(json.dumps({k:v for k,v in summary.items()if k not in ['strict_examples','projection_checks']},ensure_ascii=False),flush=True)

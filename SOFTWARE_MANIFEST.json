@@ -94,13 +94,13 @@
     },
     {
       "path": "docs/FIGURE_CASES.md",
-      "bytes": 3804,
-      "sha256": "6e0f5c3a045dc2ff9a6adddf69ff63b5b5ab2ad7014aba07852a8bacf88ecdce"
+      "bytes": 5060,
+      "sha256": "7b21a76fa04dd7290c90670a682eb30082d6b5def71cb60a0b03713b12d859bb"
     },
     {
       "path": "docs/REPRODUCING.md",
-      "bytes": 5203,
-      "sha256": "bcb37d61144f1bbea0b16b6845eb04f755e9d1ff9f10e2f8841bb49f3a281af0"
+      "bytes": 7470,
+      "sha256": "3273d46c82a0c8b33a9bc2845304c268fa15446210e06dadbb5920c53460c9c9"
     },
     {
       "path": "docs/TYPED_WINDOW_INPUT_CONTRACT.md",
@@ -194,8 +194,8 @@
     },
     {
       "path": "paper/README.md",
-      "bytes": 6269,
-      "sha256": "758f5bd92d0c5561aaf6845cd6ea047ca8334ebf79e5f9d910aff988da1c772e"
+      "bytes": 9059,
+      "sha256": "e7a061b8a87424fb14865f4ae9aeb1432f23bd697c5c9532dd88f27e592344a4"
     },
     {
       "path": "paper/SOURCE_INDEX.json",
@@ -244,8 +244,8 @@
     },
     {
       "path": "paper/expanded/SOURCE_BINDINGS.json",
-      "bytes": 8337,
-      "sha256": "a93352c1c0371633bc757b8d40ac5cf3647d11732a5803461c9b027fdf64e6a8"
+      "bytes": 8921,
+      "sha256": "1b55c041a19583ac6eefc8a590034c789255315c5b099a7a0bdc50f2bead774b"
     },
     {
       "path": "paper/expanded/audit_engine.py",
@@ -299,8 +299,8 @@
     },
     {
       "path": "paper/expanded/historical_producers/13_run_complete_graph_audit.py",
-      "bytes": 4387,
-      "sha256": "2fb06657c56adb5a15e1073e4df266f420fd2b09e86c59131fc9070d235fb793"
+      "bytes": 5189,
+      "sha256": "80c57af4a7ba87ff28eba434a030b1ffa3d78d7befa550e34c624c98cf255271"
     },
     {
       "path": "paper/expanded/historical_producers/14_score_descriptive_analysis.py",
@@ -309,8 +309,8 @@
     },
     {
       "path": "paper/expanded/historical_producers/15_all_within_movie_contrasts.py",
-      "bytes": 7555,
-      "sha256": "78b25205674c0a03d2286ffceb351d258c4ecf4a5cd9f010cda4e63f7487e644"
+      "bytes": 8646,
+      "sha256": "2931dc41292e01e12364cf6339b4a20d70cba5925284994925cc3520a59e4aa4"
     },
     {
       "path": "paper/expanded/historical_producers/16_summarize_corpus.py",
@@ -539,8 +539,8 @@
     },
     {
       "path": "paper/local_config.example.json",
-      "bytes": 1424,
-      "sha256": "ce8f095aae494d164445526953153452adef0cc96dee37e3be8008599b63220d"
+      "bytes": 1461,
+      "sha256": "4bc08e3195c69e31df0ca4d3abbf77dfd562d0cb72c7da526fda5ca005a4cbc2"
     },
     {
       "path": "paper/measure_coupled_resources.py",

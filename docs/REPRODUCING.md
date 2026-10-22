@@ -52,9 +52,16 @@ and 43,394 for the 80-movie line-fitting contrast. The module table has 72 rows;
 19 of 66 nonbaseline rows retain full-setting TP/FP while changing node or edge
 counts. This reaggregation does not execute the old module producer.
 
-The historical 175,488-frame complete-family census and 124,237 same-movie pair
-records remain in the controlled expanded evidence. Current endpoint checks reuse
-them; they are not a new whole-corpus inference or completeness run.
+The retained expanded companion contains `04_统一重分析/GRAPH_INDEX.jsonl`, `graphs/`, `references/`, `frame_cache/`, `graph_reports/`, `visibility/` and the complete pair records. A fresh complete-family/graph census and subsequent within-movie pair calculation use explicit locations:
+
+```bash
+python paper/expanded/historical_producers/13_run_complete_graph_audit.py --corpus path/to/expanded_evidence/04_统一重分析 --output outputs/expanded_graphs
+python paper/expanded/historical_producers/15_all_within_movie_contrasts.py --corpus path/to/expanded_evidence/04_统一重分析 --audit-root outputs/expanded_graphs --output outputs/expanded_pairs
+```
+
+To recalculate pairs from the retained completed graph census, set `--audit-root` to that same `04_统一重分析` directory. Use new output directories outside the input corpus. `--limit` supports a bounded execution check and leaves a partial census; omit it for all graphs or pairs. The 175,488 distinct frame geometries and 124,237 pairs are expected outcomes for the exact retained corpus and declared caps. These commands reconstruct matching/query evidence from saved graphs; they do not run detector inference. The 216 endpoint checks above replay retained focused comparisons rather than reconstructing the whole corpus.
+
+The four-fold learned-head negative result is in the expanded evidence companion at `05_补证与核验/四折负结果_历史证据/head_v2_gate.json`, with `train_head_v2.py`, the input map, captures and weights alongside it. Its leave-one-movie-out mean displacement errors yield zero wins for the head and ensemble. This historical training experiment is separate from the fixed-output audit routes.
 
 ## Retained full study routes
 
@@ -69,8 +76,7 @@ python -B -X utf8 paper/run_suite.py --config paper/local_config.json --output o
 All 336 currently indexed scientific sources are supplied in the repository. On
 2026-10-14, the 30-route suite completed in one run from a separate local input
 copy and Python environment. Individual commands describe their actual operation.
-The archived-certificate route uses retained captures; `native16` separately
-reprojects and rematches four selected windows in all four arms.
+The `bacterial-stage-archive` route reaggregates all 116 retained movie-arm certificate records. `native16` separately reprojects and rematches four selected windows in all four arms from native captures. The supplied selected-capture map covers that execution. The retained backend `rematch_stage.py --windows all` requests all 21,244 movie-arm windows and needs the corresponding full native capture set; the current selected-capture bundle does not supply it. This backend extension was not a completed full-cohort raw rematch in the reader validation.
 
 The original absence classification remains 71/135/3, distinct from historical
 canonical 72/137. D44 has 123 relation identities (102/13/8), 64 linked events
@@ -89,6 +95,4 @@ python paper/figures/retained_build_figures.py --input-root path/to/figure_input
 python paper/figures/build_integrated.py --input-root path/to/figure_inputs_LOCAL_ONLY --retained-figures outputs/base_figures --output outputs/paper_figures
 ```
 
-`paper/figures/export_case.py` handles alternative actual cases; see
-[case instructions](FIGURE_CASES.md). Source tables and pixel packets belong to
-the input companions and retain their source terms.
+`paper/figures/export_case.py` handles alternative actual cases; see [case instructions](FIGURE_CASES.md). It emits measured cases and previews, using a different schema from the fixed manuscript plot packets. The two commands above reproduce the manuscript figure set from its retained figure inputs. The base builder's historical `Figure4_actual_type_change` output is copied as the current `Figure6_support_and_relation_type`; it is unrelated to the current three-dimensional Figure 4. Source tables and pixel packets belong to the input companions and retain their source terms.

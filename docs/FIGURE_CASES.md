@@ -13,8 +13,13 @@ The output is `RESULT.json`, extracted image/mask arrays in `PIXELS.npz`, and
 separate single-frame PNG previews. These arrays include declared crops and
 z projections or normalized channel-mean displays; they are not all untouched
 raw frames. Measurements use the source coordinates, masks and graph records,
-never the PNG. The manuscript plotter uses the measurement packets to draw the
-final figure.
+never the PNG.
+
+For the **exact manuscript figures**, use the two figure-builder commands in [REPRODUCING.md](REPRODUCING.md#figures) with `figure_inputs_LOCAL_ONLY`. Those builders consume the retained `SOURCE.json`, named pixel arrays and numeric tables.
+
+For a **different selected case**, this exporter supplies freshly checked `RESULT.json`, `PIXELS.npz` and single-frame previews. These are not drop-in inputs to `build_integrated.py`: metadata, array names and case-specific layouts differ. For example, coordinate export uses `raw_<frame>` arrays, whereas the fixed Figure 4 packet uses `frame_<frame>` in `DISPLAY_PIXELS.npz`. A new presentation must use the new result and its actual arrays; the existing figure builders retain the declared manuscript cases. The exporter therefore reproduces the measurement/extraction procedure for other cases, rather than automatically drawing an alternative final manuscript figure.
+
+The controlled `case_reuse_LOCAL_ONLY` companion includes relative configurations under `configs/` and their necessary files under `inputs/`. From the repository root, run the exporter with the absolute path to a chosen JSON in `configs/` and a new output directory; no files are written into the companion. The expected original and alternative readouts are retained with that companion and in Source Data Table 59.
 
 | `kind` | Required input fields in addition to `case_id` | Recomputed evidence |
 |---|---|---|

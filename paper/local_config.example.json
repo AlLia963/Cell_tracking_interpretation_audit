@@ -15,7 +15,7 @@
   "iws_root": "<absolute path; configure_bundle.py fills this automatically>",
   "allocation_scores": "<absolute path; configure_bundle.py fills this automatically>",
   "extra_input_root": "<absolute path; configure_bundle.py fills this automatically>",
-  "decision_ledger": "<absolute path; configure_bundle.py fills this automatically>",
+  "decision_ledger": "<allocation-replay output>/measurement/decision_ledger.json; run_suite.py supplies this dependency",
   "duty_authority": "<absolute path; configure_bundle.py fills this automatically>",
   "article_root": "<absolute path; configure_bundle.py fills this automatically>"
 }

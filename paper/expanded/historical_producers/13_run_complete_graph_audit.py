@@ -2,14 +2,23 @@ from pathlib import Path
 from collections import Counter
 import argparse,csv,json,time,sys,hashlib,traceback,platform
 import numpy as np
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import audit_engine as E
-R=Path('D:/1013工作大修');O=R/'04_统一重分析';C=O/'frame_cache';S=O/'graph_reports';V=O/'visibility';Q=O/'query_reports'
+ap=argparse.ArgumentParser(description='Construct complete families and graph queries from a declared normalized corpus.')
+ap.add_argument('--corpus',type=Path,required=True,help='Folder containing GRAPH_INDEX.jsonl, graphs and references')
+ap.add_argument('--output',type=Path,required=True,help='New absent directory for frame families and graph/query reports')
+ap.add_argument('--limit',type=int,help='Optional bounded verification run; not a complete census')
+args=ap.parse_args()
+if args.limit is not None and args.limit<1:ap.error('--limit must be positive')
+CORPUS=args.corpus.resolve();O=args.output.resolve()
+if O==CORPUS or CORPUS in O.parents:raise ValueError('Output must be outside the input corpus')
+O.mkdir(parents=True,exist_ok=False)
+C=O/'frame_cache';S=O/'graph_reports';V=O/'visibility';Q=O/'query_reports'
 for p in [C,S,V,Q]:p.mkdir(exist_ok=True)
-ap=argparse.ArgumentParser();ap.add_argument('--limit',type=int);args=ap.parse_args()
-rows=[json.loads(x)for x in(O/'GRAPH_INDEX.jsonl').read_text(encoding='utf8').splitlines()]
+rows=[json.loads(x)for x in(CORPUS/'GRAPH_INDEX.jsonl').read_text(encoding='utf8').splitlines()]
 path=O/'GRAPH_AUDIT_SUMMARIES.jsonl';done={}
 if path.exists():done={x['graph_id']:x for x in map(json.loads,path.read_text(encoding='utf8').splitlines())}
-context={'engine_sha256':E.ENGINE_SHA,'constructor_sha256':E.BACKEND_SHA,'python':sys.version,'numpy':np.__version__,'platform':platform.platform(),'gate_um':E.GATE,'frame_cap':E.FRAME_CAP,'query_cap':E.QUERY_CAP,'ordinary_enumeration_cap':E.BASELINE_CAP,'scope':'retrospective saved untyped graph corpus; no new inference or biology'}
+context={'engine_sha256':E.ENGINE_SHA,'constructor_sha256':E.BACKEND_SHA,'python':sys.version,'numpy':np.__version__,'platform':platform.platform(),'gate_um':E.GATE,'frame_cap':E.FRAME_CAP,'query_cap':E.QUERY_CAP,'ordinary_enumeration_cap':E.BASELINE_CAP,'scope':'retrospective saved untyped graph corpus; no new inference or biology','corpus_root':str(CORPUS),'graph_index_sha256':hashlib.sha256((CORPUS/'GRAPH_INDEX.jsonl').read_bytes()).hexdigest()}
 cp=O/'AUDIT_EXECUTION_CONTEXT.json'
 if cp.exists():
     old=json.loads(cp.read_text(encoding='utf8'))
@@ -22,8 +31,8 @@ with path.open('a',encoding='utf8')as log,(O/'QUERY_EXCEPTIONS.jsonl').open('a',
     if gid in done:continue
     t=time.perf_counter()
     try:
-        if film not in refs:refs[film]=E.load_graph(O/'references'/(film+'.npz'))
-        pred=E.load_graph(O/row['path']);summary,visibility,queries,exceptions=E.audit_graph(pred,refs[film],film,C)
+        if film not in refs:refs[film]=E.load_graph(CORPUS/'references'/(film+'.npz'))
+        pred=E.load_graph(CORPUS/row['path']);summary,visibility,queries,exceptions=E.audit_graph(pred,refs[film],film,C)
         summary.update(graph_id=gid,film=film,normalized_graph_path=row['path'],engine_sha256=E.ENGINE_SHA)
         E.save_json_gz(S/(gid+'.json.gz'),summary);E.save_json_gz(Q/(gid+'.json.gz'),queries)
         np.savez_compressed(V/(gid+'.npz'),**visibility)

@@ -57,7 +57,7 @@ The default suite contains **30 routes**. It calculates new outputs before optio
 | Historical negative results | `historical-negative` | All 48 SVM saved-output pairs/6 groups, 20 SDY scores and 16 paired contrasts |
 | Bacterial processing and pulses | `bacterial-natural`, `bacterial-full`, `bacterial-pulse-endpoint`, `projection` | Raw/typed relation histories, three full policies, 116 fixed four-arm endpoints and all 14 captured geometry-feedback pulses |
 | Native histories | `bacterial-stage-archive`, `native16` | Reaggregate all 116 certificates/124372 relation-arm identities; freshly project/rematch four selected windows × four arms |
-| Event/lineage consequences | `bacterial-timing`, `bacterial-chains`, `bacterial-cca`, `identity-crosswalk` | Timing tolerances, complete focal chains, 87 CCA values, exact relation/event/chain crosswalks and Figure 4 pixels |
+| Event/lineage consequences | `bacterial-timing`, `bacterial-chains`, `bacterial-cca`, `identity-crosswalk` | Timing tolerances, complete focal chains, 87 CCA values, exact relation/event/chain crosswalks and the current Figure 6 support pixels |
 | Epithelial domain | `epithelial` | Execute E0–E3 from specified images, then calculate reference-relative relation/path results |
 
 Individual routes use the same interface:
@@ -66,9 +66,23 @@ Individual routes use the same interface:
 python -B -X utf8 paper/run.py projection --config paper/local_config.json --output outputs/projection_run
 ```
 
-Dependencies are supplied automatically by the suite. For manual runs, configure the completed `natural_measurement_root`, `timing_measurement_root`, `chains_measurement_root`, `native_window_root`, `generated_common_root`, `decision_ledger` and `duty_authority` where needed. Some bacterial outputs reside under `measurement/measurement/`; use the actual containing directory.
+The suite supplies dependency paths automatically. For manual runs, `configure_bundle.py` sets their expected locations but does not calculate upstream outputs. Run `allocation-replay` before `bacterial-duties` and set `decision_ledger` to its `measurement/decision_ledger.json`; `run_suite.py` makes this connection. Run `natural3d` before `literal-baseline`, and complete `bacterial-timing`, `bacterial-chains` and `native16` before `identity-crosswalk`. Some bacterial outputs reside under `measurement/measurement/`; use the directories written in the configuration. The generated policy dependencies are connected by the suite in the order shown in `run_suite.py`.
 
-Native-stage reconstruction uses the retained full-cohort records in `bacterial-stage-archive`. The `native16` route separately reprojects and rematches four selected windows in all four arms.
+Native-stage reconstruction uses the retained full-cohort records in `bacterial-stage-archive`. The `native16` route separately reprojects and rematches four selected windows in all four arms. The `identity-crosswalk` output retains historical filenames `FIGURE4_29_040_041_SUPPORT_PIXELS.npz` and `FIGURE4_EXACT_SINGLE_RELATION_AND_COMPANION_TYPE_TABLE.json`; they support **Figure 6 in the current manuscript**. The current Figure 4 is the three-dimensional adjacent gain/loss example built from `figure_inputs_LOCAL_ONLY/actual_3d_case`.
+
+## Which files to use
+
+| Task | Entry and instructions |
+|---|---|
+| One new coordinate-output comparison | [`expanded/compare.py`](expanded/compare.py), then [`expanded/verify_endpoints.py`](expanded/verify_endpoints.py); [input schema and commands](../docs/DATA_ACCESS.md#using-downloaded-data) |
+| Complete expanded graph/pair census | [Explicit corpus commands](../docs/REPRODUCING.md#expanded-archive-and-focused-comparisons); supply normalized graphs and references |
+| Retained 30-route study | `configure_bundle.py` → `prepare_local.py` → `run_suite.py`, as above |
+| Worked shared-path decision | [`review_d47.py`](review_d47.py); [worked-task inputs and expected result](../docs/REPRODUCING.md#actual-worked-path) |
+| Exact manuscript figures | [`figures/retained_build_figures.py`](figures/retained_build_figures.py) → [`figures/build_integrated.py`](figures/build_integrated.py); [figure commands](../docs/REPRODUCING.md#figures) |
+| A different real-image case | [`figures/export_case.py`](figures/export_case.py); [case formats and outputs](../docs/FIGURE_CASES.md) |
+| Fresh resource measurements | [`measure_d47_resources.py`](measure_d47_resources.py), [`measure_coupled_resources.py`](measure_coupled_resources.py); use `--help` for explicit task inputs |
+
+`SOURCE_INDEX.json` identifies the scientific dependencies used by the study routes; `expanded/SOURCE_BINDINGS.json` identifies the expanded comparison programs. The library under `src/` implements the reusable family/query API. Files under `scientific/` and `expanded/historical_producers/` retain study-specific producers and source snapshots. The two complete graph/pair producers now accept explicit corpus/output locations; other historical snapshots preserve their original layouts. `export_inputs.py` and `build_extra_inputs.py` are author packaging tools and are not reader prerequisites. The four-fold learned-head training source and its captures/weights are retained in the expanded evidence companion under `05_补证与核验/四折负结果_历史证据/`; reproducing its historical training is separate from auditing fixed outputs.
 
 ## Checking a run
 
