@@ -2,6 +2,8 @@
 
 This repository provides the analysis code, reproduction workflows and figure-generation scripts supporting the paper **Auditing interpretations of fixed cell tracking outputs across processing changes**.
 
+**Reproduce the paper:** follow [one complete walkthrough](docs/REPRODUCING.md#start-here), Steps 1–9. It lists every paper result and the output to inspect. The [repository map](#repository-map) below explains the folders.
+
 Given saved tracking graphs, reference objects and a declared matching convention,
 this software evaluates proposed statements about recovered relations, processing
 changes and local histories. It constructs complete correspondence families,
@@ -55,32 +57,59 @@ and query calculation establish the domain and extrema.
 
 ## Reader guide
 
-Use this README as the starting point. Choose a task below; each linked guide
-gives the required inputs, commands and expected outputs.
+**To reproduce the paper, follow [the complete walkthrough](docs/REPRODUCING.md)
+from Step 1 to Step 9.** It contains the execution order, required inputs,
+dependencies, expected outputs and a result index for every main result, all
+figures, supplementary tables and Source Data entries. Stay in that document
+through the run; supporting pages are linked where needed.
 
-| Task | Start here |
+| Reader goal | Read next |
 |---|---|
-| Install and run a first example without external data | [Install](#install), then [Try the method](#try-the-method) |
-| Obtain the paper's saved inputs and identify their sources | [Study input archive](data/study_inputs/README.md) |
-| Reproduce the reported analyses | [Step-by-step reproduction commands](docs/REPRODUCING.md) |
-| Generate the exact manuscript figures | [Figure commands](docs/REPRODUCING.md#figures) |
-| Extract a different real-image case | [Case formats and commands](docs/FIGURE_CASES.md) |
-| Analyze new saved coordinate graphs | [Analyze saved graphs](#analyze-saved-graphs) and [input formats](docs/DATA_ACCESS.md#using-downloaded-data) |
+| Reproduce the complete supplied paper workflow | [Steps 1–9](docs/REPRODUCING.md#start-here) |
+| Locate one paper result | [Paper result index](docs/REPRODUCING.md#paper-result-index), then its listed step |
+| Locate a particular figure | [Figure index](docs/REPRODUCING.md#figure-index) |
+| Locate a Source Data entry | [All 59 entries](docs/REPRODUCING.md#source-data-index) |
+| Obtain the archive and source attribution | [Study inputs](data/study_inputs/README.md), then return to the walkthrough |
+| Analyze a new coordinate comparison or another real-image case | [Reuse interfaces](docs/REPRODUCING.md#supporting-files-and-reuse) |
 
-## Reproduce the study
+## Repository map
 
-- [Inputs and access](docs/DATA_ACCESS.md)
-- [Commands and expected results](docs/REPRODUCING.md)
-- [Real-image extraction and alternative cases](docs/FIGURE_CASES.md)
-- [Full analysis routes](paper/README.md)
+The folders below have distinct implementation roles. The walkthrough selects
+the commands in the required order; readers do not need to choose scripts from
+these directories by trial and error.
 
-The [study input directory](data/study_inputs/README.md) identifies the archive,
-checksum, six-folder layout, original data sources and checkpoint attribution.
-Large input files are distributed as repository release assets; only their guide
-and metadata are tracked under `data/study_inputs/`. The reproduction guide starts
-with a small actual saved-input check, then covers the 30-route suite, expanded
-comparisons, module/head experiments and figures. The constructed example above
-can be run immediately after installation.
+| Folder | Purpose | Reader action |
+|---|---|---|
+| `.github/workflows/` | Automated source/test checks on GitHub. | No manual action for the reproduction walkthrough. |
+| `data/catalog/` | Notebook/run/output identities and the retained focused/module CSV tables. | Read for development coverage; used by Steps 4–5. |
+| `data/study_inputs/` | Archive identity, source attribution, checksum and extraction layout. | Obtain the release input archive; then follow the single walkthrough. |
+| `docs/` | Reader instructions, input schemas, case formats and route inventory. | REPRODUCING.md is the complete paper walkthrough. |
+| `examples/` | Small library examples and constructed JSON/coordinate fixtures. | Optional examples after the first run. |
+| `src/portable_analysis_candidate/` | Reusable graph, family, window and typed-relation audit API. | Read when integrating the method with another analysis. |
+| `src/portable_analysis_candidate/_upstream/` | Pinned implementation dependencies of that library. | Implementation reference; invoked by the public API. |
+| `workflows/coordinate/` | Coordinate-input workflow and its scientific_backend/ adapter. | Optional lower-level coordinate integration. |
+| `tests/` | Executable tests of library contracts and image input handling. | Run in Step 1. |
+| `paper/` | Current commands for study execution, explicit-input audit and checks. | The walkthrough invokes the required entry points. |
+| `paper/adapters/` | Explicit-root adapters connecting the 30-route runner to retained scientific implementations. | Called by run_suite.py; no manual path editing. |
+| `paper/expanded/` | Expanded graph audits, focused comparisons and portable module/head producers. | Steps 4–5. |
+| `paper/expanded/reference_backend/` | Pinned primitive matching/family backend used by the expanded audit. | Called by the expanded commands. |
+| `paper/expanded/module_runtime/` | Original selected notebook cells, their hashes and the original module scorer. | Loaded by reproduce_module_conditions.py in Step 5. |
+| `paper/expanded/historical_producers/` | Historical producer snapshots plus explicitly adapted graph/pair/focused/estimator entry points. | Run only the explicitly named current commands in Steps 4–5. |
+| `paper/figures/` | Exact manuscript figure builders and configurable real-image case exporter. | Steps 6–7. |
+| `paper/scientific/` | 336 indexed study dependencies. Subfolders extensions/, extras/, historical_sources/, inputs_LOCAL_ONLY/ and sources/ retain the original calculation packages. | prepare_local.py assembles these dependencies; do not reconstruct their old directory layout by hand. |
+| `paper/historical_validation_scripts/` | Retained validation snapshots supporting earlier executions. | Provenance/reference; the walkthrough names current checks explicitly. |
+| `paper/resources_v1_1/` | Original worked-task resource measurement implementations. | Invoked through the explicit-root timing wrapper in Step 8. |
+| `paper/protocols/` | Fixed definitions of the original geometry scenarios. | Consumed by the sensitivity route. |
+| `paper/licenses/` | Upstream licenses and source attribution. | Read for reuse of third-party source. |
+| `paper/_local/ [created locally]` | Prepared runtime and local input bindings; ignored by Git. | Created in Step 3. |
+| `data/study_inputs/downloads/ [local only]` | Optional local copy of the release ZIP; ignored by Git. | Storage only; extracted INPUTS may be elsewhere. |
+
+Root files: `pyproject.toml` and the requirements files define installation;
+`LICENSE` and `NOTICE.md` identify source terms; `SOFTWARE_MANIFEST.json` and
+`SOURCE_PROVENANCE.json` identify delivered source/provenance. The script
+`paper/run_suite.py` runs the original 30 routes. Expanded graph/pair, module,
+head, figure, case and resource steps are additional commands explicitly included
+in the complete walkthrough.
 
 ## Development archive
 

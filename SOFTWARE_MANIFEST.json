@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6055,
-      "sha256": "440e74e17c3081c4281571a0563ecd0b58b90f3f68e28061362e23a8e7c5e2bf"
+      "bytes": 9859,
+      "sha256": "b2edc3c3caba7f9e30e4246bd523312e65f7d11052d8985372d8cce935edecac"
     },
     {
       "path": "SOURCE_PROVENANCE.json",
@@ -114,8 +114,8 @@
     },
     {
       "path": "docs/REPRODUCING.md",
-      "bytes": 12862,
-      "sha256": "b8f2a956e86a2fc5f9b57f3560add2eb33be2e4c376dd8c38642bf406f6b348e"
+      "bytes": 53097,
+      "sha256": "449adcd13c3eb22a7602f969a6caa5b78b58e6c1f376c97ba092c7c474c2fb70"
     },
     {
       "path": "docs/TYPED_WINDOW_INPUT_CONTRACT.md",
@@ -209,8 +209,8 @@
     },
     {
       "path": "paper/README.md",
-      "bytes": 9829,
-      "sha256": "186bb4ee2c8cb666f4f3b815935ef7d482bb443d3dbc70eb313f062b977ae098"
+      "bytes": 10473,
+      "sha256": "11083720f8e2420be69a30fe5af0de8185a258c792aebb01345c78d26282b313"
     },
     {
       "path": "paper/SOURCE_INDEX.json",

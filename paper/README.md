@@ -2,6 +2,16 @@
 
 Code accompanying **Auditing interpretations of fixed cell tracking outputs across processing changes**. Start with the repository README and `docs/REPRODUCING.md` for the current explicit-input interface. This page documents the retained full-study analysis routes and their historical execution scope. Figure programs are in `paper/figures/`.
 
+## Complete paper walkthrough
+
+For a first reproduction, follow [docs/REPRODUCING.md](../docs/REPRODUCING.md)
+Steps 1–9. Its [paper result index](../docs/REPRODUCING.md#paper-result-index),
+[figure index](../docs/REPRODUCING.md#figure-index), [supplementary table index](../docs/REPRODUCING.md#supplementary-table-index)
+and [Source Data index](../docs/REPRODUCING.md#source-data-index) identify the new
+output to inspect for each paper item. This page is the detailed reference for
+the 30-route subset; the complete walkthrough also includes expanded graph/pair,
+module/head, figures, alternative cases, interface checks and resource runs.
+
 ## Install
 
 The integration was executed on Windows with Python 3.13.12. From the repository root in an activated environment:
