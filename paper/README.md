@@ -16,9 +16,11 @@ Paper analyses use CPU. Upstream model training/inference has a separate environ
 
 ## Study inputs
 
-The full-study suite uses `full_study_inputs_LOCAL_ONLY`, containing fixed
-stage/reference graphs, saved predictions, captures and historical comparison
-inputs. See [data sources and input use](../docs/DATA_ACCESS.md) for the three
+Obtain and verify the saved inputs using the
+[study input guide](../data/study_inputs/README.md). It gives the release archive,
+checksum, extraction layout and source attribution. The full-study suite uses
+its `full_study_inputs_LOCAL_ONLY` directory, containing fixed stage/reference
+graphs, saved predictions, captures and historical comparison inputs. See [data sources and input use](../docs/DATA_ACCESS.md) for the three
 original datasets and the formats used by the explicit-input interfaces.
 
 The repository supplies the analysis code and development catalog. Dataset

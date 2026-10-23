@@ -28,11 +28,15 @@ The source-duty producer is the author-instrumented derivative of Igor Zharov's
 are included in `scientific/inputs_LOCAL_ONLY/bacterial/sources/source_duty/`;
 see `licenses/Harmonic-Fusion-NOTICE.md` for ancestry and instrumentation details.
 
-No competition images, coordinates, model weights, private reviewer reports or
-raw competition inputs are versioned. The development catalog and focused numerical
-records are included under `data/catalog/`. The authorized LOCAL ONLY input
-companion and machine-path configurations remain outside Git. Hash-only original
-source provenance in that companion is not imported as executable dependency code.
+The Git source tree contains the development catalog and focused numerical records
+under `data/catalog/`. Large study inputs are distributed separately from the Git
+tree. Their dataset, checkpoint and derived-output sources are mapped in
+`data/study_inputs/SOURCES.csv`; archive identity and usage are documented in
+`data/study_inputs/README.md`. The archive includes selected original pixels and
+annotations, saved predictions/captures, retained checkpoints and historical
+records. Those materials keep their own source attribution and applicable terms.
+Hash-only original source provenance in a companion is not imported as executable
+dependency code by the current runtime assembler.
 
 Scientific reconstruction does not reproduce all upstream model training/inference
 or certify original-author performance. Publication status and manuscript readiness

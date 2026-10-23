@@ -62,30 +62,14 @@ mask or coordinate case configurations in the case guide.
 
 ## Inputs for the exact reported study
 
-The paper audits fixed saved outputs. A new tracker run on downloaded images
-produces a new audit input, which need not reproduce the historical predictions.
-The following retained companions identify the inputs for the reported analyses.
+The central [study input guide](../data/study_inputs/README.md) contains the archive
+identity, release location, extraction instructions, six-directory layout and
+dataset/checkpoint attribution. [SOURCES.csv](../data/study_inputs/SOURCES.csv)
+distinguishes original dataset subsets, saved predictions/captures, upstream and
+study-fitted checkpoints, computed audit evidence and historical records.
 
-| Companion | Contents | Analysis entry |
-|---|---|---|
-| `controlled_companion_LOCAL_ONLY.zip` | Worked-audit NPZs, original results and interface records | `paper/review_d47.py` |
-| `full_study_inputs_LOCAL_ONLY.zip` | Saved predictions and intermediate captures for the retained analyses | `paper/configure_bundle.py` and the 30-route suite |
-| `expanded_evidence_LOCAL_ONLY.zip` | Normalized graphs, references, frame families and comparison records | Expanded archive and 216 endpoint checks |
-| `figure_inputs_LOCAL_ONLY` | Image crops, masks, provenance and plot inputs | Figure builders |
-| `case_reuse_LOCAL_ONLY` | Inputs and configurations for the original and alternative cases | Case exporter |
-
-The author-prepared `study_reproduction_inputs.zip` contains these companion
-directories plus `historical_module_inputs` (three movies of saved GEFF
-predictions/references and the association ranker). Extract it once to a new
-directory and retain the top-level folder names. Its root readme gives the input
-layout; its manifest lists individual file sizes and hashes. The original
-companions and their existing manifests are preserved.
-On Windows, use a short extraction root such as `D:/inputs` for the longest
-historical source paths. Historical source/text snapshots in the companions
-document prior execution; use the current manuscript and source checkout.
-
-Reviewer access to this archive is to be specified in the article's data and
-code availability statement; an actual retrieval location has not yet been
-assigned. Source code, constructed examples and the development catalog are
-available here. The [reproduction guide](REPRODUCING.md) gives executable commands
-for the fixed-output analyses, figures and the two historical experiments.
+The retained study uses exact saved outputs. Downloading the original images and
+running a tracker again produces new inputs; the archive provides the historical
+predictions and intermediates used in the reported calculations. After extraction,
+use [REPRODUCING.md](REPRODUCING.md) for the worked example, full suite, expanded
+comparisons, module/head producers and exact figures.

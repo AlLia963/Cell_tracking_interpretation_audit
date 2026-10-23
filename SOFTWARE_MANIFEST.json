@@ -14,8 +14,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 304,
-      "sha256": "9c00f738ed4d71db5b23aacb0ecf4ed3e478680df6f247c053d7631afc01d02c"
+      "bytes": 436,
+      "sha256": "315655817b5474afb4b853823f0474dc5c3ec3e0eb988675f98ed3bc9249428c"
     },
     {
       "path": "LICENSE",
@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4696,
-      "sha256": "4079fa3cd3ab6708be0f2712dbd0fb0df654ee4ce144800c9bcd4373bb686773"
+      "bytes": 6055,
+      "sha256": "440e74e17c3081c4281571a0563ecd0b58b90f3f68e28061362e23a8e7c5e2bf"
     },
     {
       "path": "SOURCE_PROVENANCE.json",
@@ -78,14 +78,29 @@
       "sha256": "d9e31192e24e19cb026ba0b5557a7d13de630300dff17c2a06ae89800194d550"
     },
     {
+      "path": "data/study_inputs/ARCHIVE.json",
+      "bytes": 2295,
+      "sha256": "2b997b31b935c9a1d5b9b7202a934fd5b36e44cc53dba007d896e5ee5297c9a8"
+    },
+    {
+      "path": "data/study_inputs/README.md",
+      "bytes": 6764,
+      "sha256": "c64c50b3575d9eca3e61e30e494338141d6ad0b3ee1e98c2a8f3f71373cae56c"
+    },
+    {
+      "path": "data/study_inputs/SOURCES.csv",
+      "bytes": 6892,
+      "sha256": "fa80e529791653837c4547a68c806f7e81385c5d97849d79c64402c40b1db977"
+    },
+    {
       "path": "docs/D44_CURRENT_SUMMARY.json",
       "bytes": 726,
       "sha256": "d3c7ab597b181f164daeaa30168ca2635d66f603463716101da66f236817752d"
     },
     {
       "path": "docs/DATA_ACCESS.md",
-      "bytes": 5932,
-      "sha256": "674a431aa0ced5e4e7f2232ff0fbabc98c041500253bcd56243a96a18cbeb45d"
+      "bytes": 4714,
+      "sha256": "7e1c1511e3f06003b7b2671d11bf405af904bed23106158162f5d6cc6f13ff58"
     },
     {
       "path": "docs/EXPERIMENT_ROUTES.csv",
@@ -94,13 +109,13 @@
     },
     {
       "path": "docs/FIGURE_CASES.md",
-      "bytes": 5060,
-      "sha256": "7b21a76fa04dd7290c90670a682eb30082d6b5def71cb60a0b03713b12d859bb"
+      "bytes": 5285,
+      "sha256": "4a735b1e545629d6b18555349b347c1e2dbe87b071d5a9876427a426b6d6760b"
     },
     {
       "path": "docs/REPRODUCING.md",
-      "bytes": 11599,
-      "sha256": "00f3abf85ce5b448b2f2c94c1a2d8d843d9c04043d2f99510fef186fa3edeb64"
+      "bytes": 12862,
+      "sha256": "b8f2a956e86a2fc5f9b57f3560add2eb33be2e4c376dd8c38642bf406f6b348e"
     },
     {
       "path": "docs/TYPED_WINDOW_INPUT_CONTRACT.md",
@@ -179,8 +194,8 @@
     },
     {
       "path": "paper/NOTICE.md",
-      "bytes": 2364,
-      "sha256": "ff00388fe722fa67370933596c97e347831ce618b0f5c55c34a868385e2f6bae"
+      "bytes": 2648,
+      "sha256": "d47118062ddfa6bf671adb75f08d31b6362577c99ae728e9e82dab387837335c"
     },
     {
       "path": "paper/PATH_ADAPTATIONS.json",
@@ -194,8 +209,8 @@
     },
     {
       "path": "paper/README.md",
-      "bytes": 9635,
-      "sha256": "84bcda2e920c7e9aa08a7253868b323f74564a6a63804b2ec930bf75b44e20e2"
+      "bytes": 9829,
+      "sha256": "186bb4ee2c8cb666f4f3b815935ef7d482bb443d3dbc70eb313f062b977ae098"
     },
     {
       "path": "paper/SOURCE_INDEX.json",

@@ -53,6 +53,20 @@ common object-ID namespace. Each reported metric endpoint has its own witness.
 The endpoint checker verifies its existence and constraints; complete construction
 and query calculation establish the domain and extrema.
 
+## Reader guide
+
+Use this README as the starting point. Choose a task below; each linked guide
+gives the required inputs, commands and expected outputs.
+
+| Task | Start here |
+|---|---|
+| Install and run a first example without external data | [Install](#install), then [Try the method](#try-the-method) |
+| Obtain the paper's saved inputs and identify their sources | [Study input archive](data/study_inputs/README.md) |
+| Reproduce the reported analyses | [Step-by-step reproduction commands](docs/REPRODUCING.md) |
+| Generate the exact manuscript figures | [Figure commands](docs/REPRODUCING.md#figures) |
+| Extract a different real-image case | [Case formats and commands](docs/FIGURE_CASES.md) |
+| Analyze new saved coordinate graphs | [Analyze saved graphs](#analyze-saved-graphs) and [input formats](docs/DATA_ACCESS.md#using-downloaded-data) |
+
 ## Reproduce the study
 
 - [Inputs and access](docs/DATA_ACCESS.md)
@@ -60,10 +74,13 @@ and query calculation establish the domain and extrema.
 - [Real-image extraction and alternative cases](docs/FIGURE_CASES.md)
 - [Full analysis routes](paper/README.md)
 
-Study runs use the saved input companions described in the access guide. The
-repository contains the analysis code, including the required source-duty producer;
-the companion supplies actual predictions, intermediate captures and reference
-inputs. The example above can be run immediately after installation.
+The [study input directory](data/study_inputs/README.md) identifies the archive,
+checksum, six-folder layout, original data sources and checkpoint attribution.
+Large input files are distributed as repository release assets; only their guide
+and metadata are tracked under `data/study_inputs/`. The reproduction guide starts
+with a small actual saved-input check, then covers the 30-route suite, expanded
+comparisons, module/head experiments and figures. The constructed example above
+can be run immediately after installation.
 
 ## Development archive
 
@@ -89,6 +106,9 @@ programs; `paper/scientific/` the pinned dependencies of the full study routes;
 and `tests/` executable checks.
 
 Project code uses [MIT](LICENSE). Upstream components retain their licenses and
-attribution in [NOTICE](NOTICE.md) and `paper/licenses/`. Data access terms are
-listed separately in the input guide. Cite the manuscript title and Git revision
-until a publication DOI is assigned.
+attribution in [NOTICE](NOTICE.md) and `paper/licenses/`. Dataset and checkpoint
+sources are listed in [data/study_inputs/SOURCES.csv](data/study_inputs/SOURCES.csv).
+For the research method, cite the manuscript title above; publication metadata
+will be added when assigned. A software revision identifies the code used for a run.
+For reproducibility questions or bug reports, open a repository issue and include
+the command, environment, input archive identity and relevant error log.

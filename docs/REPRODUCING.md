@@ -1,12 +1,23 @@
 # Reproducing the analyses
 
-Start with the unrestricted example in the main README. Use new output paths.
-For original datasets, see [data sources and input use](DATA_ACCESS.md): it
-identifies the three upstream sources, the input formats and the next executable
-commands. The routes below use the named saved study inputs. Tracker inference
-and analysis of fixed predictions are separate steps.
-`COMPLETE` means the requested implementation scope completed; `WITHHELD_*`
-records a reason and contains no truncated bounds.
+Start at the repository [README](../README.md) for installation and the example
+that constructs its own inputs. For paper results, obtain and verify the archive
+using the [study input guide](../data/study_inputs/README.md). Keep the six extracted
+folder names. In the commands below, replace `INPUTS` with that extraction root,
+such as `D:/inputs`, and run from the source repository root.
+
+| Goal | Dependencies | Section | Main output |
+|---|---|---|---|
+| Small actual saved-input audit | Root installation | [Actual worked path](#actual-worked-path) | Witness/family checks and cap refusal |
+| Expanded saved graph/pair comparisons | Root installation | [Expanded archive](#expanded-archive-and-focused-comparisons) | Graph reports, bounds and endpoint checks |
+| All 72 module conditions and four head folds | `paper/requirements-historical.txt` | [Historical experiments](#historical-module-and-head-experiments) | Condition CSV; fold scores and weights |
+| Retained 30-route study | `paper/requirements-paper.txt` | [Full study routes](#retained-full-study-routes) | Per-route measurements and completion records |
+| Exact paper figures | `paper/figures/requirements.txt` | [Figures](#figures) | Independent PNG/PDF/SVG figures |
+
+Use new output paths. `COMPLETE` means the requested implementation scope completed;
+`WITHHELD_*` records a reason and contains no truncated bounds. For new downloaded
+datasets or new predictions, use the [input schema](DATA_ACCESS.md#using-downloaded-data)
+and [case interface](FIGURE_CASES.md).
 
 ## Core comparison
 
@@ -24,10 +35,10 @@ extremality by replay alone.
 
 ## Actual worked path
 
-After obtaining the [controlled input companion](DATA_ACCESS.md):
+After extracting the [study archive](../data/study_inputs/README.md):
 
 ```bash
-python paper/review_d47.py --input-root "../controlled_companion_LOCAL_ONLY/03_最小D47/LOCAL_ONLY_INPUTS" --expected-report "../controlled_companion_LOCAL_ONLY/04_既有补充证据_v1.2/packaged_cli_execution/EXPLICIT_PROBE/NEW_ROOT_TASK/REPORT.json" --output outputs/worked_path
+python paper/review_d47.py --input-root "INPUTS/controlled_companion_LOCAL_ONLY/03_最小D47/LOCAL_ONLY_INPUTS" --expected-report "INPUTS/controlled_companion_LOCAL_ONLY/04_既有补充证据_v1.2/packaged_cli_execution/EXPLICIT_PROBE/NEW_ROOT_TASK/REPORT.json" --output outputs/worked_path
 ```
 
 Expected: `WORKED_AUDIT_REVIEW_PASS`; families 1/2/1; joint recovery `{0}`;
@@ -37,13 +48,15 @@ graphs without new inference or historical timing reruns.
 
 ## Expanded archive and focused comparisons
 
-`corpus` must contain `graphs`, `references`, `graph_reports` and `frame_cache`;
-`records` must contain `linked_records` and `motion_linked`.
+The retained corpus is `INPUTS/expanded_evidence/04_统一重分析` and contains
+`graphs`, `references`, `graph_reports` and `frame_cache`. The focused records
+are in `INPUTS/expanded_evidence/integration/`, with
+`linked_records` and `motion_linked`.
 
 ```bash
-python paper/expanded/review_linked_records.py --corpus path/to/corpus --records path/to/comparison_records --output outputs/endpoint_checks.json
-python paper/expanded/summarize_focused_inputs.py --comparisons path/to/55_all_208_movie_comparisons.csv --corpus path/to/corpus --output outputs/focused_inputs.json
-python paper/summarize_module_context.py --input path/to/57_all_72_module_conditions.csv --output outputs/module_context.json
+python paper/expanded/review_linked_records.py --corpus INPUTS/expanded_evidence/04_统一重分析 --records INPUTS/expanded_evidence/integration --output outputs/endpoint_checks.json
+python paper/expanded/summarize_focused_inputs.py --comparisons data/catalog/focused_comparisons.csv --corpus INPUTS/expanded_evidence/04_统一重分析 --output outputs/focused_inputs.json
+python paper/summarize_module_context.py --input data/catalog/module_conditions.csv --output outputs/module_context.json
 ```
 
 Expected: 216 comparisons and 2,160 endpoint witnesses; reference denominators
@@ -55,8 +68,8 @@ counts. This reaggregation does not execute the old module producer.
 The retained expanded companion contains `04_统一重分析/GRAPH_INDEX.jsonl`, `graphs/`, `references/`, `frame_cache/`, `graph_reports/`, `visibility/` and the complete pair records. A fresh complete-family/graph census and subsequent within-movie pair calculation use explicit locations:
 
 ```bash
-python paper/expanded/historical_producers/13_run_complete_graph_audit.py --corpus path/to/expanded_evidence/04_统一重分析 --output outputs/expanded_graphs
-python paper/expanded/historical_producers/15_all_within_movie_contrasts.py --corpus path/to/expanded_evidence/04_统一重分析 --audit-root outputs/expanded_graphs --output outputs/expanded_pairs
+python paper/expanded/historical_producers/13_run_complete_graph_audit.py --corpus INPUTS/expanded_evidence/04_统一重分析 --output outputs/expanded_graphs
+python paper/expanded/historical_producers/15_all_within_movie_contrasts.py --corpus INPUTS/expanded_evidence/04_统一重分析 --audit-root outputs/expanded_graphs --output outputs/expanded_pairs
 ```
 
 To recalculate pairs from the retained completed graph census, set `--audit-root` to that same `04_统一重分析` directory. Use new output directories outside the input corpus. `--limit` supports a bounded execution check and leaves a partial census; omit it for all graphs or pairs. The 175,488 distinct frame geometries and 124,237 pairs are expected outcomes for the exact retained corpus and declared caps. These commands reconstruct matching/query evidence from saved graphs; they do not run detector inference. The 216 endpoint checks above replay retained focused comparisons rather than reconstructing the whole corpus.
@@ -64,8 +77,8 @@ To recalculate pairs from the retained completed graph census, set `--audit-root
 To recalculate all 208 focused linked comparisons and the eight saved motion-intervention comparisons, use the graph-pair definitions from Source Data Tables 55–56:
 
 ```bash
-python paper/expanded/historical_producers/run_linked_focused.py --corpus path/to/expanded_evidence/04_统一重分析 --audit-root outputs/expanded_graphs --contrasts path/to/55_LINKED_FOCUSED_CONTRASTS.json --motion path/to/56_motion_source_and_result_join.json --output outputs/focused_recalculated
-python paper/expanded/review_linked_records.py --corpus path/to/expanded_evidence/04_统一重分析 --audit-root outputs/expanded_graphs --records outputs/focused_recalculated --output outputs/focused_witness_checks.json
+python paper/expanded/historical_producers/run_linked_focused.py --corpus INPUTS/expanded_evidence/04_统一重分析 --audit-root outputs/expanded_graphs --contrasts INPUTS/expanded_evidence/integration/LINKED_FOCUSED_CONTRASTS.json --motion INPUTS/expanded_evidence/integration/MOTION_INTERVENTION_RESULTS.json --output outputs/focused_recalculated
+python paper/expanded/review_linked_records.py --corpus INPUTS/expanded_evidence/04_统一重分析 --audit-root outputs/expanded_graphs --records outputs/focused_recalculated --output outputs/focused_witness_checks.json
 ```
 
 The first command recalculates the linked bounds from graphs and supplied complete-frame families; prior linked result fields in the cohort JSON do not enter the calculation. Set `--audit-root` to the retained corpus to reuse its families, or to a fresh `13_run_complete_graph_audit.py` output for new primitive construction. The second command uses primitive graphs at `--corpus` and the corresponding graph reports/frame families at `--audit-root`, so a fresh audit can be checked without copying inputs or mixing report sets. The eight-movie command remeasures the saved intervention outputs; it does not regenerate their upstream processing.
@@ -73,7 +86,7 @@ The first command recalculates the linked bounds from graphs and supplied comple
 The historical cached-coordinate estimator replay has an explicit input entry:
 
 ```bash
-python paper/expanded/historical_producers/replay_local_smoother.py --input-root "path/to/expanded_evidence/05_补证与核验/16片局部重放_历史证据" --film 44b6_12dfb391 --output outputs/smoother_check.json
+python paper/expanded/historical_producers/replay_local_smoother.py --input-root "INPUTS/expanded_evidence/05_补证与核验/16片局部重放_历史证据" --film 44b6_12dfb391 --output outputs/smoother_check.json
 ```
 
 Use a film directory actually present under that input root. The command reads its pinned cached coordinates and repaired graph, executes the retained estimator and compares the three output arrays with its frozen target. It does not execute detector inference.
@@ -125,7 +138,7 @@ layout for these commands.
 
 ```bash
 python -m pip install -r paper/requirements-paper.txt
-python -B -X utf8 paper/configure_bundle.py --bundle path/to/full_study_inputs_LOCAL_ONLY --runtime paper/_local/review_runtime --config paper/local_config.json --runs outputs/full_study
+python -B -X utf8 paper/configure_bundle.py --bundle INPUTS/full_study_inputs_LOCAL_ONLY --runtime paper/_local/review_runtime --config paper/local_config.json --runs outputs/full_study
 python -B -X utf8 paper/prepare_local.py --config paper/local_config.json
 python -B -X utf8 paper/run.py list
 python -B -X utf8 paper/run_suite.py --config paper/local_config.json --output outputs/full_study
@@ -149,8 +162,8 @@ then construct the manuscript set:
 
 ```bash
 python -m pip install -r paper/figures/requirements.txt
-python paper/figures/retained_build_figures.py --input-root path/to/figure_inputs_LOCAL_ONLY/retained_inputs --output outputs/base_figures
-python paper/figures/build_integrated.py --input-root path/to/figure_inputs_LOCAL_ONLY --retained-figures outputs/base_figures --output outputs/paper_figures
+python paper/figures/retained_build_figures.py --input-root INPUTS/figure_inputs_LOCAL_ONLY/retained_inputs --output outputs/base_figures
+python paper/figures/build_integrated.py --input-root INPUTS/figure_inputs_LOCAL_ONLY --retained-figures outputs/base_figures --output outputs/paper_figures
 ```
 
 `paper/figures/export_case.py` handles alternative actual cases; see [case instructions](FIGURE_CASES.md). It emits measured cases and previews, using a different schema from the fixed manuscript plot packets. The two commands above reproduce the manuscript figure set from its retained figure inputs. The base builder's historical `Figure4_actual_type_change` output is copied as the current `Figure6_support_and_relation_type`; it is unrelated to the current three-dimensional Figure 4. Source tables and pixel packets belong to the input companions and retain their source terms.

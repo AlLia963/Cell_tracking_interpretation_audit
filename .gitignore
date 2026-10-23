@@ -9,6 +9,11 @@ dist/
 outputs/
 data/*
 !data/catalog/
+!data/study_inputs/
+data/study_inputs/*
+!data/study_inputs/README.md
+!data/study_inputs/SOURCES.csv
+!data/study_inputs/ARCHIVE.json
 weights/
 *.npz
 *.npy

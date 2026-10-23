@@ -1,0 +1,61 @@
+{
+  "archive_name": "study_reproduction_inputs.zip",
+  "bytes": 1864437422,
+  "sha256": "6a8e0bf2abee7c0f9cfc7e61ea893dc0540e3288eb9ba0c9333eceaca59b8b2c",
+  "payload_files": 237935,
+  "unpacked_payload_bytes": 2915005567,
+  "distribution": {
+    "method": "GitHub release asset",
+    "release_tag": "study-inputs-2026-10-23",
+    "releases_page": "https://github.com/AlLia963/Cell_tracking_interpretation_audit/releases",
+    "expected_asset_url": "https://github.com/AlLia963/Cell_tracking_interpretation_audit/releases/download/study-inputs-2026-10-23/study_reproduction_inputs.zip",
+    "state_at_preparation": "Prepared locally; the author has not uploaded the asset."
+  },
+  "source_table": "SOURCES.csv",
+  "per_file_manifest_in_archive": "REPRODUCTION_INPUT_MANIFEST.json",
+  "preserved_directory_roots": {
+    "full_study_inputs_LOCAL_ONLY": {
+      "files": 23994,
+      "unpacked_bytes": 1447717005
+    },
+    "controlled_companion_LOCAL_ONLY": {
+      "files": 1742,
+      "unpacked_bytes": 91459339
+    },
+    "expanded_evidence": {
+      "files": 211803,
+      "unpacked_bytes": 1254250686
+    },
+    "figure_inputs_LOCAL_ONLY": {
+      "files": 56,
+      "unpacked_bytes": 8104363
+    },
+    "case_reuse_LOCAL_ONLY": {
+      "files": 171,
+      "unpacked_bytes": 112710482
+    },
+    "historical_module_inputs": {
+      "files": 169,
+      "unpacked_bytes": 763692
+    }
+  },
+  "checkpoint_files": [
+    {
+      "path": "expanded_evidence/05_补证与核验/四折负结果_历史证据/shipped_v1_head.pt",
+      "bytes": 33913,
+      "sha256": "625a0d9340f48193f2ec294fc2d81c5bb3c03087eab78ef0ae998a9c4c7da00c"
+    },
+    {
+      "path": "expanded_evidence/05_补证与核验/四折负结果_历史证据/v1284_head_v2.pt",
+      "bytes": 294893,
+      "sha256": "6be787cb5515db1600f3955e3cafb3aa8f27e01ca475edd5a9ead45c7768fa7e"
+    },
+    {
+      "path": "historical_module_inputs/ranker/model/local_association_ranker.pt",
+      "bytes": 20283,
+      "sha256": "b49a9ab4228daba63d31056ae5beef9fd3e8bcd3ba26d9f57a45ef828d4fb4b8"
+    }
+  ],
+  "license_scope": "Mixed study outputs, upstream dataset subsets, checkpoints and historical records; source attribution and upstream terms are listed separately.",
+  "archive_modified_by_this_repository_documentation_update": false
+}

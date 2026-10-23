@@ -15,6 +15,10 @@ z projections or normalized channel-mean displays; they are not all untouched
 raw frames. Measurements use the source coordinates, masks and graph records,
 never the PNG.
 
+Obtain the figure and alternative-case inputs using the
+[study input guide](../data/study_inputs/README.md). Their original dataset
+sources and transformations are indexed in [SOURCES.csv](../data/study_inputs/SOURCES.csv).
+
 For the **exact manuscript figures**, use the two figure-builder commands in [REPRODUCING.md](REPRODUCING.md#figures) with `figure_inputs_LOCAL_ONLY`. Those builders consume the retained `SOURCE.json`, named pixel arrays and numeric tables.
 
 For a **different selected case**, this exporter supplies freshly checked `RESULT.json`, `PIXELS.npz` and single-frame previews. These are not drop-in inputs to `build_integrated.py`: metadata, array names and case-specific layouts differ. For example, coordinate export uses `raw_<frame>` arrays, whereas the fixed Figure 4 packet uses `frame_<frame>` in `DISPLAY_PIXELS.npz`. A new presentation must use the new result and its actual arrays; the existing figure builders retain the declared manuscript cases. The exporter therefore reproduces the measurement/extraction procedure for other cases, rather than automatically drawing an alternative final manuscript figure.
