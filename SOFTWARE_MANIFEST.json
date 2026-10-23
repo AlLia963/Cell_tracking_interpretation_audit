@@ -584,8 +584,8 @@
     },
     {
       "path": "paper/figures/build_integrated.py",
-      "bytes": 19291,
-      "sha256": "ff51fa1abbea317c0a9412bc7127f539bc1163d462aae05d991a937cb506fc08"
+      "bytes": 19659,
+      "sha256": "f3cb15f346ba428121e6071954329a4f4eb1d65894340cd0ac9f7e99b4ec3f52"
     },
     {
       "path": "paper/figures/export_case.py",
