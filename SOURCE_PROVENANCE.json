@@ -1,239 +1,268 @@
 {
-  "repository": "stage-resolved-tracking-audit",
+  "repository": "cell-tracking-interpretation-audit",
   "version": "0.1.0",
-  "source_scope": "post-competition local project analysis; source and constructed examples only",
+  "source_scope": "Source ancestry of the reusable library, constructed examples and coordinate workflow. SOFTWARE_MANIFEST.json inventories current delivered files; paper/SOURCE_INDEX.json and paper/expanded/SOURCE_BINDINGS.json identify the paper-specific implementations.",
   "competition_inputs_included": false,
   "files": [
     {
       "destination": "src/portable_analysis_candidate/__init__.py",
       "source_sha256": "0d5d31eebbff4a12ab6f5fe8ac14319d28e7582217b5032f0eec80983015481a",
-      "distributed_sha256": "94f57d72e40fa1d84af4df22f0322aee5b5c0d74cebfeb2010ba22c510f1ecff",
-      "changes": "public package version only",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/__init__.py"
+      "distributed_sha256": "256fedab829c8890c7eafd41275772acdbb004ab17c82bac781cd32215fbac85",
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/__init__.py",
+      "initial_import_changes": "public package version only",
+      "initial_distributed_sha256": "94f57d72e40fa1d84af4df22f0322aee5b5c0d74cebfeb2010ba22c510f1ecff",
+      "distribution_update": "Reconcile the initial receipt with the already delivered line-ending/encoding representation; this metadata correction does not edit the source file."
     },
     {
       "destination": "src/portable_analysis_candidate/__main__.py",
       "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
       "distributed_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/__main__.py"
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/__main__.py",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "src/portable_analysis_candidate/_upstream/__init__.py",
       "source_sha256": "d6b56a6155d08e5006a0a8a6d089ca381a033f353c37431644a043e91fe2269b",
       "distributed_sha256": "d6b56a6155d08e5006a0a8a6d089ca381a033f353c37431644a043e91fe2269b",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/__init__.py"
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/__init__.py",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "src/portable_analysis_candidate/_upstream/coupled_accounting.py",
       "source_sha256": "19d58332f6a89718474217f3b1ea49de9cd605fcba439e553faed2a906554503",
       "distributed_sha256": "19d58332f6a89718474217f3b1ea49de9cd605fcba439e553faed2a906554503",
-      "changes": "byte-identical copy",
-      "source_version": "v1.0_r2_sources/portable/src/portable_analysis_candidate/_upstream/coupled_accounting.py"
+      "source_version": "v1.0_r2_sources/portable/src/portable_analysis_candidate/_upstream/coupled_accounting.py",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "src/portable_analysis_candidate/_upstream/exact_disjoint_envelope.py",
       "source_sha256": "864c95d22820ab0cfd607b795f7f71c0fe16d0c6ce0c971b24e755ef8d37514c",
       "distributed_sha256": "864c95d22820ab0cfd607b795f7f71c0fe16d0c6ce0c971b24e755ef8d37514c",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/exact_disjoint_envelope.py"
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/exact_disjoint_envelope.py",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "src/portable_analysis_candidate/_upstream/family_accounting.py",
       "source_sha256": "8c3fabd427df413e1bc68fa59c6fcb0f5851767f07b2431cd6a4d4a9897e0067",
       "distributed_sha256": "8c3fabd427df413e1bc68fa59c6fcb0f5851767f07b2431cd6a4d4a9897e0067",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/family_accounting.py"
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/family_accounting.py",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "src/portable_analysis_candidate/_upstream/mask_correspondence.py",
       "source_sha256": "35df456c04ac18ba7c7fa62195faf69daf5451ec05c57ab3ef97e99be855df0d",
-      "distributed_sha256": "35df456c04ac18ba7c7fa62195faf69daf5451ec05c57ab3ef97e99be855df0d",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/mask_correspondence.py"
+      "distributed_sha256": "e3bf295c2ca33b06b43ed00ece23e13bde4c0eac517feda398c668bbe76b22ee",
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/mask_correspondence.py",
+      "initial_import_changes": "byte-identical copy",
+      "initial_distributed_sha256": "35df456c04ac18ba7c7fa62195faf69daf5451ec05c57ab3ef97e99be855df0d",
+      "distribution_update": "Reconcile the initial receipt with the already delivered line-ending/encoding representation; this metadata correction does not edit the source file."
     },
     {
       "destination": "src/portable_analysis_candidate/_upstream/stage_accounting.py",
       "source_sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
-      "distributed_sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/stage_accounting.py"
+      "distributed_sha256": "81259d828248cb3be116578ea8f11a52e73ae2570b903cef9b647c8bcfc817ec",
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/stage_accounting.py",
+      "initial_import_changes": "byte-identical copy",
+      "initial_distributed_sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "distribution_update": "Reconcile the initial receipt with the already delivered line-ending/encoding representation; this metadata correction does not edit the source file."
     },
     {
       "destination": "src/portable_analysis_candidate/_upstream/typed_pathways.py",
       "source_sha256": "5b7f83ea1217a91a4c121b39c3915d0a123b43f4f87e2b1e0e2ad6b7fe812ac6",
       "distributed_sha256": "5b7f83ea1217a91a4c121b39c3915d0a123b43f4f87e2b1e0e2ad6b7fe812ac6",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/typed_pathways.py"
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/_upstream/typed_pathways.py",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "src/portable_analysis_candidate/cli.py",
       "source_sha256": "111f378f70f5632ce682916f2e8707de369b72cf23ad129f69ebebe69109d11d",
-      "distributed_sha256": "5c12dff969f40ca7e77cf6cfbede878818f2d605e36258afe17a6b0a5fb0f1db",
-      "changes": "omit dataset-specific natural-ctc command; update package receipt name",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/cli.py"
+      "distributed_sha256": "f612cf1283574032ff41d1ece402ef96eedc803ce03f57db98662a4cb0efece8",
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/cli.py",
+      "initial_import_changes": "omit dataset-specific natural-ctc command; update package receipt name",
+      "initial_distributed_sha256": "5c12dff969f40ca7e77cf6cfbede878818f2d605e36258afe17a6b0a5fb0f1db",
+      "distribution_update": "Current receipt package label is cell-tracking-interpretation-audit; commands, input handling and scientific result fields are unchanged by this label correction."
     },
     {
       "destination": "src/portable_analysis_candidate/io.py",
       "source_sha256": "b1c7e32d650d864fa39ecabec29f6668fd6de82046b1a9ee70353830b636de35",
-      "distributed_sha256": "b1c7e32d650d864fa39ecabec29f6668fd6de82046b1a9ee70353830b636de35",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/io.py"
+      "distributed_sha256": "ff10e572d9129fec0672ae5c7b9d3bfa9dc95f32d96478b751995d1b2ce101d2",
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/io.py",
+      "initial_import_changes": "byte-identical copy",
+      "initial_distributed_sha256": "b1c7e32d650d864fa39ecabec29f6668fd6de82046b1a9ee70353830b636de35",
+      "distribution_update": "Reconcile the initial receipt with the already delivered line-ending/encoding representation; this metadata correction does not edit the source file."
     },
     {
       "destination": "src/portable_analysis_candidate/joint_history.py",
       "source_sha256": "330ddac2d61022cbbbb547d53ac91c4111f92f122e91c401fd5333d4db4d1b31",
       "distributed_sha256": "330ddac2d61022cbbbb547d53ac91c4111f92f122e91c401fd5333d4db4d1b31",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/joint_history.py"
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/joint_history.py",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "src/portable_analysis_candidate/typed.py",
       "source_sha256": "bba885d539cbe4b0c358a57295c5e111345920a5da51940e48b1c215b00efacd",
       "distributed_sha256": "bba885d539cbe4b0c358a57295c5e111345920a5da51940e48b1c215b00efacd",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/typed.py"
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/typed.py",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "src/portable_analysis_candidate/typed_window.py",
       "source_sha256": "7c57ef26c60d5c83fa184306f5095d36b920e1a3e545604ee4bcf054dc9e1d0f",
       "distributed_sha256": "7c57ef26c60d5c83fa184306f5095d36b920e1a3e545604ee4bcf054dc9e1d0f",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/typed_window.py"
+      "source_version": "portable_analysis_candidate_v0.5/src/portable_analysis_candidate/typed_window.py",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "examples/constructed_joint_histories.json",
       "source_sha256": "8c5e50d337065020eb0387d1f1f51616535e4be6a9e21a5afaf4828e8a4be132",
-      "distributed_sha256": "8c5e50d337065020eb0387d1f1f51616535e4be6a9e21a5afaf4828e8a4be132",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/examples/constructed_joint_histories.json"
+      "distributed_sha256": "27d8578835461c899a0f468f9a3d1a70bdda6bb8a811facb38d469d77066c35c",
+      "source_version": "portable_analysis_candidate_v0.5/examples/constructed_joint_histories.json",
+      "initial_import_changes": "byte-identical copy",
+      "initial_distributed_sha256": "8c5e50d337065020eb0387d1f1f51616535e4be6a9e21a5afaf4828e8a4be132",
+      "distribution_update": "Reconcile the initial receipt with the already delivered line-ending/encoding representation; this metadata correction does not edit the source file."
     },
     {
       "destination": "examples/coordinate_families.json",
       "source_sha256": "cab2e922b3bc8c59ca9e375885f2166ca9cdfea77ef0051a0ea1a944844e78d4",
       "distributed_sha256": "cab2e922b3bc8c59ca9e375885f2166ca9cdfea77ef0051a0ea1a944844e78d4",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/examples/coordinate_families.json"
+      "source_version": "portable_analysis_candidate_v0.5/examples/coordinate_families.json",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "examples/coordinate_reference.json",
       "source_sha256": "54b1752eab75583b1c3cff49498e4e9d4fc0cde300e7f9dc6e8d22cbcff6ea14",
       "distributed_sha256": "54b1752eab75583b1c3cff49498e4e9d4fc0cde300e7f9dc6e8d22cbcff6ea14",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/examples/coordinate_reference.json"
+      "source_version": "portable_analysis_candidate_v0.5/examples/coordinate_reference.json",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "examples/coordinate_stage_0.json",
       "source_sha256": "0b9e7d6b65decf79b257e98359ba9800e73a55c0bc32031e941f50b7d496345e",
       "distributed_sha256": "0b9e7d6b65decf79b257e98359ba9800e73a55c0bc32031e941f50b7d496345e",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/examples/coordinate_stage_0.json"
+      "source_version": "portable_analysis_candidate_v0.5/examples/coordinate_stage_0.json",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "examples/coordinate_stage_1.json",
       "source_sha256": "8e78dcb6ca70cd4dc56468edece39100dbdece6721b6535168cdaa57b33ac08a",
       "distributed_sha256": "8e78dcb6ca70cd4dc56468edece39100dbdece6721b6535168cdaa57b33ac08a",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/examples/coordinate_stage_1.json"
+      "source_version": "portable_analysis_candidate_v0.5/examples/coordinate_stage_1.json",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "examples/mask_prediction.json",
       "source_sha256": "6e578a0640cb381a38d5f1dda3049f517eb3c7ef993cc0cceb70fbcb170ba996",
       "distributed_sha256": "6e578a0640cb381a38d5f1dda3049f517eb3c7ef993cc0cceb70fbcb170ba996",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/examples/mask_prediction.json"
+      "source_version": "portable_analysis_candidate_v0.5/examples/mask_prediction.json",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "examples/mask_reference.json",
       "source_sha256": "42e4c2996a76faf0edb80896ce7edd1aa5e5766c5014cfabeaaee471210d173e",
       "distributed_sha256": "42e4c2996a76faf0edb80896ce7edd1aa5e5766c5014cfabeaaee471210d173e",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/examples/mask_reference.json"
+      "source_version": "portable_analysis_candidate_v0.5/examples/mask_reference.json",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "examples/typed_matches.json",
       "source_sha256": "a9e4617169f313e991eae66d03aca80e9cf579e47e29624380b521632a20711b",
       "distributed_sha256": "a9e4617169f313e991eae66d03aca80e9cf579e47e29624380b521632a20711b",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/examples/typed_matches.json"
+      "source_version": "portable_analysis_candidate_v0.5/examples/typed_matches.json",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "examples/typed_raw_stage.json",
       "source_sha256": "f6d8e72d68c73416ff0b7a16920be244373a0acbe17fb0e761a725f02cb465ee",
       "distributed_sha256": "f6d8e72d68c73416ff0b7a16920be244373a0acbe17fb0e761a725f02cb465ee",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/examples/typed_raw_stage.json"
+      "source_version": "portable_analysis_candidate_v0.5/examples/typed_raw_stage.json",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "examples/typed_reference.json",
       "source_sha256": "498f93fef8f22c8e2ea1d85ad129e60205a11f9b7fce4f190284a158f1386629",
       "distributed_sha256": "498f93fef8f22c8e2ea1d85ad129e60205a11f9b7fce4f190284a158f1386629",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/examples/typed_reference.json"
+      "source_version": "portable_analysis_candidate_v0.5/examples/typed_reference.json",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "examples/typed_views.json",
       "source_sha256": "5680232df8a8d3c02f74f96bc966c13cefb2a148a79106ecdf528228e6480db0",
       "distributed_sha256": "5680232df8a8d3c02f74f96bc966c13cefb2a148a79106ecdf528228e6480db0",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/examples/typed_views.json"
+      "source_version": "portable_analysis_candidate_v0.5/examples/typed_views.json",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "tests/test_synthetic_contracts.py",
       "source_sha256": "491b2dae38b318a675076f5de9ce18658aad7c08bc7469092a44df1d14aa185e",
       "distributed_sha256": "491b2dae38b318a675076f5de9ce18658aad7c08bc7469092a44df1d14aa185e",
-      "changes": "byte-identical copy",
-      "source_version": "portable_analysis_candidate_v0.5/checks/test_synthetic_contracts.py"
+      "source_version": "portable_analysis_candidate_v0.5/checks/test_synthetic_contracts.py",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "docs/TYPED_WINDOW_INPUT_CONTRACT.md",
       "source_sha256": "e12fa330c93a21e561a2bd53d188dc6f4e0bce0be38ff77e245c60b3a2c058ac",
       "distributed_sha256": "2774dfa98ac77cf966782a1a196b31e04870dbeac7b19333a94fecb3505726de",
-      "changes": "replace obsolete private audit status with current release boundary",
-      "source_version": "portable_analysis_candidate_v0.5/docs/TYPED_WINDOW_INPUT_CONTRACT.md"
+      "source_version": "portable_analysis_candidate_v0.5/docs/TYPED_WINDOW_INPUT_CONTRACT.md",
+      "initial_import_changes": "replace obsolete private audit status with current release boundary"
     },
     {
       "destination": "workflows/coordinate/local_graph_core.py",
       "source_sha256": "36ef1a068a3fdb0ec9f68c0f142c4bf97944ec2e8639c1c9ac087f3000e5a749",
       "distributed_sha256": "36ef1a068a3fdb0ec9f68c0f142c4bf97944ec2e8639c1c9ac087f3000e5a749",
-      "changes": "byte-identical copy",
-      "source_version": "v1.0_r2_sources/primitive/local_graph_core.py"
+      "source_version": "v1.0_r2_sources/primitive/local_graph_core.py",
+      "initial_import_changes": "byte-identical copy"
     },
     {
       "destination": "workflows/coordinate/workflow.py",
       "source_sha256": "82a299ea34acddcc0eeaa8ef5fdbddd829d63e4b881a06a0279a94c89255c098",
-      "distributed_sha256": "6e4f83a633634d045b2c2a6029231075c085d795c703069bd4543ace3282373f",
-      "changes": "release description and obsolete release-status field only; scientific computation unchanged",
-      "source_version": "v1.0_r2_sources/primitive/workflow.py"
+      "distributed_sha256": "0f32c9d86d0fae9d04789e52626a0f9d3da609dd47005e83be0a3525e9600307",
+      "source_version": "v1.0_r2_sources/primitive/workflow.py",
+      "initial_import_changes": "release description and obsolete release-status field only; scientific computation unchanged",
+      "initial_distributed_sha256": "6e4f83a633634d045b2c2a6029231075c085d795c703069bd4543ace3282373f",
+      "distribution_update": "Reconcile the stale import-distribution receipt with the already delivered source bytes; the previous receipt is retained. This metadata correction does not edit the source file."
     },
     {
       "destination": "workflows/coordinate/scientific_backend/reconstruct.py",
       "source_sha256": "d733a59f98518e83d7138f8fcfa3172e70642f206afe491d8bb086423ce6fba4",
-      "distributed_sha256": "dcd3acd5b2292dcf5a1f730483f738a5f1967f8f1d26b00588b82d8d66e1f5c5",
-      "changes": "extract five generic frame-family functions and required imports; omit fixed eight-film/seven-stage research driver",
-      "source_version": "v1.0_r2_sources/primitive/scientific_backend/reconstruct.py"
+      "distributed_sha256": "155684c632b1dfc320e633a8f2e14917a62f9101dfbd85d89601cc9a08ffe98a",
+      "source_version": "v1.0_r2_sources/primitive/scientific_backend/reconstruct.py",
+      "initial_import_changes": "extract five generic frame-family functions and required imports; omit fixed eight-film/seven-stage research driver",
+      "initial_distributed_sha256": "dcd3acd5b2292dcf5a1f730483f738a5f1967f8f1d26b00588b82d8d66e1f5c5",
+      "distribution_update": "Reconcile the stale import-distribution receipt with the already delivered source bytes; the previous receipt is retained. This metadata correction does not edit the source file."
     },
     {
       "destination": "workflows/coordinate/scientific_backend/stage_accounting.py",
       "source_sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
-      "distributed_sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
-      "changes": "byte-identical copy",
-      "source_version": "v1.0_r2_sources/primitive/scientific_backend/sources/executed/stage_accounting.py"
+      "distributed_sha256": "81259d828248cb3be116578ea8f11a52e73ae2570b903cef9b647c8bcfc817ec",
+      "source_version": "v1.0_r2_sources/primitive/scientific_backend/sources/executed/stage_accounting.py",
+      "initial_import_changes": "byte-identical copy",
+      "initial_distributed_sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "distribution_update": "Reconcile the initial receipt with the already delivered line-ending/encoding representation; this metadata correction does not edit the source file."
     },
     {
       "destination": "examples/generate_coordinate_inputs.py",
       "source_sha256": "8a5328f4da4dadd744069a773dd84b9c8b1b7e5c14843ad144cb4d328ae42fdc",
       "distributed_sha256": "a20198ecd827cd87bb89243c9aa0d093041a7c600ed98418de41a591e84c1cdd",
-      "changes": "documentation only; constructed coordinates and generator unchanged",
-      "source_version": "v1_software_candidate_v0.1/prepare_constructed_only.py"
+      "source_version": "v1_software_candidate_v0.1/prepare_constructed_only.py",
+      "initial_import_changes": "documentation only; constructed coordinates and generator unchanged"
     },
     {
       "destination": "workflows/coordinate/scientific_backend/sources/executed/stage_accounting.py",
       "source_sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
-      "distributed_sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
-      "changes": "byte-identical copy; retained source receipt layout",
-      "source_version": "v1.0_r2_sources/primitive/scientific_backend/sources/executed/stage_accounting.py"
+      "distributed_sha256": "81259d828248cb3be116578ea8f11a52e73ae2570b903cef9b647c8bcfc817ec",
+      "source_version": "v1.0_r2_sources/primitive/scientific_backend/sources/executed/stage_accounting.py",
+      "initial_import_changes": "byte-identical copy; retained source receipt layout",
+      "initial_distributed_sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5",
+      "distribution_update": "Reconcile the initial receipt with the already delivered line-ending/encoding representation; this metadata correction does not edit the source file."
     }
-  ]
+  ],
+  "initial_import_repository": "stage-resolved-tracking-audit",
+  "receipt_fields": {
+    "source_sha256": "Recorded original-source identity; preserved from initial import.",
+    "source_version": "Recorded original-source location or version; preserved from initial import.",
+    "initial_import_changes": "Transformation description retained from the original import record.",
+    "distributed_sha256": "SHA256 of the current delivered file bytes.",
+    "initial_distributed_sha256": "Previous import receipt, preserved where current bytes differ.",
+    "distribution_update": "Explanation of the current delivery receipt reconciliation."
+  }
 }

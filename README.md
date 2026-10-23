@@ -105,8 +105,9 @@ these directories by trial and error.
 | `data/study_inputs/downloads/ [local only]` | Optional local copy of the release ZIP; ignored by Git. | Storage only; extracted INPUTS may be elsewhere. |
 
 Root files: `pyproject.toml` and the requirements files define installation;
-`LICENSE` and `NOTICE.md` identify source terms; `SOFTWARE_MANIFEST.json` and
-`SOURCE_PROVENANCE.json` identify delivered source/provenance. The script
+`LICENSE` and `NOTICE.md` identify source terms. `SOFTWARE_MANIFEST.json`
+identifies current delivered bytes; `SOURCE_PROVENANCE.json` preserves original-source
+identities and separately binds current delivered source. The script
 `paper/run_suite.py` runs the original 30 routes. Expanded graph/pair, module,
 head, figure, case and resource steps are additional commands explicitly included
 in the complete walkthrough.

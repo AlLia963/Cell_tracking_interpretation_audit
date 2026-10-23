@@ -6,10 +6,10 @@ Start with the repository [README](../../README.md). The complete command guide 
 
 ## Obtain and verify the archive
 
-The archive is prepared for attachment to this repository's
-[Releases](https://github.com/AlLia963/Cell_tracking_interpretation_audit/releases), under the tag `study-inputs-2026-10-23`.
-**At preparation it has not yet been uploaded.** The download below becomes usable
-when that release is published; GitHub's source-code ZIP does not contain the data.
+The archive is publicly available in the
+[study input release](https://github.com/AlLia963/Cell_tracking_interpretation_audit/releases/tag/study-inputs-2026-10-23).
+Download the asset linked below; GitHub's automatically generated source-code ZIP
+contains the source tree and does not contain the study inputs.
 
 - File: [`study_reproduction_inputs.zip`](https://github.com/AlLia963/Cell_tracking_interpretation_audit/releases/download/study-inputs-2026-10-23/study_reproduction_inputs.zip)
 - Size: 1,864,437,422 bytes (about 1.86 GB compressed)

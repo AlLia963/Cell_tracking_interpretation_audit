@@ -136,7 +136,7 @@ def main(argv=None):
                           "support_comparability_certified_by_module": False,
                           "all_optimal_alternatives_enumerated": False,
                           "semantic_types_supported": False}
-        envelope = {"package": "stage-resolved-tracking-audit", "version": __version__,
+        envelope = {"package": "cell-tracking-interpretation-audit", "version": __version__,
                     "command": args.command, "input_receipts": receipts,
                     "family_declaration": declaration, "result": result}
         write_new_json(args.output, envelope)

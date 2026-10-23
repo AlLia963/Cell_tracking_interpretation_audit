@@ -9,7 +9,10 @@
     "release_tag": "study-inputs-2026-10-23",
     "releases_page": "https://github.com/AlLia963/Cell_tracking_interpretation_audit/releases",
     "expected_asset_url": "https://github.com/AlLia963/Cell_tracking_interpretation_audit/releases/download/study-inputs-2026-10-23/study_reproduction_inputs.zip",
-    "state_at_preparation": "Prepared locally; the author has not uploaded the asset."
+    "status": "published",
+    "release_url": "https://github.com/AlLia963/Cell_tracking_interpretation_audit/releases/tag/study-inputs-2026-10-23",
+    "published_at": "2026-10-23T05:44:55Z",
+    "release_id": 421446934
   },
   "source_table": "SOURCES.csv",
   "per_file_manifest_in_archive": "REPRODUCTION_INPUT_MANIFEST.json",
