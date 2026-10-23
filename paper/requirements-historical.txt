@@ -1,0 +1,8 @@
+numpy==2.4.6
+scipy==1.18.0
+zarr==3.3.0
+polars==1.43.2
+pandas==3.0.5
+tracksdata==0.1.0rc8
+blosc2==4.10.1
+torch==2.13.0

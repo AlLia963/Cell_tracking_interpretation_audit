@@ -84,8 +84,8 @@
     },
     {
       "path": "docs/DATA_ACCESS.md",
-      "bytes": 5182,
-      "sha256": "dd290c1f67cc88d1e143eef57d4b35b07eead965ef0360e8f3f8c7053a6d03b8"
+      "bytes": 5932,
+      "sha256": "674a431aa0ced5e4e7f2232ff0fbabc98c041500253bcd56243a96a18cbeb45d"
     },
     {
       "path": "docs/EXPERIMENT_ROUTES.csv",
@@ -99,8 +99,8 @@
     },
     {
       "path": "docs/REPRODUCING.md",
-      "bytes": 9782,
-      "sha256": "af8317add5a7669a0905089aa5fbf79a2cf3ea94e1df907fe74ee9c999e62205"
+      "bytes": 11599,
+      "sha256": "00f3abf85ce5b448b2f2c94c1a2d8d843d9c04043d2f99510fef186fa3edeb64"
     },
     {
       "path": "docs/TYPED_WINDOW_INPUT_CONTRACT.md",
@@ -194,8 +194,8 @@
     },
     {
       "path": "paper/README.md",
-      "bytes": 9059,
-      "sha256": "e7a061b8a87424fb14865f4ae9aeb1432f23bd697c5c9532dd88f27e592344a4"
+      "bytes": 9635,
+      "sha256": "84bcda2e920c7e9aa08a7253868b323f74564a6a63804b2ec930bf75b44e20e2"
     },
     {
       "path": "paper/SOURCE_INDEX.json",
@@ -238,14 +238,19 @@
       "sha256": "4328eeec3fd91a186d3f100fc3efc3d80386d58450b3e3e035954a8f56039757"
     },
     {
+      "path": "paper/expanded/HISTORICAL_RUNTIME.json",
+      "bytes": 976,
+      "sha256": "88f47e0ba6ac9697bcf3b02fb37d72dce1b3c9ac87437d3e0e444a04bfcaa943"
+    },
+    {
       "path": "paper/expanded/INITIAL_IMPORT_BINDINGS.json",
       "bytes": 2302,
       "sha256": "923784cad4aa75f8c53250141e762c8dae0be51fec92a0069d3264105f339cc8"
     },
     {
       "path": "paper/expanded/SOURCE_BINDINGS.json",
-      "bytes": 9752,
-      "sha256": "f2a2d0b0e7fac4c9b82bc44d2fc3a42dead72ec1f70e57cd24e0f0b2c785eaac"
+      "bytes": 16491,
+      "sha256": "96d58b4d1da6a614d50b40cc96775691bc06b7c49b53569835502fc3846becca"
     },
     {
       "path": "paper/expanded/audit_engine.py",
@@ -408,6 +413,91 @@
       "sha256": "5a5219b2d101a1aa6d09435b4c71f07338ad8a8b4289d0ff124bc4d6a60c6e74"
     },
     {
+      "path": "paper/expanded/module_runtime/SOURCE.json",
+      "bytes": 2704,
+      "sha256": "ebce6f7a2e520bdecee7d63c6724ea14bbf3f03ee3fce2edd06f2f4eedd7caa9"
+    },
+    {
+      "path": "paper/expanded/module_runtime/__init__.py",
+      "bytes": 1753,
+      "sha256": "d02860e92486c077e949504d7971a7774693524c964c2f6fba67a90831ccf891"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/bootstrap.py",
+      "bytes": 16571,
+      "sha256": "9fc90c5b8775bb2ecc77677152770fdb3fdd1037a5a3d89f62333567b31c8b23"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/config.py",
+      "bytes": 4880,
+      "sha256": "69d9d5083f18f2cf6c8134c019ef717cd96ad18967f52c7027b51bdeefa3c521"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/division.py",
+      "bytes": 4668,
+      "sha256": "3829884524d7765f3f305efbe8c5367544676deac4d8b2e67da252da959ea6f2"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/filter_and_fit.py",
+      "bytes": 8153,
+      "sha256": "a5231650969cd7682de6213c65be57e61d4385ab2a9c96313bfba4f7b468c4a5"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/gap.py",
+      "bytes": 12359,
+      "sha256": "6880854e056fae1a64a310099a53b1a880c3704cc2dd8aab30b0c2b45db872dc"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/gap_two.py",
+      "bytes": 7208,
+      "sha256": "78195e42365451791bc1f3738a989e7c2a7130b0f1215f8153de52f585719b68"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/graph_imports.py",
+      "bytes": 415,
+      "sha256": "79f4691e39a6e083edc0867fc8baaaf6a3d4568209dd9dc722f8d63539ee7deb"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/graph_io.py",
+      "bytes": 21424,
+      "sha256": "60054fa9793672b9a499cf2bd975aa18de6a759bffef346f1f518d7fc2d87508"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/learned_reassignment.py",
+      "bytes": 7656,
+      "sha256": "1af469a4691b2b604c432b2f6a8e4eff1b1db6c41806fe0fdd07ace1e848e47c"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/lookahead.py",
+      "bytes": 2266,
+      "sha256": "132a30304c1fbee2811038836803354dbb0a539d1b684bd85d713485556f33be"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/motion.py",
+      "bytes": 11211,
+      "sha256": "e5c44a15a92457a45c2eb00193a78ffee5f2969875a4b95a01b67059dd8197c7"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/pipeline.py",
+      "bytes": 10604,
+      "sha256": "d1985fe2e7bc23d21067c6b5457b96a7c19bf89fa457fe0b6f3e4ba4a773fcef"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/ranker.py",
+      "bytes": 18830,
+      "sha256": "3b60919b72ad5b0f46bfe29bef6fafbbe79564fe4db6d7ea3089a9b38e5dfd0c"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/ranker_reassignment.py",
+      "bytes": 6984,
+      "sha256": "a4aa91d50f12b1525f9baa6ad0d18bc29feffe4f6a7b100e8616348b69449d84"
+    },
+    {
+      "path": "paper/expanded/module_runtime/cv_scorer.py",
+      "bytes": 17420,
+      "sha256": "b2c3602c9f16ed5e3652ed9c530fb1f78515a472769f0fc4ccaaef60a902388d"
+    },
+    {
       "path": "paper/expanded/orientation.py",
       "bytes": 1587,
       "sha256": "567f6833fca645d6a87ac8284d0a579af7bbfd45335efa5c4a546a30ad6e10e8"
@@ -436,6 +526,16 @@
       "path": "paper/expanded/replay_saved.py",
       "bytes": 861,
       "sha256": "94912da9e316943cfe2a8267a3ce9a5e63c820a120f9f0d9849d3d004e5db978"
+    },
+    {
+      "path": "paper/expanded/reproduce_head_validation.py",
+      "bytes": 12704,
+      "sha256": "e59beaf2ec48796478157c31569dee055db7559915203d7febffbb0957db04a6"
+    },
+    {
+      "path": "paper/expanded/reproduce_module_conditions.py",
+      "bytes": 10132,
+      "sha256": "45672bf53892f2fca80974eb3dd9b3b7795914eb6478b0c2fb92f27c675f5808"
     },
     {
       "path": "paper/expanded/review_example.py",
@@ -576,6 +676,11 @@
       "path": "paper/replay_path_witness.py",
       "bytes": 3937,
       "sha256": "16941455d33fd411933d23381b46d75cb704da2faf55c8b6f767ecb24c0c9907"
+    },
+    {
+      "path": "paper/requirements-historical.txt",
+      "bytes": 118,
+      "sha256": "fd6b30aa861ed3e9388cc4761906a2c115dcab7001efb79d60d9a70b02398336"
     },
     {
       "path": "paper/requirements-paper.txt",

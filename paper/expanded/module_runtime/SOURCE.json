@@ -1,0 +1,85 @@
+{
+  "notebook_filename": "biohub-cell-tracking_v7.3.ipynb",
+  "notebook_sha256": "35c74b2f7558cec8e413566e1e820c835b2fa468af4797ba1c39b3b8be2fafa8",
+  "cells": [
+    {
+      "cell": 3,
+      "file": "cells/config.py",
+      "sha256": "69d9d5083f18f2cf6c8134c019ef717cd96ad18967f52c7027b51bdeefa3c521"
+    },
+    {
+      "cell": 4,
+      "file": "cells/bootstrap.py",
+      "sha256": "9fc90c5b8775bb2ecc77677152770fdb3fdd1037a5a3d89f62333567b31c8b23"
+    },
+    {
+      "cell": 5,
+      "file": "cells/ranker.py",
+      "sha256": "3b60919b72ad5b0f46bfe29bef6fafbbe79564fe4db6d7ea3089a9b38e5dfd0c"
+    },
+    {
+      "cell": 8,
+      "file": "cells/lookahead.py",
+      "sha256": "132a30304c1fbee2811038836803354dbb0a539d1b684bd85d713485556f33be"
+    },
+    {
+      "cell": 10,
+      "file": "cells/graph_imports.py",
+      "sha256": "79f4691e39a6e083edc0867fc8baaaf6a3d4568209dd9dc722f8d63539ee7deb"
+    },
+    {
+      "cell": 11,
+      "file": "cells/graph_io.py",
+      "sha256": "60054fa9793672b9a499cf2bd975aa18de6a759bffef346f1f518d7fc2d87508"
+    },
+    {
+      "cell": 12,
+      "file": "cells/motion.py",
+      "sha256": "e5c44a15a92457a45c2eb00193a78ffee5f2969875a4b95a01b67059dd8197c7"
+    },
+    {
+      "cell": 13,
+      "file": "cells/gap.py",
+      "sha256": "6880854e056fae1a64a310099a53b1a880c3704cc2dd8aab30b0c2b45db872dc"
+    },
+    {
+      "cell": 14,
+      "file": "cells/gap_two.py",
+      "sha256": "78195e42365451791bc1f3738a989e7c2a7130b0f1215f8153de52f585719b68"
+    },
+    {
+      "cell": 15,
+      "file": "cells/division.py",
+      "sha256": "3829884524d7765f3f305efbe8c5367544676deac4d8b2e67da252da959ea6f2"
+    },
+    {
+      "cell": 16,
+      "file": "cells/filter_and_fit.py",
+      "sha256": "a5231650969cd7682de6213c65be57e61d4385ab2a9c96313bfba4f7b468c4a5"
+    },
+    {
+      "cell": 17,
+      "file": "cells/pipeline.py",
+      "sha256": "d1985fe2e7bc23d21067c6b5457b96a7c19bf89fa457fe0b6f3e4ba4a773fcef"
+    },
+    {
+      "cell": 18,
+      "file": "cells/ranker_reassignment.py",
+      "sha256": "a4aa91d50f12b1525f9baa6ad0d18bc29feffe4f6a7b100e8616348b69449d84"
+    },
+    {
+      "cell": 19,
+      "file": "cells/learned_reassignment.py",
+      "sha256": "1af469a4691b2b604c432b2f6a8e4eff1b1db6c41806fe0fdd07ace1e848e47c"
+    }
+  ],
+  "simulation_source_sha256": "fb081f00627dad39e57c71e743fef6cb5631105676b9602b2dd3d25295ece627",
+  "scorer_source_sha256": "b2c3602c9f16ed5e3652ed9c530fb1f78515a472769f0fc4ccaaef60a902388d",
+  "cohort": [
+    "44b6_0113de3b",
+    "44b6_0b24845f",
+    "6bba_05b6850b"
+  ],
+  "conditions_per_movie": 24,
+  "scope": "Verbatim selected processing cells and original scorer; explicit reader locations replace author workspace paths."
+}

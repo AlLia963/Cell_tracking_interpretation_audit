@@ -2,6 +2,17 @@
   "scope": "Current comparison/case software identity; immutable executed matching engine retained. Hashes identify files and do not establish scientific correctness.",
   "files": [
     {
+      "path": "paper/expanded/HISTORICAL_RUNTIME.json",
+      "bytes": 976,
+      "sha256": "88f47e0ba6ac9697bcf3b02fb37d72dce1b3c9ac87437d3e0e444a04bfcaa943",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/INITIAL_IMPORT_BINDINGS.json",
+      "bytes": 2302,
+      "sha256": "923784cad4aa75f8c53250141e762c8dae0be51fec92a0069d3264105f339cc8"
+    },
+    {
       "path": "paper/expanded/audit_engine.py",
       "bytes": 18516,
       "sha256": "488d906f33295bc882a2b9a02c0849bd88169d864dadd386cfd30f45d20ab269"
@@ -165,14 +176,111 @@
       "sha256": "90e26aca88ffd3257b09a7f61c6e673614d7e019d0556e7746b534d9b09a0521"
     },
     {
-      "path": "paper/expanded/INITIAL_IMPORT_BINDINGS.json",
-      "bytes": 2302,
-      "sha256": "923784cad4aa75f8c53250141e762c8dae0be51fec92a0069d3264105f339cc8"
-    },
-    {
       "path": "paper/expanded/linked_contrast.py",
       "bytes": 7388,
       "sha256": "5a5219b2d101a1aa6d09435b4c71f07338ad8a8b4289d0ff124bc4d6a60c6e74"
+    },
+    {
+      "path": "paper/expanded/module_runtime/SOURCE.json",
+      "bytes": 2704,
+      "sha256": "ebce6f7a2e520bdecee7d63c6724ea14bbf3f03ee3fce2edd06f2f4eedd7caa9",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/__init__.py",
+      "bytes": 1753,
+      "sha256": "d02860e92486c077e949504d7971a7774693524c964c2f6fba67a90831ccf891",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/bootstrap.py",
+      "bytes": 16571,
+      "sha256": "9fc90c5b8775bb2ecc77677152770fdb3fdd1037a5a3d89f62333567b31c8b23",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/config.py",
+      "bytes": 4880,
+      "sha256": "69d9d5083f18f2cf6c8134c019ef717cd96ad18967f52c7027b51bdeefa3c521",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/division.py",
+      "bytes": 4668,
+      "sha256": "3829884524d7765f3f305efbe8c5367544676deac4d8b2e67da252da959ea6f2",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/filter_and_fit.py",
+      "bytes": 8153,
+      "sha256": "a5231650969cd7682de6213c65be57e61d4385ab2a9c96313bfba4f7b468c4a5",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/gap.py",
+      "bytes": 12359,
+      "sha256": "6880854e056fae1a64a310099a53b1a880c3704cc2dd8aab30b0c2b45db872dc",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/gap_two.py",
+      "bytes": 7208,
+      "sha256": "78195e42365451791bc1f3738a989e7c2a7130b0f1215f8153de52f585719b68",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/graph_imports.py",
+      "bytes": 415,
+      "sha256": "79f4691e39a6e083edc0867fc8baaaf6a3d4568209dd9dc722f8d63539ee7deb",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/graph_io.py",
+      "bytes": 21424,
+      "sha256": "60054fa9793672b9a499cf2bd975aa18de6a759bffef346f1f518d7fc2d87508",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/learned_reassignment.py",
+      "bytes": 7656,
+      "sha256": "1af469a4691b2b604c432b2f6a8e4eff1b1db6c41806fe0fdd07ace1e848e47c",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/lookahead.py",
+      "bytes": 2266,
+      "sha256": "132a30304c1fbee2811038836803354dbb0a539d1b684bd85d713485556f33be",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/motion.py",
+      "bytes": 11211,
+      "sha256": "e5c44a15a92457a45c2eb00193a78ffee5f2969875a4b95a01b67059dd8197c7",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/pipeline.py",
+      "bytes": 10604,
+      "sha256": "d1985fe2e7bc23d21067c6b5457b96a7c19bf89fa457fe0b6f3e4ba4a773fcef",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/ranker.py",
+      "bytes": 18830,
+      "sha256": "3b60919b72ad5b0f46bfe29bef6fafbbe79564fe4db6d7ea3089a9b38e5dfd0c",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cells/ranker_reassignment.py",
+      "bytes": 6984,
+      "sha256": "a4aa91d50f12b1525f9baa6ad0d18bc29feffe4f6a7b100e8616348b69449d84",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/module_runtime/cv_scorer.py",
+      "bytes": 17420,
+      "sha256": "b2c3602c9f16ed5e3652ed9c530fb1f78515a472769f0fc4ccaaef60a902388d",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
     },
     {
       "path": "paper/expanded/orientation.py",
@@ -185,6 +293,11 @@
       "sha256": "73d335ec9c200b0d5bbb873f5cad552f76640843bc5ca41133f10115c38c2da8"
     },
     {
+      "path": "paper/expanded/reference_backend/UPSTREAM_NOTICE.md",
+      "bytes": 1069,
+      "sha256": "bf5d484ef1a7e2744b252da8003be9592feafe69fcbf832226f34511113f4fb8"
+    },
+    {
       "path": "paper/expanded/reference_backend/reconstruct.py",
       "bytes": 23398,
       "sha256": "24d6000a5abea7b5d738e93cd3967831ce3c6be43489e3d88391bd683b51a9b8"
@@ -195,14 +308,21 @@
       "sha256": "7efa6c2f752c9be67cd316bc5e122b7aec840b865cced5674c863b8fd3de92a5"
     },
     {
-      "path": "paper/expanded/reference_backend/UPSTREAM_NOTICE.md",
-      "bytes": 1069,
-      "sha256": "bf5d484ef1a7e2744b252da8003be9592feafe69fcbf832226f34511113f4fb8"
-    },
-    {
       "path": "paper/expanded/replay_saved.py",
       "bytes": 861,
       "sha256": "94912da9e316943cfe2a8267a3ce9a5e63c820a120f9f0d9849d3d004e5db978"
+    },
+    {
+      "path": "paper/expanded/reproduce_head_validation.py",
+      "bytes": 12704,
+      "sha256": "e59beaf2ec48796478157c31569dee055db7559915203d7febffbb0957db04a6",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
+    },
+    {
+      "path": "paper/expanded/reproduce_module_conditions.py",
+      "bytes": 10132,
+      "sha256": "45672bf53892f2fca80974eb3dd9b3b7795914eb6478b0c2fb92f27c675f5808",
+      "source_scope": "Original historical module/head production with explicit input/output roots; selected notebook cells retain exact original bytes."
     },
     {
       "path": "paper/expanded/review_example.py",

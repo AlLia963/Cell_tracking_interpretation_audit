@@ -74,7 +74,18 @@ The following retained companions identify the inputs for the reported analyses.
 | `figure_inputs_LOCAL_ONLY` | Image crops, masks, provenance and plot inputs | Figure builders |
 | `case_reuse_LOCAL_ONLY` | Inputs and configurations for the original and alternative cases | Case exporter |
 
-The companions are retained by the authors; a reviewer download location has not
-yet been assigned. Source code, constructed examples and the development catalog
-are available in this repository. The [reproduction guide](REPRODUCING.md) gives
-commands and expected outputs for the named companions.
+The author-prepared `study_reproduction_inputs.zip` contains these companion
+directories plus `historical_module_inputs` (three movies of saved GEFF
+predictions/references and the association ranker). Extract it once to a new
+directory and retain the top-level folder names. Its root readme gives the input
+layout; its manifest lists individual file sizes and hashes. The original
+companions and their existing manifests are preserved.
+On Windows, use a short extraction root such as `D:/inputs` for the longest
+historical source paths. Historical source/text snapshots in the companions
+document prior execution; use the current manuscript and source checkout.
+
+Reviewer access to this archive is to be specified in the article's data and
+code availability statement; an actual retrieval location has not yet been
+assigned. Source code, constructed examples and the development catalog are
+available here. The [reproduction guide](REPRODUCING.md) gives executable commands
+for the fixed-output analyses, figures and the two historical experiments.

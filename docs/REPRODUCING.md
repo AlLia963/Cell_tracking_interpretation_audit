@@ -78,9 +78,48 @@ python paper/expanded/historical_producers/replay_local_smoother.py --input-root
 
 Use a film directory actually present under that input root. The command reads its pinned cached coordinates and repaired graph, executes the retained estimator and compares the three output arrays with its frozen target. It does not execute detector inference.
 
-The 72-condition module table is a historical saved-result experiment. `paper/summarize_module_context.py` reaggregates its rows; `archived_module_ablation.py` is an original producer snapshot requiring the legacy simulator, scorer, prediction graphs and their environment, not a standalone reader entry. The current 30-route suite does not regenerate those original module conditions.
+## Historical module and head experiments
 
-The four-fold learned-head negative result is in the expanded evidence companion at `05_补证与核验/四折负结果_历史证据/head_v2_gate.json`, with `train_head_v2.py`, the input map, captures and weights alongside it. Its leave-one-movie-out mean displacement errors yield zero wins for the head and ensemble. This historical training experiment is separate from the fixed-output audit routes.
+These two producers reconstruct the reported experiments separately from the
+30-route fixed-output suite. Use the original graph-processing conditions and
+held-out movies. Install the recorded dependencies in a separate environment:
+
+```bash
+python -m pip install -r paper/requirements-historical.txt
+```
+
+The tested Windows CPU environment is recorded in
+`paper/expanded/HISTORICAL_RUNTIME.json`. No GPU detector training or new image
+inference is needed by these two producers.
+
+```bash
+python paper/expanded/reproduce_module_conditions.py --input-root INPUTS/historical_module_inputs --output outputs/module_conditions
+python paper/summarize_module_context.py --input outputs/module_conditions/v75_ablation.csv --output outputs/module_context.json
+python paper/expanded/reproduce_head_validation.py --input-root INPUTS/expanded_evidence/05_补证与核验/四折负结果_历史证据 --expected INPUTS/expanded_evidence/05_补证与核验/四折负结果_历史证据/head_v2_gate.json --threads 16 --output outputs/head_validation
+```
+
+Replace `INPUTS` with the root of the extracted study reproduction input archive.
+The module producer executes the original notebook processing cells and scorer
+from `paper/expanded/module_runtime/`, with saved GEFF prediction/reference
+graphs and the retained association ranker. Its default cohort is exactly the
+three reported movies, with 24 conditions each. `--films` and `--conditions`
+support bounded checks; omit them for all 72 rows. The output CSV retains every
+condition and fresh execution time. `REPRODUCTION_CHECK.json` compares calculated
+counts with the frozen table; historical paper timings are not overwritten.
+
+The head producer reconstructs training labels from the 400 retained captures and
+four reference graphs, uses the original movie holdouts, model widths, seeds,
+400-epoch fold fits and 600-epoch final fit, and writes predictions/errors and
+weights to the new output directory. Use 16 CPU threads for the recorded
+numerical replay. Changing thread count can alter float32 trained weights.
+`REPRODUCTION_CHECK.json` records every comparison and exits nonzero on a frozen
+score mismatch. Frozen expected scores enter only the post-computation check.
+The reported head and ensemble each win in zero of the four held-out movies.
+
+`paper/summarize_module_context.py` remains the quick saved-table reaggregation
+entry; it does not train or regenerate conditions. The original archived producer
+snapshots remain as provenance. The input archive readme gives the exact folder
+layout for these commands.
 
 ## Retained full study routes
 

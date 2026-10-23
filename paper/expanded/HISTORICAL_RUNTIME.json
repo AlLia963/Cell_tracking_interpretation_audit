@@ -1,0 +1,31 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.12",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "torch": "2.13.0",
+    "zarr": "3.3.0",
+    "polars": "1.43.2",
+    "pandas": "3.0.5",
+    "tracksdata": "0.1.0rc8",
+    "blosc2": "4.10.1"
+  },
+  "device": "CPU",
+  "head_training_threads": 16,
+  "module_processing_threads": 1,
+  "head_numeric_replay": "All four held-out scores and final trained weight tensors equal retained evidence at 16 threads.",
+  "one_thread_attempt": "Completed and retained; small numerical differences in new float32 training, zero wins unchanged.",
+  "module_cohort": [
+    "44b6_0113de3b",
+    "44b6_0b24845f",
+    "6bba_05b6850b"
+  ],
+  "head_cohort": [
+    "44b6_12dfb391",
+    "44b6_267148e4",
+    "6bba_062c8d37",
+    "6bba_09961292"
+  ],
+  "source_provenance": "module_runtime/SOURCE.json identifies original notebook cells and scorer; producer adaptations preserve the reported calculation definitions."
+}
